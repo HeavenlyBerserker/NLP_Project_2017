@@ -21,3 +21,5 @@ Instructions so far:
 
 Change log:
 2017-10-29 Added readme file and did some modifications to the code.
+2017-10-29 Parsed the file further. Now each file has been put with
+			its answers, parsed answers, raw text, and parsed sentences.
