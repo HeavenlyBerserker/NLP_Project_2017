@@ -4,6 +4,7 @@ Written on python 2.7.12
 
 Created October 28 2017
 
+#######################################################
 Instructions so far:
 
 1. Install python repository nlkt:
@@ -15,3 +16,8 @@ Instructions so far:
 2. Run project.py with no arguments. Suggested version 2.7.12
 	
 	python2 project.py
+	
+#######################################################
+
+Change log:
+2017-10-29 Added readme file and did some modifications to the code.
