@@ -7,8 +7,11 @@ Created October 28 2017
 Instructions so far:
 
 1. Install python repository nlkt:
+	
 	sudo pip install -U nltk
 	
 	Open python and install suggested subpackages.
 	
 2. Run project.py with no arguments. Suggested version 2.7.12
+	
+	python2 project.py
