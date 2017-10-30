@@ -3,6 +3,9 @@ Project by Hong Xu and Jie Zhang
 Written on python 2.7.12
 
 Created October 28 2017
+Sources for nltk: http://www.nltk.org/book_1ed/
+Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
+
 
 #######################################################
 Instructions so far:

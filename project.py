@@ -4,6 +4,8 @@
 
 #Autors: Hong Xu and Jie Zhang
 #Repository: https://github.com/HeavenlyBerserker/NLP_Project_2017.git
+#Sources for nltk: http://www.nltk.org/book_1ed/
+#Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
 
 #Possibly useful imports
 import argparse
@@ -24,6 +26,8 @@ def main(argv):
 	#[i][0] = filename
 	#[i][1][0] = raw text
 	#[i][1][1] = parsed sentences
+	#[i][1][2] = important words meaning words that were extracted as parsed answers 
+	#	plus the index in which they were found in that sentence
 	#[i][2][0] = raw answers
 	#[i][2][1] = parsed answers
 	#See printed output for more details
@@ -141,7 +145,7 @@ def parseAnswers(files):
 			for j in range(1, len(template)):
 				for k in range(len(template[j])):
 					template[j][k] = template[j][k].lstrip(' ').rstrip(' ')
-					
+
 		templates.append(template)
 		#print(template)
 		files[i][2].append(templates)
