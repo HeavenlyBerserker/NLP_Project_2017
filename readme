@@ -11,7 +11,13 @@ Instructions so far:
 	
 	sudo pip install -U nltk
 	
-	Open python and install suggested subpackages.
+	Open python and install suggested subpackages including:
+	
+	import nltk
+  	nltk.download('averaged_perceptron_tagger')
+  	nltk.download('maxent_ne_chunker')
+  	nltk.download('words')
+
 	
 2. Run project.py with no arguments. Suggested version 2.7.12
 	
@@ -23,3 +29,4 @@ Change log:
 2017-10-29 Added readme file and did some modifications to the code.
 2017-10-29 Parsed the file further. Now each file has been put with
 			its answers, parsed answers, raw text, and parsed sentences.
+2017-10-29 Added finding important words

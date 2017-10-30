@@ -39,11 +39,12 @@ def main(argv):
 		print(files[i][1][0]) #prints text for file i
 		print("Parsed sentences-----------------------------")
 		printList(files[i][1][1],1)
+		print("Important words------------------------------")
+		printList(files[i][1][2],1)
 		print("Answers--------------------------------------")
 		print(files[i][2][0]) #prints answer for the file i
 		print("Answers_in_array_form------------------------")
 		printList(files[i][2][1],0) #prints answer array for the file i
-
 
 	print(argv)
 
@@ -75,14 +76,44 @@ def processFiles(dirtxt, dirans, startswith):
 
 #Function#########################################################
 #Function breaks down files into an array of sentences contained in files[i][1][1]
+#Also includes entities in files[i][1][2]
 def extractSentences(files):
 	for i in range(len(files)):
+		#print("Processing " + str(i) +"/" + str(len(files)) + " files")
 		file = files[i][1][0]
 		sentences = nltk.sent_tokenize(file)[0:]
+		sentenceEntities = []
+		sentenceImp = []
 		for j in range(len(sentences)):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
+			'''tokens = nltk.word_tokenize(sentences[j])
+			tagged = nltk.pos_tag(tokens)
+			entities = nltk.chunk.ne_chunk(tagged)
+			sentenceEntities.append(entities)'''
+			
+			impWords = []
+			for important in files[i][2][1]:
+				for k in range(1, len(important)):
+					for l in range(len(important[k])):
+						if not important[k][l].startswith("DEV") and important[k][l] != '-' and important[k][l] in sentences[j]:
+							impWords.append([important[k][l], find_indexes(important[k][l], sentences[j])])
+			sentenceImp.append(impWords)
+			
+
 		files[i][1].append(sentences)
+		#files[i][1].append(sentenceEntities)
+		files[i][1].append(sentenceImp)
 	return files
+
+#Function#########################################################
+#Given wor1 and wor2, returns the index where any instance of wor1 was found in wor2
+def find_indexes(wor1, wor2):
+	ind = []
+	for i in range(len(wor2) - len(wor1)+1):
+		if wor1 == wor2[i:(i+len(wor1))]:
+			ind.append(i)
+	return ind
+
 
 #Function#########################################################
 #Function parses the answers into an array of the following format contained in files[i][2][1]
@@ -106,6 +137,11 @@ def parseAnswers(files):
 				template.append(list(filter(None,line.split(':')[1].lstrip(' ').rstrip(' ').split('/'))))
 			elif line.split('/')[0] != '':
 				template.append(line.lstrip(' ').rstrip(' ').split('/'))
+			
+			for j in range(1, len(template)):
+				for k in range(len(template[j])):
+					template[j][k] = template[j][k].lstrip(' ').rstrip(' ')
+					
 		templates.append(template)
 		#print(template)
 		files[i][2].append(templates)
