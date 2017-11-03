@@ -5,7 +5,7 @@
 #Autors: Hong Xu and Jie Zhang
 #Repository: https://github.com/HeavenlyBerserker/NLP_Project_2017.git
 #Sources for nltk: http://www.nltk.org/book_1ed/
-#Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. OReilly Media Inc.
+#Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
 
 #Possibly useful imports
 import argparse
