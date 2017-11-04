@@ -43,8 +43,14 @@ def main(argv):
 	#See printed output for more details
 	files = processFiles('developset/texts', 'developset/answers', "DEV")
 
-	#uncomment the following to see how "files" works
-	'''
+	#uncomment the following line to see how "files" works
+	#printFiles(files)
+
+	patterns = paternize(files) 
+
+	print(argv)
+
+def printFiles(files):
 	for i in range(len(files)):
 		print("\n\n\n")
 		print("#################Filename####################")
@@ -61,11 +67,6 @@ def main(argv):
 		print(files[i][2][0]) #prints answer for the file i
 		print("Answers_in_array_form------------------------")
 		printList(files[i][2][1],0) #prints answer array for the file i
-	'''
-
-	patterns = paternize(files) 
-
-	print(argv)
 
 #Function#########################################################
 #Creates patterns of form: [verb, POS, type_of_attribute]
@@ -90,8 +91,12 @@ def paternize(files):
 		for sent in tags[i]:
 			verbs = []
 			for np in sent:
-				if np[2] == 'nsubj' or np[2] == 'dobj' and WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper() not in verbs:
-					verbs.append(WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper())
+				if np[2] == 'nsubj' or np[2] == 'dobj':
+					tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
+					if isinstance(tempv, str) and tempv not in verbs:
+						verbs.append(WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper())
+					elif isinstance(tempv, unicode) and unicodedata.normalize('NFKD', tempv).encode('ascii','ignore') not in verbs:
+						verbs.append(unicodedata.normalize('NFKD', tempv).encode('ascii','ignore'))
 			for np in sent:
 				noun = np[0]
 				for answer in answs:
@@ -99,9 +104,13 @@ def paternize(files):
 					for j in range(1,len(answer)):
 						for entry in answer[j]:
 							#print(entry)
-							if entry in noun:
+							if entry == noun:
 								if np[2] == 'nsubj' or np[2] == 'dobj':
-									patterns.append([WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper(), np[2], answer[0]])
+									tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
+									if isinstance(tempv, str):
+										patterns.append([WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper(), np[2], answer[0]])
+									else:
+										patterns.append([unicodedata.normalize('NFKD', tempv).encode('ascii','ignore'), np[2], answer[0]])
 								else:
 									for v in verbs:
 										patterns.append([v, np[2], answer[0]])
