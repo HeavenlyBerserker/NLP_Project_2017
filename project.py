@@ -21,14 +21,12 @@ import spacy
 from spacy.en import English
 from nltk import Tree
 import en_core_web_sm
+import unicodedata
+from nltk.stem.wordnet import WordNetLemmatizer
 
 def main(argv):
-	command = "Submit debug logs to project lead today at 9:00 AM"
-	nlp = en_core_web_sm.load()
-	en_doc = nlp(u'' + command) 
-
-	[to_nltk_tree(sent.root).pretty_print() for sent in en_doc.sents]
 	#[print(sent.root) for sent in en_doc.sents]
+	#print(WordNetLemmatizer().lemmatize('being','v'))
 
 	#Reads the files in directory that begin with DEV and parses them into
 	#project friendly format
@@ -39,6 +37,7 @@ def main(argv):
 	#[i][1][1] = parsed sentences
 	#[i][1][2] = important words meaning words that were extracted as parsed answers 
 	#	plus the index in which they were found in that sentence
+	#[i][1][3] = Tagged noun phrases in sentences
 	#[i][2][0] = raw answers
 	#[i][2][1] = parsed answers
 	#See printed output for more details
@@ -64,7 +63,51 @@ def main(argv):
 		printList(files[i][2][1],0) #prints answer array for the file i
 	'''
 
+	patterns = paternize(files) 
+
 	print(argv)
+
+#Function#########################################################
+#Creates patterns of form: [verb, POS, type_of_attribute]
+#Work in progress
+def paternize(files):
+	tags = []
+	ans = []
+	sentences = []
+
+	#Pattern format: [verb, POS, type_of_attribute]
+	patterns = []
+
+	for i in range(len(files)):
+		tags.append(files[i][1][3])
+		ans.append(files[i][2][1])
+		sentences.append(files[i][1][1])
+		#print(tags[i])
+		#print(ans[i])
+
+	for i in range(len(tags)):
+		answs = ans[i]
+		for sent in tags[i]:
+			verbs = []
+			for np in sent:
+				if np[2] == 'nsubj' or np[2] == 'dobj' and WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper() not in verbs:
+					verbs.append(WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper())
+			for np in sent:
+				noun = np[0]
+				for answer in answs:
+					#print(answer)
+					for j in range(1,len(answer)):
+						for entry in answer[j]:
+							#print(entry)
+							if entry in noun:
+								if np[2] == 'nsubj' or np[2] == 'dobj':
+									patterns.append([WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper(), np[2], answer[0]])
+								else:
+									for v in verbs:
+										patterns.append([v, np[2], answer[0]])
+
+	printList(patterns, 0)
+	return patterns
 
 #Function#########################################################
 #Prints items in array
@@ -108,14 +151,21 @@ def extractSentences(files):
 			#tokens = nltk.word_tokenize(sentences[j])
 			#tagged = nltk.pos_tag(tokens)
 			doc=nlp(unicode(sentences[j]))
-			print(doc)
+			
+			chunks = []
 			for np in doc.noun_chunks:
-				print(np.text, np.root.text, np.root.dep_, np.root.head.text)
+				chunk = []
+				chunk.append(unicodedata.normalize('NFKD', np.text).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.root.text).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.root.head.text).encode('ascii','ignore'))
+				chunks.append(chunk)
 			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#sentenceEntities.append(sub_toks)
 			'''
 			entities = nltk.chunk.ne_chunk(tagged)
 			sentenceEntities.append(entities)'''
+			sentenceEntities.append(chunks)
 			
 			impWords = []
 			for important in files[i][2][1]:
