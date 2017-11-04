@@ -111,7 +111,8 @@ def extractSentences(files):
 			print(doc)
 			for np in doc.noun_chunks:
 				print(np.text, np.root.text, np.root.dep_, np.root.head.text)
-			sentenceEntities.append(sub_toks)
+			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
+			#sentenceEntities.append(sub_toks)
 			'''
 			entities = nltk.chunk.ne_chunk(tagged)
 			sentenceEntities.append(entities)'''
