@@ -17,8 +17,19 @@ import random
 import os
 #NLP tools
 import nltk
+import spacy
+from spacy.en import English
+from nltk import Tree
+import en_core_web_sm
 
 def main(argv):
+	command = "Submit debug logs to project lead today at 9:00 AM"
+	nlp = en_core_web_sm.load()
+	en_doc = nlp(u'' + command) 
+
+	[to_nltk_tree(sent.root).pretty_print() for sent in en_doc.sents]
+	#[print(sent.root) for sent in en_doc.sents]
+
 	#Reads the files in directory that begin with DEV and parses them into
 	#project friendly format
 	#files = [file_index 0-i] 
@@ -34,7 +45,7 @@ def main(argv):
 	files = processFiles('developset/texts', 'developset/answers', "DEV")
 
 	#uncomment the following to see how "files" works
-
+	'''
 	for i in range(len(files)):
 		print("\n\n\n")
 		print("#################Filename####################")
@@ -45,10 +56,13 @@ def main(argv):
 		printList(files[i][1][1],1)
 		print("Important words------------------------------")
 		printList(files[i][1][2],1)
+		print("Tagger output------------------------------")
+		printList(files[i][1][3],1)
 		print("Answers--------------------------------------")
 		print(files[i][2][0]) #prints answer for the file i
 		print("Answers_in_array_form------------------------")
 		printList(files[i][2][1],0) #prints answer array for the file i
+	'''
 
 	print(argv)
 
@@ -82,6 +96,7 @@ def processFiles(dirtxt, dirans, startswith):
 #Function breaks down files into an array of sentences contained in files[i][1][1]
 #Also includes entities in files[i][1][2]
 def extractSentences(files):
+	nlp = spacy.load('en')
 	for i in range(len(files)):
 		#print("Processing " + str(i) +"/" + str(len(files)) + " files")
 		file = files[i][1][0]
@@ -90,8 +105,14 @@ def extractSentences(files):
 		sentenceImp = []
 		for j in range(len(sentences)):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
-			'''tokens = nltk.word_tokenize(sentences[j])
-			tagged = nltk.pos_tag(tokens)
+			#tokens = nltk.word_tokenize(sentences[j])
+			#tagged = nltk.pos_tag(tokens)
+			doc=nlp(unicode(sentences[j]))
+			print(doc)
+			for np in doc.noun_chunks:
+				print(np.text, np.root.text, np.root.dep_, np.root.head.text)
+			sentenceEntities.append(sub_toks)
+			'''
 			entities = nltk.chunk.ne_chunk(tagged)
 			sentenceEntities.append(entities)'''
 			
@@ -107,6 +128,7 @@ def extractSentences(files):
 		files[i][1].append(sentences)
 		#files[i][1].append(sentenceEntities)
 		files[i][1].append(sentenceImp)
+		files[i][1].append(sentenceEntities)
 	return files
 
 #Function#########################################################
@@ -233,6 +255,16 @@ def find(name, path):
 	for root, dirs, files in os.walk(path):
 		if name+".anskey" in files:
 			return os.path.join(root, name)
+
+def tok_format(tok):
+    return "_".join([tok.orth_, tok.tag_, tok.dep_])
+
+
+def to_nltk_tree(node):
+    if node.n_lefts + node.n_rights > 0:
+        return Tree(tok_format(node), [to_nltk_tree(child) for child in node.children])
+    else:
+        return tok_format(node)
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
