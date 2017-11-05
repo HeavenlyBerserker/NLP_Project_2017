@@ -264,8 +264,8 @@ def extractSentences(files):
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.head.text).encode('ascii','ignore'))
 				chunks.append(chunk)
-			print(sentences[j])
-			[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
+			#print(sentences[j])
+			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#sentenceEntities.append(sub_toks)
 			'''
 			entities = nltk.chunk.ne_chunk(tagged)
