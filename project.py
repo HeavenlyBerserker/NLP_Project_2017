@@ -104,7 +104,7 @@ def paternize(files):
 					for j in range(1,len(answer)):
 						for entry in answer[j]:
 							#print(entry)
-							if entry == noun:
+							if entry in noun:
 								if np[2] == 'nsubj' or np[2] == 'dobj':
 									tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
 									if isinstance(tempv, str):
