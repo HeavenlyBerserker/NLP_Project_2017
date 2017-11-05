@@ -47,11 +47,14 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 	files = processFiles('developset/texts', 'developset/answers', "DEV")
+	t1Files = processFiles('developset/texts', 'developset/answers', "TST1")
 
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
 
-	patterns = paternize(files) 
+	patterns = paternize(files)
+
+	#printFiles(t1Files)
 
 	print(argv)
 
@@ -330,7 +333,12 @@ def readAndParseFile(dirnametxt, dirnameans, startsw):
 			tfile = open(dirnametxt +"/" + filename,"r")
 			afile = open(answer,"r")
 
-			text = [ filename ,[tfile.read()], [afile.read()]]
+			rawText = tfile.read()
+
+			rawText = rawText[rawText.index("--"):]
+			#print(rawText)
+
+			text = [ filename ,[rawText], [afile.read()]]
 
 			files.append(text)
 
