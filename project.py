@@ -1,3 +1,5 @@
+
+
 ###########################
 #NLP Project 2017 main code
 ###########################
@@ -23,6 +25,7 @@ from nltk import Tree
 import en_core_web_sm
 import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
 
 def main(argv):
 	#[print(sent.root) for sent in en_doc.sents]
@@ -78,6 +81,27 @@ def paternize(files):
 
 	#Pattern format: [verb, POS, type_of_attribute]
 	patterns = []
+	long_patterns=[]
+        nlp = spacy.load('en')
+	for i in range(len(files)):
+            for j in range(len(files[i][1][2])):
+                if len(files[i][1][2][j])!=0:
+                    doc=nlp(unicode(files[i][1][1][j]))
+                    for np in doc.noun_chunks:
+                        for k in range(len(files[i][1][2][j])):
+                                if files[i][1][2][j][k][0]==np.text or files[i][1][2][j][k][0] in np.text or np.text in files[i][1][2][j][k][0] :
+                                    for answer_entry in files[i][2][1]:
+                                        if files[i][1][2][j][k][0]==answer_entry[1][0]:
+                                            verb=np.root.head.text
+                                            
+                                            wordindex=word_index(verb, files[i][1][1][j])
+                                            if wordindex!=None:
+                                                verb=doc[wordindex]
+                                                span=doc[verb.left_edge.i:verb.right_edge.i+1]
+                                                long_patterns.append([span.text, np.root.dep_, answer_entry[0]])
+
+        print "now print long_patterns. ########################################################"                                                                                				
+	printList(long_patterns,0)
 
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
@@ -283,9 +307,7 @@ def readAndParseFile(dirnametxt, dirnameans, startsw):
 					else:
 						each_entry=linecontent[1].lstrip().rstrip()
 						create_pattern(each_entry, filedir, filename)
-
 					prevrole=role
-
 			else:
 				content=line.lstrip().rstrip()
 				if "/" in content:
@@ -296,7 +318,6 @@ def readAndParseFile(dirnametxt, dirnameans, startsw):
 				else:
 					each_entry=content.lstrip().rstrip()
 					create_pattern(each_entry, filedir, filename)
-
 				role=prevrole
 	'''
 
@@ -325,6 +346,14 @@ def to_nltk_tree(node):
         return Tree(tok_format(node), [to_nltk_tree(child) for child in node.children])
     else:
         return tok_format(node)
+    
+def word_index(word, sentence):
+    sents=word_tokenize(sentence)
+    for i in range(len(sents)):
+        if sents[i]==word:
+            return i
+    return None
+
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
