@@ -1,5 +1,4 @@
 
-
 ###########################
 #NLP Project 2017 main code
 ###########################
@@ -54,9 +53,16 @@ def main(argv):
 
 	patterns = paternize(files)
 
+	writePats(patterns, "output/patterns.txt")
 	#printFiles(t1Files)
 
 	print(argv)
+
+#Writes patterns to a file
+def writePats(pats, name):
+	file = open(name, 'w')
+	for line in pats:
+		file.write(line[0] + "/" +  line[1] + "/" + line[2] + "/" + str(line[3]) + "\n")
 
 
 #Prints files content
