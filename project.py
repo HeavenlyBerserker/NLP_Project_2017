@@ -27,6 +27,8 @@ import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
+
+
 def main(argv):
 	#[print(sent.root) for sent in en_doc.sents]
 	#print(WordNetLemmatizer().lemmatize('being','v'))
@@ -53,6 +55,8 @@ def main(argv):
 
 	print(argv)
 
+
+#Prints files content
 def printFiles(files):
 	for i in range(len(files)):
 		print("\n\n\n")
@@ -72,7 +76,7 @@ def printFiles(files):
 		printList(files[i][2][1],0) #prints answer array for the file i
 
 #Function#########################################################
-#Creates patterns of form: [verb, POS, type_of_attribute]
+#Creates patterns of form: [verb, POS, type_of_attribute, frequency]
 #Work in progress
 def paternize(files):
 	tags = []
@@ -116,11 +120,16 @@ def paternize(files):
 			verbs = []
 			for np in sent:
 				if np[2] == 'nsubj' or np[2] == 'dobj':
+					'''
 					tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
 					if isinstance(tempv, str) and tempv not in verbs:
 						verbs.append(WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper())
 					elif isinstance(tempv, unicode) and unicodedata.normalize('NFKD', tempv).encode('ascii','ignore') not in verbs:
 						verbs.append(unicodedata.normalize('NFKD', tempv).encode('ascii','ignore'))
+					'''
+					if np[2] not in verbs:
+						verbs.append(np[2])
+
 			for np in sent:
 				noun = np[0]
 				for answer in answs:
@@ -129,6 +138,7 @@ def paternize(files):
 						for entry in answer[j]:
 							#print(entry)
 							if entry in noun:
+								'''
 								if np[2] == 'nsubj' or np[2] == 'dobj':
 									tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
 									if isinstance(tempv, str):
@@ -138,9 +148,43 @@ def paternize(files):
 								else:
 									for v in verbs:
 										patterns.append([v, np[2], answer[0]])
+								'''
+								if np[2] == 'nsubj' or np[2] == 'dobj':
+									patterns.append([np[3], np[2], answer[0]])
+								else:
+									for v in verbs:
+										patterns.append([v, np[2], answer[0]])
 
-	printList(patterns, 0)
-	return patterns
+	pats = []
+
+	for pat in patterns:
+		inPats = -1
+		for i in range(len(pats)):
+			if pat == pats[i][0:3]:
+				inPats = i
+		if inPats >= 0:
+			pats[i][3] += 1
+		else:
+			p = list(pat)
+			p.append(1)
+			pats.append(p)
+
+	pats = sorted(pats, key=lambda x: x[3], reverse=True)
+
+	uniquePats = []
+
+	for pat in pats:
+		repeated = False
+		for i in range(len(uniquePats)):
+			if pat[0:2] == uniquePats[i][0:2]:
+				repeated = True
+		if not repeated:
+			uniquePats.append(pat)
+	
+	printList(uniquePats, 0)
+	#print(len(pats))
+	#print(len(uniquePats))
+	return uniquePats
 
 #Function#########################################################
 #Prints items in array
@@ -339,7 +383,6 @@ def find(name, path):
 
 def tok_format(tok):
     return "_".join([tok.orth_, tok.tag_, tok.dep_])
-
 
 def to_nltk_tree(node):
     if node.n_lefts + node.n_rights > 0:
