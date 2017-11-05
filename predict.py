@@ -1,5 +1,5 @@
 ###########################
-#NLP Project 2017 main code
+#NLP Project 2017 predict file
 ###########################
 
 #Autors: Hong Xu and Jie Zhang

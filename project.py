@@ -245,7 +245,8 @@ def extractSentences(files):
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.head.text).encode('ascii','ignore'))
 				chunks.append(chunk)
-			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
+			print(sentences[j])
+			[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#sentenceEntities.append(sub_toks)
 			'''
 			entities = nltk.chunk.ne_chunk(tagged)
@@ -395,7 +396,7 @@ def find(name, path):
 			return os.path.join(root, name)
 
 def tok_format(tok):
-    return "_".join([tok.orth_, tok.tag_, tok.dep_])
+	return "_".join([tok.orth_, tok.tag_, tok.dep_])
 
 def to_nltk_tree(node):
     if node.n_lefts + node.n_rights > 0:
