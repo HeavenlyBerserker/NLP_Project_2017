@@ -1,3 +1,4 @@
+
 ###########################
 #NLP Project 2017 main code
 ###########################
@@ -111,10 +112,28 @@ def paternize(files):
                                                 verb=doc[wordindex]
                                                 span=doc[verb.left_edge.i:verb.right_edge.i+1]
                                                 long_patterns.append([span.text, np.root.dep_, answer_entry[0]])
+                
 
         print "now print long_patterns. ########################################################"                                                                                				
 	printList(long_patterns,0)
 
+        long_patterns_verb=[]
+        
+        for i in range(len(files)):
+            for j in range(len(files[i][1][2])):
+                if len(files[i][1][2][j])!=0:
+                    verbphrase=[]
+                    doc=nlp(unicode(files[i][1][1][j]))
+                    for word in doc:
+                            if word.pos_.encode('utf-8')=='VERB':
+                                    verbphrase.append(word)
+                    long_patterns_verb.append(verbphrase)
+                
+        printList(long_patterns_verb,0)
+
+
+
+                    
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
 		ans.append(files[i][2][1])
