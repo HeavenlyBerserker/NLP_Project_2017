@@ -25,14 +25,14 @@ import en_core_web_sm
 import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-<<<<<<< HEAD
+
 from nltk.corpus import stopwords
 
-=======
+
 import random
 from spacy.gold import GoldParse
 from spacy.language import EntityRecognizer
->>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
+
 
 
 def main(argv):
@@ -57,15 +57,10 @@ def main(argv):
 
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
-<<<<<<< HEAD
+
 
 	patterns, trigs = paternize(files)
-=======
-        train_data=create_NER_training_data(files)
-        train_NER(train_data, t1Files)
-        
-	patterns = paternize(files)
->>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
+
 
 	writePats(patterns, "output/patterns.txt")
 	writeTrigs(trigs, "output/triggers.txt")
@@ -73,7 +68,6 @@ def main(argv):
 
 
 	print(argv)
-<<<<<<< HEAD
 
 #Writes triggers to a file
 def writeTrigs(trigs, name):
@@ -81,9 +75,6 @@ def writeTrigs(trigs, name):
 	for line in trigs:
 		file.write(line + "\n")
 
-=======
-	
->>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
 #Writes patterns to a file
 def writePats(pats, name):
 	file = open(name, 'w')
@@ -430,7 +421,7 @@ def extractSentences(files):
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.head.text.upper()).encode('ascii','ignore'))
 				chunks.append(chunk)
-<<<<<<< HEAD
+
 
 			##################Test lab##########################
 			print('\n' + sentences[j])
@@ -496,8 +487,7 @@ def extractSentences(files):
 			printList(chunks,0)
 			print("Chunks2")
 			printList(chunks2,0)
-=======
->>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
+
 			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#####################################################
 			#sentenceEntities.append(sub_toks)
