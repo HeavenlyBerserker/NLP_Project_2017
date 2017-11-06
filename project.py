@@ -25,8 +25,14 @@ import en_core_web_sm
 import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+<<<<<<< HEAD
 from nltk.corpus import stopwords
 
+=======
+import random
+from spacy.gold import GoldParse
+from spacy.language import EntityRecognizer
+>>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
 
 
 def main(argv):
@@ -51,8 +57,15 @@ def main(argv):
 
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
+<<<<<<< HEAD
 
 	patterns, trigs = paternize(files)
+=======
+        train_data=create_NER_training_data(files)
+        train_NER(train_data, t1Files)
+        
+	patterns = paternize(files)
+>>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
 
 	writePats(patterns, "output/patterns.txt")
 	writeTrigs(trigs, "output/triggers.txt")
@@ -60,6 +73,7 @@ def main(argv):
 
 
 	print(argv)
+<<<<<<< HEAD
 
 #Writes triggers to a file
 def writeTrigs(trigs, name):
@@ -67,12 +81,76 @@ def writeTrigs(trigs, name):
 	for line in trigs:
 		file.write(line + "\n")
 
+=======
+	
+>>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
 #Writes patterns to a file
 def writePats(pats, name):
 	file = open(name, 'w')
 	for line in pats:
 		file.write(line[0] + "/" +  line[1] + "/" + line[2] + "/" + str(line[3]) + "\n")
 
+def create_NER_training_data(files):
+        train_data=[]
+        for i in range(len(files)):
+            for j in range(len(files[i][1][2])):
+                if len(files[i][1][2][j])!=0:
+                        important_sentence=unicode(files[i][1][1][j])
+                        tuple_info=[]
+                        for k in range(len(files[i][1][2][j])):
+                                important_entry=files[i][1][2][j][k]
+                                start_index=important_entry[1][0]
+                                end_index=start_index+len(important_entry[0])+1
+                                important_word=important_entry[0]
+                                #print "important entry"
+                                #print important_entry
+                                #print "importaant_index"
+                                #print start_index, end_index
+                                #print "important word"
+                                #print important_word
+
+
+                                answer_array=files[i][2][1]
+                                for p in range(len(answer_array)):
+                                        answer_line=answer_array[p]
+                                        for q in range(1, len(answer_line)):
+                                                if important_word in answer_line[q]:
+                                                        label=answer_line[0]
+                                                        #print "label"
+                                                        #print label
+                                                        one_tuple=(start_index, end_index, label)
+                                                        tuple_info.append(one_tuple)
+                        one_train_data_entry=(important_sentence, tuple_info)
+                        train_data.append(one_train_data_entry)
+
+        
+        return train_data
+
+def train_NER(train_data, t1Files):
+        nlp=spacy.load('en', entity=False, parser=False)
+        ner=EntityRecognizer(nlp.vocab, entity_types=['ID', 'INCIDENT', 'WEAPON', 'PERP INDIV', 'PERP ORG', 'TARGET', 'VICTIM'])
+
+        for itn in range(5):
+                random.shuffle(train_data)
+                for raw_text, entity_offset in train_data:
+                        doc = nlp.make_doc(raw_text)
+                        gold = GoldParse(doc,entities=entity_offset)
+
+                        nlp.tagger(doc)
+                        ner.update(doc, gold)
+                        
+        ner.model.end_training()
+
+        for i in range(len(t1Files)):
+                test_file_sentences=t1Files[i][1][1]
+                for j in range(len(test_file_sentences)):
+                        s=unicode(test_file_sentences[j])
+                        doc=nlp(s, entity=False)
+                        ner(doc)
+                        print("Entites on fine tuned NER:")
+                        for word in doc:
+                              print(word.text, word.orth, word.lower, word.tag_, word.ent_type_, word.ent_iob)
+                       
 
 #Prints files content
 def printFiles(files):
@@ -104,6 +182,7 @@ def paternize(files):
 
 	#Pattern format: [verb, POS, type_of_attribute]
 	patterns = []
+
 	'''
 	long_patterns=[]
         nlp = spacy.load('en')
@@ -144,7 +223,7 @@ def paternize(files):
 	'''
 
 
-                    
+ 
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
 		ans.append(files[i][2][1])
@@ -234,7 +313,7 @@ def paternize(files):
 		if not repeated:
 			uniquePats.append(pat)
 	
-	printList(uniquePats, 0)
+	#printList(uniquePats, 0)
 	#print(len(pats))
 	#print(len(uniquePats))
 	return uniquePats, triggers
@@ -351,6 +430,7 @@ def extractSentences(files):
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.head.text.upper()).encode('ascii','ignore'))
 				chunks.append(chunk)
+<<<<<<< HEAD
 
 			##################Test lab##########################
 			print('\n' + sentences[j])
@@ -416,6 +496,8 @@ def extractSentences(files):
 			printList(chunks,0)
 			print("Chunks2")
 			printList(chunks2,0)
+=======
+>>>>>>> ba9b93ee5e05f565c9498e7a71d2518aff321609
 			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#####################################################
 			#sentenceEntities.append(sub_toks)
@@ -604,7 +686,7 @@ def find(name, path):
 			return os.path.join(root, name)
 
 def tok_format(tok):
-	return "_".join([tok.orth_, tok.tag_, tok.dep_])
+    return "_".join([tok.orth_, tok.tag_, tok.dep_])
 
 def to_nltk_tree(node):
     if node.n_lefts + node.n_rights > 0:
