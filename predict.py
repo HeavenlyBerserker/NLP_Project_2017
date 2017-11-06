@@ -48,15 +48,25 @@ def main(argv):
 	t1Files = processFiles('developset/texts', 'developset/answers', "TST1")
 
 	patterns = readPats("output/patterns.txt")
+	triggers = readTrigs("output/triggers.txt")
 
 	#printFiles(t1Files)
 	#printList(patterns, 0)
+	#print(triggers)
 
-	predictions = predict(t1Files, patterns)
+	predictions = predict(t1Files, patterns,triggers)
 
 	print(argv)
 
-def predict(files, patterns):
+#Reads triggers from a file
+def readTrigs(name):
+	trigs = []
+	file = open(name, 'r')
+	for line in file:
+		trigs.append(line.rstrip('\n').upper())
+	return trigs
+
+def predict(files, patterns, triggers):
 	tags = []
 	ans = []
 	sentences = []
@@ -68,6 +78,7 @@ def predict(files, patterns):
 
 	predicts = []
 
+	'''
 	for i in range(len(tags)):
 		predict = []
 		for sentence in tags[i]:
@@ -75,6 +86,7 @@ def predict(files, patterns):
 				#print(entry)
 				for p in patterns:
 					if p[1] == entry[2] and p[0] == entry[3]:
+						#predict.append([sentences[i][tags[i].index(sentence)],p[2], entry[0], entry, p])
 						predict.append([p[2], entry[0]])
 		predicts.append(predict)
 		print("############################\nPredictions:")
@@ -82,9 +94,33 @@ def predict(files, patterns):
 		print("----------------------------\nActual Answers:")
 		printList(ans[i], 0)
 		print("############################\n\n\n")
+	'''
+
+	for i in range(len(tags)):
+		predict = []
+		for j in range(len(tags[i])):
+			sentence = tags[i][j]
+			sent = sentences[i][j]
+			trigs = {}
+			for trig in triggers:
+				#print(trig + "####" + senti)
+				if trig in sent and trig not in trigs:
+					trigs[trig] = 1
+			for entry in sentence:
+				#print(entry)
+				for p in patterns:
+					for trig in trigs:
+						if p[1] == entry[2] and p[0] == trig:
+							#predict.append([sentences[i][tags[i].index(sentence)],p[2], entry[0], entry, p])
+							predict.append([p[2], entry[0]])
+		if predict not in predicts:
+			predicts.append(predict)
+		print("############################\nPredictions:")
+		printList(predict, 0)
+		print("----------------------------\nActual Answers:")
+		printList(ans[i], 0)
+		print("############################\n\n\n")
 	return predicts
-
-
 
 def readPats(filename):
 	file = open(filename, 'r')

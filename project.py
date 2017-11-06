@@ -25,6 +25,7 @@ import en_core_web_sm
 import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 
 
@@ -51,12 +52,20 @@ def main(argv):
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
 
-	patterns = paternize(files)
+	patterns, trigs = paternize(files)
 
 	writePats(patterns, "output/patterns.txt")
+	writeTrigs(trigs, "output/triggers.txt")
 	#printFiles(t1Files)
 
+
 	print(argv)
+
+#Writes triggers to a file
+def writeTrigs(trigs, name):
+	file = open(name, 'w')
+	for line in trigs:
+		file.write(line + "\n")
 
 #Writes patterns to a file
 def writePats(pats, name):
@@ -74,11 +83,11 @@ def printFiles(files):
 		print("#################Raw_Text####################")
 		print(files[i][1][0]) #prints text for file i
 		print("Parsed sentences-----------------------------")
-		printList(files[i][1][1],1)
+		printList(files[i][1][1],2)
 		print("Important words------------------------------")
-		printList(files[i][1][2],1)
+		printList(files[i][1][2],2)
 		print("Tagger output------------------------------")
-		printList(files[i][1][3],1)
+		printList(files[i][1][3],2)
 		print("Answers--------------------------------------")
 		print(files[i][2][0]) #prints answer for the file i
 		print("Answers_in_array_form------------------------")
@@ -91,9 +100,11 @@ def paternize(files):
 	tags = []
 	ans = []
 	sentences = []
+	imp = []
 
 	#Pattern format: [verb, POS, type_of_attribute]
 	patterns = []
+	'''
 	long_patterns=[]
         nlp = spacy.load('en')
 	for i in range(len(files)):
@@ -130,7 +141,7 @@ def paternize(files):
                     long_patterns_verb.append(verbphrase)
                 
         printList(long_patterns_verb,0)
-
+	'''
 
 
                     
@@ -138,22 +149,20 @@ def paternize(files):
 		tags.append(files[i][1][3])
 		ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
+		imp.append(files[i][1][2])
 		#print(tags[i])
 		#print(ans[i])
 
+	triggers = findTriggers(sentences, imp)
+
+	'''
 	for i in range(len(tags)):
 		answs = ans[i]
 		for sent in tags[i]:
 			verbs = []
 			for np in sent:
 				if np[2] == 'nsubj' or np[2] == 'dobj':
-					'''
-					tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
-					if isinstance(tempv, str) and tempv not in verbs:
-						verbs.append(WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper())
-					elif isinstance(tempv, unicode) and unicodedata.normalize('NFKD', tempv).encode('ascii','ignore') not in verbs:
-						verbs.append(unicodedata.normalize('NFKD', tempv).encode('ascii','ignore'))
-					'''
+					
 					if np[2] not in verbs:
 						verbs.append(np[2])
 
@@ -165,22 +174,39 @@ def paternize(files):
 						for entry in answer[j]:
 							#print(entry)
 							if entry in noun:
-								'''
-								if np[2] == 'nsubj' or np[2] == 'dobj':
-									tempv = WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper()
-									if isinstance(tempv, str):
-										patterns.append([WordNetLemmatizer().lemmatize(np[3].lower(),'v').upper(), np[2], answer[0]])
-									else:
-										patterns.append([unicodedata.normalize('NFKD', tempv).encode('ascii','ignore'), np[2], answer[0]])
-								else:
-									for v in verbs:
-										patterns.append([v, np[2], answer[0]])
-								'''
+								
 								if np[2] == 'nsubj' or np[2] == 'dobj':
 									patterns.append([np[3], np[2], answer[0]])
 								else:
 									for v in verbs:
 										patterns.append([v, np[2], answer[0]])
+	'''
+	for i in range(len(tags)):
+		answs = ans[i]
+		for j in range(len(tags[i])):
+			sent = tags[i][j]
+			senti = sentences[i][j]
+			verbs = []
+			trigs = {}
+			for np in sent:
+				if np[2] == 'nsubj' or np[2] == 'dobj':
+					if np[2] not in verbs:
+						verbs.append(np[2])
+			for trig in triggers:
+				#print(trig + "####" + senti)
+				if trig in senti and trig not in trigs:
+					trigs[trig] = 1
+			
+			for np in sent:
+				noun = np[0]
+				for answer in answs:
+					#print(answer)
+					for j in range(1,len(answer)):
+						for entry in answer[j]:
+							#print(entry)
+							if entry in noun:
+								for trig in trigs:
+									patterns.append([trig, np[2], answer[0]])
 
 	pats = []
 
@@ -211,13 +237,74 @@ def paternize(files):
 	printList(uniquePats, 0)
 	#print(len(pats))
 	#print(len(uniquePats))
-	return uniquePats
+	return uniquePats, triggers
+
+def findTriggers(sents, ans):
+	relSents = []
+	for i in range(len(sents)):
+		for j in range(len(sents[i])):
+			sent = sents[i][j]
+			an = ans[i][j]
+			if len(an) > 0:
+				relSents.append(sent)
+
+	stops = ["ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN"]
+	file = open("developset/stopwords.txt", 'r')
+	for line in file:
+		stops.append(line.rstrip('\n').upper())
+
+	for el in list(set(stopwords.words('english'))):
+		stops.append(el.upper())
+
+	relWords = {}
+
+	for sentence in relSents:
+		tokens = nltk.word_tokenize(sentence)
+		for token in tokens:
+			if token.isalpha() and token not in stops and token not in relWords:
+				relWords[token] = 1
+			elif token.isalpha() and token not in stops:
+				relWords[token] += 1
+
+	allWords = {}
+
+	for senta in sents:
+		for sentence in senta:
+			tokens = nltk.word_tokenize(sentence)
+			for token in tokens:
+				if token.isalpha() and token not in stops and token not in allWords:
+					allWords[token] = 1
+				elif token.isalpha() and token not in stops:
+					allWords[token] += 1
+
+	trigs = []
+
+	for key in relWords:
+		trigs.append([key,round(float(relWords[key])/float(allWords[key]) * math.log(allWords[key]),4)])
+
+	trigs = sorted(trigs, key=lambda x: x[1], reverse=True)
+
+	ctrigs = []
+	for t in trigs:
+		if t[1] > 2.0:
+			ctrigs.append(t[0])
+
+	#print(ctrigs)
+
+	return ctrigs
+
+
+
 
 #Function#########################################################
 #Prints items in array
 def printList(sentences,skip):
-	for sentence in sentences:
-		print(sentence)
+	for i in range(len(sentences)):
+		sentence = sentences[i]
+		if skip == 2:
+			print(str(i) + " " + str(sentence))
+		else:
+			print(sentence)
 		if skip:
 			print("")
 
@@ -254,23 +341,88 @@ def extractSentences(files):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
 			#tokens = nltk.word_tokenize(sentences[j])
 			#tagged = nltk.pos_tag(tokens)
-			doc=nlp(unicode(sentences[j]))
+			doc=nlp(unicode(sentences[j].lower()))
 			
 			chunks = []
 			for np in doc.noun_chunks:
 				chunk = []
-				chunk.append(unicodedata.normalize('NFKD', np.text).encode('ascii','ignore'))
-				chunk.append(unicodedata.normalize('NFKD', np.root.text).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.text.upper()).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.root.text.upper()).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
-				chunk.append(unicodedata.normalize('NFKD', np.root.head.text).encode('ascii','ignore'))
+				chunk.append(unicodedata.normalize('NFKD', np.root.head.text.upper()).encode('ascii','ignore'))
 				chunks.append(chunk)
-			#print(sentences[j])
+
+			##################Test lab##########################
+			print('\n' + sentences[j])
+			tokens = nltk.word_tokenize(sentences[j].lower())
+			tagged = nltk.pos_tag(tokens)
+			print(tagged)
+			tags = []
+			for k in range(len(tagged)):
+				tags.append([tagged[k][0].upper(),tagged[k][1]])
+			print(tags)
+			verbsAndPos = []
+			k=0
+			while k < len(tags):
+				t = tags[k]
+				s = k
+				vs = []
+				if t[1][0:2] == 'VB' and t[0].isalpha():
+					vs.append(t[0])
+					k+=1
+					while k < len(tags) and tags[k][1][0:2] == 'VB' and tags[k][0].isalpha():
+						vs[0] = vs[0] + " " + tags[k][0]
+						k+=1
+					while k < len(tags) and tags[k][0] != ',' and tags[k][0] != ':' and tags[k][0] != ';':
+						k+=1
+					vs.append(k)
+					vs.append(s)
+				if len(vs) > 0 and len(vs[0]) > 0:
+					verbsAndPos.append(vs)
+				k+=1
+			if len(verbsAndPos) > 0:
+				verbsAndPos[len(verbsAndPos)-1][1] = len(tags)-1
+
+			chunks2 = []
+			k=0
+			while k < len(tags):
+				t = tags[k]
+				s = k
+				vs = []
+				if (t[1][0:2] == 'IN') and t[0].isalpha():
+					prep = t[0]
+					vs.append("")
+					vs.append("")
+					k+=1
+					while k < len(tags) and (tags[k][1][0:2] == 'NN' or tags[k][1][0:2] == 'JJ'  or tags[k][1][0:2] == 'JJ')and tags[k][0].isalpha():
+						vs[0] = vs[0] + " " + tags[k][0]
+						k+=1
+					vs.append(prep.lower())
+					vs.append(retVerb(k, verbsAndPos))
+				elif (t[1][0:2] == 'NN' or t[1][0:2] == 'DT') and t[0].isalpha():
+					vs.append(t[0])
+					vs.append(t[0])
+					k+=1
+					while k < len(tags) and (tags[k][1][0:2] == 'NN' or tags[k][1][0:2] == 'JJ'  or tags[k][1][0:2] == 'JJ')and tags[k][0].isalpha():
+						vs[0] = vs[0] + " " + tags[k][0]
+						k+=1
+					vs.append(subobj(k, verbsAndPos))
+					vs.append(retVerb(k, verbsAndPos))
+				if len(vs) > 0:
+					chunks2.append(vs)
+				if k == s:
+					k+=1
+			print(verbsAndPos)
+			printList(chunks,0)
+			print("Chunks2")
+			printList(chunks2,0)
 			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
+			#####################################################
 			#sentenceEntities.append(sub_toks)
 			'''
 			entities = nltk.chunk.ne_chunk(tagged)
 			sentenceEntities.append(entities)'''
-			sentenceEntities.append(chunks)
+			sentenceEntities.append(chunks2)
 			
 			impWords = []
 			for important in files[i][2][1]:
@@ -286,6 +438,43 @@ def extractSentences(files):
 		files[i][1].append(sentenceImp)
 		files[i][1].append(sentenceEntities)
 	return files
+
+def retVerb(index, verbpos):
+	if len(verbpos) == 0:
+		return ""
+	verb = verbpos[len(verbpos) - 1][0]
+	for i in range(len(verbpos)-1, -1, -1):
+		el = verbpos[i]
+		#print(el)
+		if index < el[1]:
+			verb = el[0]
+			#print(verb)
+	#print(index)
+	#print(verb)
+	return verb
+
+def passive(verb):
+	if verb.split(" ")[0] == "was" or verb.split(" ")[0] == "is":
+		return True
+	return False
+
+def subobj(index, verbpos):
+	if len(verbpos) == 0:
+		return "nsubj"
+	verb = True
+	v = False
+	for el in verbpos:
+		if index < el[1] and index > el[2]:
+			verb = False
+			v = passive(el[0])
+	if v and verb:
+		return "dobj"
+	elif not v and verb:
+		return "nsubj"
+	elif v and not verb:
+		return "nsubj"
+	elif not v and not verb:
+		return "dobj"
 
 #Function#########################################################
 #Given wor1 and wor2, returns the index where any instance of wor1 was found in wor2
