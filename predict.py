@@ -46,7 +46,8 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
-	t1Files = processFiles('developset/texts', 'developset/answers', "TST1")
+	t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
+	processAns('developset/answers', argv[0])
 	#t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
 
 	patterns = readPats("output/patterns.txt")
@@ -72,9 +73,10 @@ def main(argv):
 
 #Write predict file
 def writePred(predictions):
-	file = open("output/predicitons.txt", 'w')
+	predictions = sorted(predictions)
+	file = open("scoring program/predictions.txt", 'w')
 	for line in predictions:
-		file.write(line)
+		file.write(line + "\n")
 
 #Reads triggers from a file
 def readTrigs(name):
@@ -161,13 +163,13 @@ def predict(files, patterns, triggers, words, test):
 		if not test:
 			print("----------------------------\nActual Answers:")
 			printList(ans[i], 0)
-		print("############################\n\n\n")
 		if not test:
 			print("---------------------\nAnswers included in predictors")
 			prediRightPred(predict, ans[i])
 			print("---------------------\nAnswers predictor got right")
 			prediRight(predict, ans[i])
 			print("---------------------")
+		print("############################\n\n\n")
 	if not test:
 		print("Right = " + str(right) + "/" + str(count))
 
@@ -505,6 +507,32 @@ def printFiles2(files):
 		printList(files[i][1][2],2)
 		print("Tagger output------------------------------")
 		printList(files[i][1][3],2)
+
+def processAns(dirnameans, startsw):
+	txtFiles = []
+	ansFiles = []
+	files = []
+	filedir = dirnameans
+	for filename in os.listdir(filedir):
+		if filename.startswith(startsw):
+			#print ("###############################################################")
+			#print (filename)
+
+			answer = dirnameans +"/"+ filename
+			#print(answer)
+
+			afile = open(answer,"r")
+
+			rawText = afile.read()
+
+			files.append(rawText)
+	files = sorted(files)
+	f = open("scoring program/" + startsw+ ".txt", 'w')
+	f.write('\n')
+	for text in files:
+		f.write(text)
+
+	return files
 
 if __name__ == "__main__":
 	main(sys.argv[1:])

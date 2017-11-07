@@ -25,7 +25,7 @@ import en_core_web_sm
 import unicodedata
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-
+from nltk.corpus import wordnet as wn
 from nltk.corpus import stopwords
 
 
@@ -35,7 +35,11 @@ from spacy.language import EntityRecognizer
 
 
 
+
 def main(argv):
+	print(wn.synsets("jump")[0].pos() == "v")
+	print(nltk.pos_tag(["kill"]))
+
 	#[print(sent.root) for sent in en_doc.sents]
 	#print(WordNetLemmatizer().lemmatize('being','v'))
 
@@ -49,6 +53,7 @@ def main(argv):
 	#[i][1][2] = important words meaning words that were extracted as parsed answers 
 	#	plus the index in which they were found in that sentence
 	#[i][1][3] = Tagged noun phrases in sentences
+	#[i][1][4] = POSs in sentences
 	#[i][2][0] = raw answers
 	#[i][2][1] = parsed answers
 	#See printed output for more details
@@ -178,6 +183,7 @@ def paternize(files):
 	sentences = []
 	imp = []
 	raw = []
+	pos = []
 
 	#Pattern format: [verb, POS, type_of_attribute]
 	patterns = []
@@ -225,6 +231,8 @@ def paternize(files):
  
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
+		pos.append(files[i][1][4])
+		#print(tags)
 		ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
 		imp.append(files[i][1][2])
@@ -232,7 +240,7 @@ def paternize(files):
 		#print(tags[i])
 		#print(ans[i])
 
-	triggers, words = findTriggers(sentences, imp, ans, raw)
+	triggers, words = findTriggers(sentences, imp, ans, raw, pos)
 
 	'''
 	for i in range(len(tags)):
@@ -318,7 +326,7 @@ def paternize(files):
 	#print(len(uniquePats))
 	return uniquePats, triggers, words
 
-def findTriggers(sents, ans, ans2, raw):
+def findTriggers(sents, ans, ans2, raw, pos):
 	sinc = []
 	swe = []
 	sind = []
@@ -355,12 +363,12 @@ def findTriggers(sents, ans, ans2, raw):
 		stops.append(el.upper())
 
 	#printList(sinc, 2)
-	incident = incidentDet(sinc, stops, sents,"INCIDENT")
-	weapon = trigsCat(swe, stops, sents,"WEAPON")
-	indiv= trigsCat(sind, stops, sents,"PERP INDIV")
-	org = trigsCat(sorg,stops, sents,"PERP ORG")
-	target =  trigsCat(star,stops, sents, "TARGET")
-	victim = trigsCat(svic,stops, sents,"VICTIM")
+	incident = incidentDet(sinc, stops, sents,"INCIDENT", pos)
+	weapon = trigsCat(swe, stops, sents,"WEAPON", pos)
+	indiv= trigsCat(sind, stops, sents,"PERP INDIV", pos)
+	org = trigsCat(sorg,stops, sents,"PERP ORG", pos)
+	target =  trigsCat(star,stops, sents, "TARGET", pos)
+	victim = trigsCat(svic,stops, sents,"VICTIM", pos)
 	
 	printList(incident,0)
 	print("###################################")
@@ -369,8 +377,15 @@ def findTriggers(sents, ans, ans2, raw):
 
 	return allTrigs, incident
 
+def tokNtag(pos, ind):
+	token=[]
+	tagged=[]
+	for p in pos[ind]:
+		token.append(p[0])
+		tagged.append(p[1])
+	return token,
 	
-def incidentDet(relSents, stops, sents,typ):
+def incidentDet(relSents, stops, sents,typ, pos):
 	relWords = {}
 	for i in range (len(relSents)):
 		relSents[i][0] = re.sub('\n', ' ', relSents[i][0])
@@ -384,6 +399,13 @@ def incidentDet(relSents, stops, sents,typ):
 			types.append(ty)
 		for sentence in sentes:
 			tokens = nltk.word_tokenize(sentence)
+			'''
+			tagged = nltk.pos_tag(tokens)
+			for i in range(len(tokens)):
+				token = tokens[i]
+				tag = tagged[i]
+				if tag[1].startswith("VB"):
+			'''
 			for token in tokens:
 				if token.isalpha() and token not in stops and token not in relWords:
 					relWords[token] = [1, ty]
@@ -432,27 +454,36 @@ def incidentDet(relSents, stops, sents,typ):
 	#print(ctrigs)
 	return ctrigs
 
-def trigsCat(relSents, stops, sents,typ):
+def trigsCat(relSents, stops, sents,typ, pos):
 	relWords = {}
 
-	for sentence in relSents:
+	for i in range(len(relSents)):
+		sentence = relSents[i]
 		tokens = nltk.word_tokenize(sentence)
-		for token in tokens:
-			if token.isalpha() and token not in stops and token not in relWords:
-				relWords[token] = 1
-			elif token.isalpha() and token not in stops:
-				relWords[token] += 1
+		tagged = nltk.pos_tag(tokens)
+		for i in range(len(tokens)):
+			token = tokens[i]
+			tag = tagged[i]
+			if tag[1].startswith("VB"):
+				if token.isalpha() and token not in stops and token not in relWords:
+					relWords[token] = 1
+				elif token.isalpha() and token not in stops:
+					relWords[token] += 1
 
 	allWords = {}
 
 	for senta in sents:
 		for sentence in senta:
 			tokens = nltk.word_tokenize(sentence)
-			for token in tokens:
-				if token.isalpha() and token not in stops and token not in allWords:
-					allWords[token] = 1
-				elif token.isalpha() and token not in stops:
-					allWords[token] += 1
+			tagged = nltk.pos_tag(tokens)
+			for i in range(len(tokens)):
+				token = tokens[i]
+				tag = tagged[i]
+				if tag[1].startswith("VB"):
+					if token.isalpha() and token not in stops and token not in allWords:
+						allWords[token] = 1
+					elif token.isalpha() and token not in stops:
+						allWords[token] += 1
 
 	trigs = []
 
@@ -463,7 +494,7 @@ def trigsCat(relSents, stops, sents,typ):
 
 	ctrigs = []
 	for t in trigs:
-		if len(ctrigs) < 11 or t[1] > 2.0:
+		if len(ctrigs) < 11 or t[1] > 1.5:
 			ctrigs.append([t[0], typ])
 
 	#print(ctrigs)
@@ -511,6 +542,7 @@ def extractSentences(files):
 		sentences = nltk.sent_tokenize(file)[0:]
 		sentenceEntities = []
 		sentenceImp = []
+		sentenceTagged = []
 		for j in range(len(sentences)):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
 			#tokens = nltk.word_tokenize(sentences[j])
@@ -531,6 +563,7 @@ def extractSentences(files):
 			#print('\n' + sentences[j])
 			tokens = nltk.word_tokenize(sentences[j].lower())
 			tagged = nltk.pos_tag(tokens)
+			sentenceTagged.append(tagged)
 			#print(tagged)
 			tags = []
 			for k in range(len(tagged)):
@@ -613,6 +646,7 @@ def extractSentences(files):
 		#files[i][1].append(sentenceEntities)
 		files[i][1].append(sentenceImp)
 		files[i][1].append(sentenceEntities)
+		files[i][1].append(sentenceTagged)
 	return files
 
 def retVerb(index, verbpos):

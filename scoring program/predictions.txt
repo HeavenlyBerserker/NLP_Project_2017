@@ -1,0 +1,88 @@
+
+ID:             TST1-MUC3-0006
+INCIDENT:       ATTACK
+WEAPON:          LICENSE PLATES
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:          SEVERAL TYPES
+
+ID:             TST1-MUC3-0018
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0019
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0062
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     A COMMUNIQUE SENT
+                THE PEACE PLAN
+                THE GOVERNMENT
+                A FEW HOURS
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0068
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:          FUTURE CONFIDENCE
+                 TERMS
+
+ID:             TST1-MUC3-0082
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0090
+INCIDENT:       ARSON
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         MARCH
+                THE FARABUNDO
+                LIBERATION FRONT
+                A SUSPENSION
+                ATTACKS
+                SABOTAGE OPERATIONS
+                 TRANSPORTATION
+                BUSINESSES
+                TELECOMMUNICATIONS
+
+ID:             TST1-MUC3-0093
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     OURS
+                COLONEL PONCE
+                PROOF
+                DESPERATION
+                THE JESUIT
+                ASSASSINATION
+PERP ORG:       -
+TARGET:         -
+VICTIM:         ALL
+                PEOPLE
+                EVERYTHING NECESSARY
+                THIS CORRUPT
+                THE PEOPLE
+                THE NEIGHBORHOODS
+                AREAS
+                THE LIBERATION
