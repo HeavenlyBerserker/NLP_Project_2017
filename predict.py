@@ -49,12 +49,14 @@ def main(argv):
 
 	patterns = readPats("output/patterns.txt")
 	triggers = readTrigs("output/triggers.txt")
+	words = readWords("output/words.txt")
 
 	#printFiles(t1Files)
 	#printList(patterns, 0)
+	#printList(words,0)
 	#print(triggers)
 
-	predictions = predict(t1Files, patterns,triggers)
+	predictions = predict(t1Files, patterns, triggers, words)
 
 	print(argv)
 
@@ -63,18 +65,31 @@ def readTrigs(name):
 	trigs = []
 	file = open(name, 'r')
 	for line in file:
-		trigs.append(line.rstrip('\n').upper())
+		trigs.append(line.rstrip('\n').upper().split('/'))
 	return trigs
 
-def predict(files, patterns, triggers):
+#Reads words from a file
+def readWords(name):
+	trigs = []
+	file = open(name, 'r')
+	for line in file:
+		temp = line.rstrip('\n').upper().split('/')
+		#print(temp)
+		temp[2] = float(temp[2])
+		trigs.append(temp)
+	return trigs
+
+def predict(files, patterns, triggers, words):
 	tags = []
 	ans = []
 	sentences = []
+	raw = []
 
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
 		ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
+		raw.append(files[i][1][0])
 
 	predicts = []
 
@@ -98,23 +113,25 @@ def predict(files, patterns, triggers):
 
 	for i in range(len(tags)):
 		predict = []
+		inc = predInc(raw[i], words)
 		for j in range(len(tags[i])):
 			sentence = tags[i][j]
 			sent = sentences[i][j]
 			trigs = {}
 			for trig in triggers:
 				#print(trig + "####" + senti)
-				if trig in sent and trig not in trigs:
-					trigs[trig] = 1
+				if trig[0] in sent and trig[0] not in trigs:
+					trigs[trig[0]] = trig[1]
 			for entry in sentence:
 				#print(entry)
 				for p in patterns:
 					for trig in trigs:
-						if p[1] == entry[2] and p[0] == trig:
+						if p[1] == entry[2] and p[0] == trig and p[2] == trigs[trig]:
 							#predict.append([sentences[i][tags[i].index(sentence)],p[2], entry[0], entry, p])
-							predict.append([p[2], entry[0]])
-		if predict not in predicts:
-			predicts.append(predict)
+							if [p[2], entry[0]] not in predict and len(entry[0]) > 0:
+								predict.append([p[2], entry[0]])
+		
+		predicts.append(predict)
 		print("############################\nPredictions:")
 		printList(predict, 0)
 		print("----------------------------\nActual Answers:")
@@ -134,6 +151,28 @@ def readPats(filename):
 		pat.append(temp)
 
 	return pat
+
+def predInc(text, words):
+	#print(text)
+	tokens = nltk.word_tokenize(text)
+	#print(tokens)
+	incs = {}
+	for word in words:
+		if word[1] not in incs:
+			incs[word[1]] = 0
+	for token in tokens:
+		for word in words:
+			if token == word[0]:
+				incs[word[1]]+=word[2]
+
+	print(incs)
+	maxval = 0
+	maxlab = 0
+	for key in incs:
+		if incs[key] > maxval:
+			maxval = incs[key]
+			maxlab = key
+	print(maxlab)
 
 if __name__ == "__main__":
 	main(sys.argv[1:])

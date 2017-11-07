@@ -59,21 +59,28 @@ def main(argv):
 	#printFiles(files)
 
 
-	patterns, trigs = paternize(files)
+	patterns, trigs, words = paternize(files)
 
 
 	writePats(patterns, "output/patterns.txt")
 	writeTrigs(trigs, "output/triggers.txt")
+	writeWords(words, "output/words.txt")
 	#printFiles(t1Files)
 
 
 	print(argv)
 
+#Writes words in
+def writeWords(trigs, name):
+	file = open(name, 'w')
+	for line in trigs:
+		file.write(line[0] +"/" + line [1] +"/" + str(line [2]) + "\n")
+
 #Writes triggers to a file
 def writeTrigs(trigs, name):
 	file = open(name, 'w')
 	for line in trigs:
-		file.write(line + "\n")
+		file.write(line[0] +"/" + line [1] + "\n")
 
 #Writes patterns to a file
 def writePats(pats, name):
@@ -170,6 +177,7 @@ def paternize(files):
 	ans = []
 	sentences = []
 	imp = []
+	raw = []
 
 	#Pattern format: [verb, POS, type_of_attribute]
 	patterns = []
@@ -220,10 +228,11 @@ def paternize(files):
 		ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
 		imp.append(files[i][1][2])
+		raw.append(files[i][1][0])
 		#print(tags[i])
 		#print(ans[i])
 
-	triggers = findTriggers(sentences, imp)
+	triggers, words = findTriggers(sentences, imp, ans, raw)
 
 	'''
 	for i in range(len(tags)):
@@ -264,8 +273,8 @@ def paternize(files):
 						verbs.append(np[2])
 			for trig in triggers:
 				#print(trig + "####" + senti)
-				if trig in senti and trig not in trigs:
-					trigs[trig] = 1
+				if trig[0] in senti and trig[0] not in trigs:
+					trigs[trig[0]] = 1
 			
 			for np in sent:
 				noun = np[0]
@@ -307,18 +316,37 @@ def paternize(files):
 	#printList(uniquePats, 0)
 	#print(len(pats))
 	#print(len(uniquePats))
-	return uniquePats, triggers
+	return uniquePats, triggers, words
 
-def findTriggers(sents, ans):
-	relSents = []
+def findTriggers(sents, ans, ans2, raw):
+	sinc = []
+	swe = []
+	sind = []
+	sorg = []
+	star = []
+	svic = []
+
 	for i in range(len(sents)):
+		if ans2[i][1][0] == "INCIDENT":
+			sinc.append([raw[i], ans2[i][1][1][0]])
 		for j in range(len(sents[i])):
 			sent = sents[i][j]
 			an = ans[i][j]
 			if len(an) > 0:
-				relSents.append(sent)
+				#print(an[0])
+				for answer in an:
+					if answer[2] == "WEAPON":
+						swe.append(sent)
+					elif answer[2] == "PERP INDIV":
+						sind.append(sent)
+					elif answer[2] == "PERP ORG":
+						sorg.append(sent)
+					elif answer[2] == "TARGET":
+						star.append(sent)
+					elif answer[2] == "VICTIM":
+						svic.append(sent)
 
-	stops = ["ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN"]
+	stops = ["ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN", "TEXT"]
 	file = open("developset/stopwords.txt", 'r')
 	for line in file:
 		stops.append(line.rstrip('\n').upper())
@@ -326,6 +354,85 @@ def findTriggers(sents, ans):
 	for el in list(set(stopwords.words('english'))):
 		stops.append(el.upper())
 
+	#printList(sinc, 2)
+	incident = incidentDet(sinc, stops, sents,"INCIDENT")
+	weapon = trigsCat(swe, stops, sents,"WEAPON")
+	indiv= trigsCat(sind, stops, sents,"PERP INDIV")
+	org = trigsCat(sorg,stops, sents,"PERP ORG")
+	target =  trigsCat(star,stops, sents, "TARGET")
+	victim = trigsCat(svic,stops, sents,"VICTIM")
+	
+	printList(incident,0)
+	print("###################################")
+	allTrigs = weapon + indiv + org + target + victim
+	#print(allTrigs)
+
+	return allTrigs, incident
+
+	
+def incidentDet(relSents, stops, sents,typ):
+	relWords = {}
+	for i in range (len(relSents)):
+		relSents[i][0] = re.sub('\n', ' ', relSents[i][0])
+		relSents[i][0] = nltk.sent_tokenize(relSents[i][0])
+
+	types = []
+	for i in range (len(relSents)):
+		sentes = relSents[i][0]
+		ty = relSents[i][1]
+		if ty not in types:
+			types.append(ty)
+		for sentence in sentes:
+			tokens = nltk.word_tokenize(sentence)
+			for token in tokens:
+				if token.isalpha() and token not in stops and token not in relWords:
+					relWords[token] = [1, ty]
+				elif token.isalpha() and token not in stops:
+					relWords[token][0] += 1
+					#print(token + " " + ty)
+
+	allWords = {}
+
+	for i in range (len(relSents)):
+		sentes = relSents[i][0]
+		ty = relSents[i][1]
+		
+		for sentence in sentes:
+			tokens = nltk.word_tokenize(sentence)
+			for token in tokens:
+				for incs in types:
+					if incs != ty and token.isalpha() and token not in stops and token+ty not in allWords:
+						allWords[token+ty] = 1
+					elif incs != ty and token.isalpha() and token not in stops:
+						allWords[token+ty] += 1
+						#print(token + " " + ty)
+
+	trigs = []
+
+	for key in relWords:
+		trigs.append([key,round(float(relWords[key][0])/float(allWords[key+relWords[key][1]]) * math.log(allWords[key+relWords[key][1]]),4),relWords[key][1]])
+
+	trigs = sorted(trigs, key=lambda x: x[1], reverse=True)
+
+	ctrigs = []
+	count = {}
+	c = {}
+	for t in types:
+		count[t] = 0
+		c[t] = 0
+	for t in trigs:
+		#if (len(ctrigs) < 11 or t[1] > 1.0) and count[t[2]] < 40:
+		if t[1] > 1.0:
+			ctrigs.append([t[0], t[2],t[1]])
+			count[t[2]]+=1
+			c[t[2]] += t[1]
+	for i in range (len(ctrigs)):
+		ctrigs[i][2] = 1.0/float(count[ctrigs[i][1]])
+	printList(types,0)
+	#print(ctrigs)
+	return ctrigs
+
+def trigsCat(relSents, stops, sents,typ):
 	relWords = {}
 
 	for sentence in relSents:
@@ -356,14 +463,11 @@ def findTriggers(sents, ans):
 
 	ctrigs = []
 	for t in trigs:
-		if t[1] > 2.0:
-			ctrigs.append(t[0])
+		if len(ctrigs) < 11 or t[1] > 2.0:
+			ctrigs.append([t[0], typ])
 
 	#print(ctrigs)
-
 	return ctrigs
-
-
 
 
 #Function#########################################################
@@ -424,14 +528,14 @@ def extractSentences(files):
 
 
 			##################Test lab##########################
-			print('\n' + sentences[j])
+			#print('\n' + sentences[j])
 			tokens = nltk.word_tokenize(sentences[j].lower())
 			tagged = nltk.pos_tag(tokens)
-			print(tagged)
+			#print(tagged)
 			tags = []
 			for k in range(len(tagged)):
 				tags.append([tagged[k][0].upper(),tagged[k][1]])
-			print(tags)
+			#print(tags)
 			verbsAndPos = []
 			k=0
 			while k < len(tags):
@@ -483,10 +587,10 @@ def extractSentences(files):
 					chunks2.append(vs)
 				if k == s:
 					k+=1
-			print(verbsAndPos)
-			printList(chunks,0)
-			print("Chunks2")
-			printList(chunks2,0)
+			#print(verbsAndPos)
+			#printList(chunks,0)
+			#print("Chunks2")
+			#printList(chunks2,0)
 
 			#[to_nltk_tree(sent.root).pretty_print() for sent in doc.sents]
 			#####################################################
@@ -501,7 +605,7 @@ def extractSentences(files):
 				for k in range(1, len(important)):
 					for l in range(len(important[k])):
 						if not important[k][l].startswith("DEV") and important[k][l] != '-' and important[k][l] in sentences[j]:
-							impWords.append([important[k][l], find_indexes(important[k][l], sentences[j])])
+							impWords.append([important[k][l], find_indexes(important[k][l], sentences[j]), important[0]])
 			sentenceImp.append(impWords)
 			
 
