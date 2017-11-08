@@ -157,8 +157,6 @@ def predict(files, patterns, triggers, words, test):
 							if [p[2], entry[0]] not in predict and len(entry[0]) > 0:
 								predict.append([p[2], entry[0]])
 		
-		predict = clean(predict)
-
 		predicts.append(predict)
 		print("############################\nPredictions:")
 		printList(predict, 0)
@@ -175,38 +173,6 @@ def predict(files, patterns, triggers, words, test):
 	if not test:
 		print("Right = " + str(right) + "/" + str(count))
 
-	predictions = textifyPreds(predicts, files)
-	
-		#print(out)
-
-	return predictions
-
-def clean(predict):
-	npredict = []
-
-	for i in range(len(predict)):
-		right = True
-		if predict[i][1][0:1] == " ":
-			predict[i][1] = predict[i][1].lstrip(" ")
-		if predict[i][1][0:2] == "A ":
-			predict[i][1] = predict[i][1].lstrip("A ")
-		if predict[i][1][0:4] == "THE ":
-			predict[i][1] = predict[i][1].lstrip("THE ")
-		if predict[i][1] == "THE" or predict[i][1] == "A":
-			right = False
-		if predict[i][0] == "VICTIM":
-			if predict[i][1] == 'ATTACK':
-				right = False
-		if right and predict[i] not in npredict:
-			npredict.append(predict[i])
-
-	npredict = sorted(npredict, key=lambda x: x[0], reverse=True)
-	#print(npredict)
-
-	return npredict
-
-
-def textifyPreds(predicts, files):
 	predictions = []
 	for i in range(len(predicts)):
 		ent = predicts[i]
@@ -276,12 +242,13 @@ def textifyPreds(predicts, files):
 
 		predictions.append(out)
 		#print(out)
+
 	return predictions
 
 def prediRight(predict, answer):
 	for item in answer:
 		typ = item[0]
-		for i in range(2, len(item)):
+		for i in range(1, len(item)):
 			ansor = item[i]
 			for ans in ansor:
 				for pred in predict:
@@ -421,8 +388,6 @@ def extractSentences2(files):
 		sentences = nltk.sent_tokenize(file)[0:]
 		sentenceEntities = []
 		sentenceImp = []
-		sentenceTagged = []
-		veps = []
 		for j in range(len(sentences)):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
 			#tokens = nltk.word_tokenize(sentences[j])
@@ -443,7 +408,6 @@ def extractSentences2(files):
 			#print('\n' + sentences[j])
 			tokens = nltk.word_tokenize(sentences[j].lower())
 			tagged = nltk.pos_tag(tokens)
-			sentenceTagged.append(tagged)
 			#print(tagged)
 			tags = []
 			for k in range(len(tagged)):
@@ -455,10 +419,7 @@ def extractSentences2(files):
 				t = tags[k]
 				s = k
 				vs = []
-				if t[1][0:2] == 'VB' and t[0].isalpha() and not t[0].endswith("ING"):
-					which = False
-					if k-1 >= 0 and tags[k-1][0] == "WHICH":
-						which = True
+				if t[1][0:2] == 'VB' and t[0].isalpha():
 					vs.append(t[0])
 					k+=1
 					while k < len(tags) and tags[k][1][0:2] == 'VB' and tags[k][0].isalpha():
@@ -468,7 +429,6 @@ def extractSentences2(files):
 						k+=1
 					vs.append(k)
 					vs.append(s)
-					vs.append(not which)
 				if len(vs) > 0 and len(vs[0]) > 0:
 					verbsAndPos.append(vs)
 				k+=1
@@ -477,23 +437,11 @@ def extractSentences2(files):
 
 			chunks2 = []
 			k=0
-			vps = []
-			
 			while k < len(tags):
 				t = tags[k]
 				s = k
 				vs = []
-				vp = ''
-				if (t[1][0:2] == 'VB') and t[0].isalpha() and not t[0].endswith("ING"):
-					prep = t[0]
-					vp = t[0]
-					k+=1
-					while k < len(tags) and (tags[k][1][0:2] == 'VB')and tags[k][0].isalpha():
-						vp = vp + " " + tags[k][0]
-						k+=1
-					#print(vp)
-					vps.append(vp)
-				elif (t[1][0:2] == 'IN') and t[0].isalpha():
+				if (t[1][0:2] == 'IN') and t[0].isalpha():
 					prep = t[0]
 					vs.append("")
 					vs.append("")
@@ -512,18 +460,10 @@ def extractSentences2(files):
 						k+=1
 					vs.append(subobj(k, verbsAndPos))
 					vs.append(retVerb(k, verbsAndPos))
-					'''
-					if (so(k, verbsAndPos)):
-						print(verbsAndPos)
-						print(sentences[j])
-						print(vs)
-						print('\n')
-					'''
 				if len(vs) > 0:
 					chunks2.append(vs)
 				if k == s:
 					k+=1
-			veps = veps + vps
 			#print(verbsAndPos)
 			#printList(chunks,0)
 			#print("Chunks2")
@@ -551,8 +491,6 @@ def extractSentences2(files):
 		#files[i][1].append(sentenceEntities)
 		files[i][1].append(sentenceImp)
 		files[i][1].append(sentenceEntities)
-		files[i][1].append(sentenceTagged)
-		files[i][1].append(veps)
 	return files
 
 #Prints files content

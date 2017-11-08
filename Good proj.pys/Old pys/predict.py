@@ -62,7 +62,7 @@ def main(argv):
 	
 	
 	files = processFilesFinal('sample-textfile.txt','')
-	printFiles2(files)
+	#printFiles2(files)
 
 	#predictions = predict(files, patterns, triggers, words,1)
 	predictions = predict(t1Files, patterns, triggers, words,0)
@@ -157,8 +157,6 @@ def predict(files, patterns, triggers, words, test):
 							if [p[2], entry[0]] not in predict and len(entry[0]) > 0:
 								predict.append([p[2], entry[0]])
 		
-		predict = clean(predict)
-
 		predicts.append(predict)
 		print("############################\nPredictions:")
 		printList(predict, 0)
@@ -175,38 +173,6 @@ def predict(files, patterns, triggers, words, test):
 	if not test:
 		print("Right = " + str(right) + "/" + str(count))
 
-	predictions = textifyPreds(predicts, files)
-	
-		#print(out)
-
-	return predictions
-
-def clean(predict):
-	npredict = []
-
-	for i in range(len(predict)):
-		right = True
-		if predict[i][1][0:1] == " ":
-			predict[i][1] = predict[i][1].lstrip(" ")
-		if predict[i][1][0:2] == "A ":
-			predict[i][1] = predict[i][1].lstrip("A ")
-		if predict[i][1][0:4] == "THE ":
-			predict[i][1] = predict[i][1].lstrip("THE ")
-		if predict[i][1] == "THE" or predict[i][1] == "A":
-			right = False
-		if predict[i][0] == "VICTIM":
-			if predict[i][1] == 'ATTACK':
-				right = False
-		if right and predict[i] not in npredict:
-			npredict.append(predict[i])
-
-	npredict = sorted(npredict, key=lambda x: x[0], reverse=True)
-	#print(npredict)
-
-	return npredict
-
-
-def textifyPreds(predicts, files):
 	predictions = []
 	for i in range(len(predicts)):
 		ent = predicts[i]
@@ -276,12 +242,13 @@ def textifyPreds(predicts, files):
 
 		predictions.append(out)
 		#print(out)
+
 	return predictions
 
 def prediRight(predict, answer):
 	for item in answer:
 		typ = item[0]
-		for i in range(2, len(item)):
+		for i in range(1, len(item)):
 			ansor = item[i]
 			for ans in ansor:
 				for pred in predict:

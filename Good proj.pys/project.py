@@ -460,30 +460,29 @@ def incidentDet(relSents, stops, sents,typ, vps):
 	#print(ctrigs)
 	return ctrigs
 
-def trigsCat(relSents, stops, sents,typ, pos):
+def trigsCat(relSents, stops, sents,typ, vps):
 	relWords = {}
 
 	for i in range(len(relSents)):
 		sentence = relSents[i]
-		tokens = nltk.word_tokenize(sentence)
-		for i in range(len(tokens)):
-			token = tokens[i]
-			if token.isalpha() and token not in stops and token not in relWords:
+		for i in range(len(vps)):
+			token = vps[i]
+			if token in sentence and token not in relWords:
 				relWords[token] = 1
-			elif token.isalpha() and token not in stops:
+			elif token in sentence:
 				relWords[token] += 1
 
 	allWords = {}
 
 	for senta in sents:
 		for sentence in senta:
-			tokens = nltk.word_tokenize(sentence)
-			for i in range(len(tokens)):
-				token = tokens[i]
-				if token.isalpha() and token not in stops and token not in allWords:
+			for i in range(len(vps)):
+				token = vps[i]
+				if token in sentence and token not in allWords:
 					allWords[token] = 1
-				elif token.isalpha() and token not in stops:
+				elif token in sentence:
 					allWords[token] += 1
+
 
 	trigs = []
 
@@ -499,6 +498,8 @@ def trigsCat(relSents, stops, sents,typ, pos):
 
 	#print(ctrigs)
 	return ctrigs
+
+
 #Function#########################################################
 #Prints items in array
 def printList(sentences,skip):

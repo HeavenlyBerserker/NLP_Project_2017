@@ -15,23 +15,100 @@ VICTIM:         ANTONIO ROLDAN BETANCUR
 
 ID:             TST1-MUC3-0006
 INCIDENT:       ATTACK
-WEAPON:         LICENSE PLATES
-PERP_INDIV:     -
-PERP_ORG:       -
-TARGET:         -
-VICTIM:         SEVERAL TYPES
+WEAPON:         -
+PERP_INDIV:     RESPONSIBILITY
+                MURDER
+                ANTIOQUIA POLICE
+                COLONEL WALDEMAR FRANKLIN QUINTERO
+                THIS MORNING
+                ANTIOQUIA DEPARTMENT GOVERNOR
+                VEHICLE
+                AMERICA NEIGHBORHOOD
+                BLOCKS
+                GOVERNOR ANTONIO ROLDAN
+                COL QUINTERO
+                WHITE NISSAN PATROL VEHICLE
+                STOP
+                RED LIGHT
+                CARRERA
+                CROSSING
+                REMOVAL
+                BODY
+                ATTACK
+                SHOTS
+PERP_ORG:       EXCERPTS
+                XTRADITABLES TODAY
+                RESPONSIBILITY
+                MURDER
+                COLONEL WALDEMAR FRANKLIN QUINTERO
+                THIS MORNING
+                MEDELLIN
+                REPORT
+                COL QUINTERO
+TARGET:         AMERICA NEIGHBORHOOD
+                WHITE NISSAN PATROL VEHICLE
+                STOP
+                RED LIGHT
+                CARRERA
+                CROSSING
+                ADVANTAGE
+                THIS CIRCUMSTANCE
+                VOLLEYS
+                VEHICLE
+VICTIM:         RESPONSIBILITY
+                MURDER
+                ANTIOQUIA POLICE
+                COLONEL WALDEMAR FRANKLIN QUINTERO
+                THIS MORNING
+                MEDELLIN
+                CRIMINAL ATTACK
+                OFFICER
+                SCANT
+                MONTH
+                ANTIOQUIA DEPARTMENT GOVERNOR
+                POLICEMAN
+                ANOTHER POLICEMAN
+                RRORIST ATTACK
+                POLICE ESCORT
+                BEHEST
+                DRUG TRAFFICKING
+                DEATH THREATS
+                BEGIN
+                VARGAS
+                THIS MORNING ANTIOQUIA POLICE COMMANDER COL WALDEMAR FRANKLIN QUINTERO
+                RESIDENCE
+                TASKS
+                AMERICA NEIGHBORHOOD
+                COL QUINTERO
+                WHITE NISSAN PATROL VEHICLE
+                STOP
+                RED LIGHT
+                CARRERA
+                CROSSING
+                ADVANTAGE
+                THIS CIRCUMSTANCE
+                VOLLEYS
+                SUBMACHINEGUN FIRE
+                POLICE DRIVER
+                VEHICLE
+                JUDGE
+                DISTRICT COURT
+                REMOVAL
+                BODY
+                SEVERAL TYPES
+                SHOTS
 
      SCORES for TST1-MUC3-0006
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
-Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/1)         0.00
+Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/20)        0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/9)         0.00
+Targets         0.00 (0/0)	   0.00 (0/10)        0.00
+Victims         0.00 (0/1)	   0.00 (0/42)        0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (1/2)	   0.33 (1/3)         0.40
+TOTAL           0.50 (1/2)	   0.01 (1/82)        0.02
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -52,22 +129,68 @@ VICTIM:         HECTOR OQUELI COLINDRES
 ID:             TST1-MUC3-0018
 INCIDENT:       KIDNAPPING
 WEAPON:         -
-PERP_INDIV:     -
-PERP_ORG:       -
+PERP_INDIV:     TEXT
+                DATE
+                ARMY
+                NO KNOWLEDGE
+                REPORT
+                GUATEMALAN GOVERNMENT
+                PRESIDENT
+                CRISTIANI
+                INVESTIGATIONS
+                THAT COUNTRY
+                DEATH
+                SALVADORAN LEFTIST LEADER HECTOR OQUELI COLINDRES
+                UNIDENTIFIED INDIVIDUALS
+                LA AURORA AIRPORT
+                PRESIDENT CEREZO
+                YESTERDAY
+                SPOKESMEN
+PERP_ORG:       PRESIDENT CEREZO
+                OCCASION
+                MEETING
+                FARABUNDO
+                LIBERATION
+                FRONT
+                DELEGATION
+                SALVADORAN GOVERNMENT
+                THAT OCCASION PRESIDENT CEREZO
+                BOTH DELEGATIONS
 TARGET:         -
-VICTIM:         -
+VICTIM:         TEXT
+                DATE
+                ARMY
+                NO KNOWLEDGE
+                REPORT
+                GUATEMALAN GOVERNMENT
+                PRESIDENT
+                CRISTIANI
+                INVESTIGATIONS
+                THAT COUNTRY
+                DEATH
+                SALVADORAN LEFTIST LEADER HECTOR OQUELI COLINDRES
+                OQUELI
+                LEADER
+                NATIONAL REVOLUTIONARY MOVEMENT
+                MNR
+                FLORES
+                GUATEMALAN SOCIAL DEMOCRATIC LEADER
+                JANUARY
+                GUATEMALA CITY
+                LA AURORA AIRPORT
+                CARACAS
 
      SCORES for TST1-MUC3-0018
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Ind        0.00 (0/2)	   0.00 (0/17)        0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/10)        0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/0)         0.00
+Victims         0.00 (0/2)	   0.00 (0/22)        0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   1.00 (1/1)         0.33
+TOTAL           0.20 (1/5)	   0.02 (1/50)        0.04
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -86,22 +209,104 @@ VICTIM:         JESUITS
 ID:             TST1-MUC3-0019
 INCIDENT:       KIDNAPPING
 WEAPON:         -
-PERP_INDIV:     -
-PERP_ORG:       -
+PERP_INDIV:     ARENA
+                ALLIANCE
+                LEADER
+                INSTITUTION
+                FORCES
+                THAT
+                PROBLEM
+                END
+                BEGIN
+                JESUITS
+                CASE
+                SALVADORANS
+                PRESS AGENCIES
+                DECISION
+                SALVADORAN PRESIDENT
+                MILITARY MEN
+                MURDER
+                DIVISION
+                PARTY
+                THIS
+                PRESIDENT CRISTIANI
+                OTHER FORMER LEGISLATORS
+PERP_ORG:       REPORT
+                MAURICIO FUNES
+                TEXT
+                ABSENCE
+                NATIONAL PRESS
+                ROBERTO
+                ARENA
+                ALLIANCE
+                LEADER
+                BEGIN
+                SOME
+                MEMBERS
+                HOPE
+                COUNTRY
+                I
+                REMENDOUS OFFENSIVE
+                END
+                ARENA LEADER
+                MAJ ROBERTO
+                AN ARENA DEPUTY
 TARGET:         -
-VICTIM:         -
+VICTIM:         REPORT
+                MAURICIO FUNES
+                TEXT
+                ABSENCE
+                NATIONAL PRESS
+                ROBERTO
+                BEGIN
+                SOME
+                MEMBERS
+                POLITICAL REASONS
+                TROOPS
+                END
+                AUTHORITIES
+                JESUITS
+                CASE
+                ARGUMENT
+                SUPPORT GROUPS
+                SALVADORANS
+                CIVILIANS
+                MILITARY MEN
+                MURDER
+                DIVISION
+                PARTY
+                LEAST
+                PRESIDENT CRISTIANI
+                THIS
+                REASON
+                PRIDE
+                FRIENDS
+                SALVADORAN GOVERNMENT
+                DIALOGUE
+                FMLN
+                I
+                RESULTS
+                THESE TALKS
+                COMPLIANCE
+                COMMITMENTS
+                MAJ ROBERTO
+                AN ARENA DEPUTY
+                THIS YEAR
+                TIME
+                ELECTIONS
+                OTHER FORMER LEGISLATORS
 
      SCORES for TST1-MUC3-0019
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Ind        1.00 (1/1)	   0.05 (1/22)        0.09
+Perp_Org        0.00 (0/1)	   0.00 (0/20)        0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/0)         0.00
+Victims         1.00 (1/1)	   0.02 (1/43)        0.05
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/4)	   0.00 (0/1)         0.00
+TOTAL           0.50 (2/4)	   0.02 (2/86)        0.04
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -119,26 +324,120 @@ VICTIM:         -
 
 ID:             TST1-MUC3-0062
 INCIDENT:       KIDNAPPING
-WEAPON:         -
-PERP_INDIV:     A COMMUNIQUE SENT
-                THE PEACE PLAN
-                THE GOVERNMENT
-                A FEW HOURS
-PERP_ORG:       -
+WEAPON:         ANY MORE DETAILS
+                CASTROITE ELN
+                ATTACKS
+                PROPOSAL
+                GOVERNMENT
+PERP_INDIV:     NATIONAL LIBERATION
+                COMMUNIQUE SENT
+                ROLDAN BETANCUR
+                PEACE PLAN
+                GOVERNMENT
+                ATTACKS
+                MESSAGE
+                EL TIGRE
+                LETTER
+                FEW HOURS
+                PASTRANA BORRERO
+                NEW PEACE INITIATIVE
+                WEEK
+                BEHALF
+                PARDO RUEDA
+                PRESIDENTIAL ADVISER
+                OP
+                COMMANDER
+                PRELIMINARY AGREEMENT
+                BEGINNING
+                DIRECT DIALOGUE
+                GUERRILLA GROUPS
+                SPOKESMEN
+                POLITICAL PARTIES
+                CARLOS ANDRES
+PERP_ORG:       TEXT
+                ARMY
+                ELN
+                GOVERNOR
+                NORTHWESTERN ANTIOQUIA DEPARTMENT
+                FEW HOURS
+                REPORTS
+                ARMED MOVEMENT
+                GUERRILLA GROUPS
+                COUNTRY
+                POLICE INSPECTOR
+                FRIDAY
+                THIS PURPOSE
+                ROLDAN BETANCUR
+                THAT TIME
+                GOVERNMENT
+                CARLOS PIZARRO LEON GOMEZ
+                DOCUMENT
 TARGET:         -
-VICTIM:         -
+VICTIM:         NATIONAL LIBERATION
+                COMMUNIQUE SENT
+                ROLDAN BETANCUR
+                PEACE PLAN
+                GOVERNMENT
+                ATTACKS
+                MESSAGE
+                EL TIGRE
+                ANY MORE DETAILS
+                CASTROITE ELN
+                PROPOSAL
+                LETTER
+                FEW HOURS
+                PASTRANA BORRERO
+                FORMER PRESIDENT
+                MEMBER
+                OPPOSITION SOCIAL CONSERVATIVE PARTY
+                PSC
+                PARTY
+                NEW PEACE INITIATIVE
+                WEEK
+                JANUARY
+                THAT TIME
+                BEHALF
+                PARDO RUEDA
+                PRESIDENTIAL ADVISER
+                PEACE
+                OP
+                COMMANDER
+                CARLOS PIZARRO LEON GOMEZ
+                PRELIMINARY AGREEMENT
+                BEGINNING
+                DIRECT DIALOGUE
+                GUERRILLA GROUPS
+                SPOKESMEN
+                POLITICAL PARTIES
+                PARLIAMENT
+                FARC
+                UNILATERAL TRUCE
+                CONVERSATIONS
+                THESE AGREEMENTS
+                COUNTRY
+                REBEL MOVEMENTS
+                TODAY
+                CARACAS
+                INAUGURATION
+                CARLOS ANDRES
+                PRESIDENT
+                MEETING
+                CHIEFS
+                PARTIES
+                PRESIDENTS JULIO
+                TURBAY
 
      SCORES for TST1-MUC3-0062
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
-Weapons         0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/4)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Weapons         0.00 (0/1)	   0.00 (0/5)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/25)        0.00
+Perp_Org        1.00 (1/1)	   0.06 (1/18)        0.11
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/0)	   0.00 (0/53)        0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/4)	   0.00 (0/5)         0.00
+TOTAL           0.25 (1/4)	   0.01 (1/102)       0.02
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -157,23 +456,76 @@ VICTIM:         JESUITS
 ID:             TST1-MUC3-0068
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     -
-PERP_ORG:       -
-TARGET:         -
-VICTIM:         FUTURE CONFIDENCE
+PERP_INDIV:     TEXT
+                BODIES
+                SPANISH JESUITS
+                UNIFORMED INDIVIDUALS
+                SPANISH GOVERNMENT
+                TODAY
+                SPANISH PRIME MINISTER
+                FUTURE CONFIDENCE
+                ALFREDO CRISTIANI
+                BEGIN
+                GONZALEZ
+                GREATEST POSSIBLE EFFORT
+                CITIZENS
+                SALVADORAN CITIZENSHIP
+                SOME
+                THIS MURDER
+                END
+                SPANISH DIPLOMATIC DELEGATION
+                UNDERSECRETARY
+PERP_ORG:       END
+                SPANISH DIPLOMATIC DELEGATION
+                BURIAL
+                JESUITS
+TARGET:         GOVERNMENT
+                RESPONSE
+                THIS REQUEST
+                AN IMMEDIATE INVESTIGATION
+                MURDERS
+                SOME PEOPLE
+                THIS APPALLING ATTACK
+VICTIM:         TEXT
+                BODIES
+                SPANISH JESUITS
+                SAN SALVADOR TODAY
+                EXPLANATIONS
+                TODAY
+                SPANISH PRIME MINISTER
+                FUTURE CONFIDENCE
+                GOVERNMENT
+                RESPONSE
+                THIS REQUEST
+                AN IMMEDIATE INVESTIGATION
+                BEGIN
+                GONZALEZ
+                GREATEST POSSIBLE EFFORT
+                MURDERS
+                SOME PEOPLE
                 TERMS
+                CITIZENS
+                SOME
+                THIS APPALLING ATTACK
+                THIS MURDER
+                CONFIDENCE
+                REGARD
+                END
+                SPANISH DIPLOMATIC DELEGATION
+                FOREIGN AFFAIRS
+                EL SALVADOR
 
      SCORES for TST1-MUC3-0068
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        1.00 (1/1)	   0.05 (1/19)        0.10
+Perp_Org        0.00 (0/0)	   0.00 (0/4)         0.00
+Targets         0.00 (0/0)	   0.00 (0/7)         0.00
+Victims         0.00 (0/1)	   0.00 (0/28)        0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.33 (1/3)         0.33
+TOTAL           0.67 (2/3)	   0.03 (2/59)        0.06
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -197,8 +549,25 @@ INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
 PERP_ORG:       -
-TARGET:         -
-VICTIM:         -
+TARGET:         PLACE
+                VICINITY
+                AN EXPLOSIVE DEVICE
+                FMLN
+                ANOTHER ACTION
+                INSURGENTS
+                CLASH
+                BRIGADE SOLDIERS
+                CUSCATLAN DEPARTMENT
+VICTIM:         MORAZAN DEPARTMENT
+                PERQUIN
+                TREASURY POLICE OFFICERS
+                NIGHT
+                COMMANDOS
+                SOYAPANGO
+                INCIDENT
+                ANOTHER ACTION
+                INSURGENTS
+                SAN PEDRO PERULAPAN JURISDICTION
 
      SCORES for TST1-MUC3-0082
 
@@ -207,10 +576,10 @@ Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/4)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/9)         0.00
+Victims         0.00 (0/4)	   0.00 (0/10)        0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/7)	   0.00 (0/1)         0.00
+TOTAL           0.00 (0/7)	   0.00 (0/20)        0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -228,31 +597,39 @@ VICTIM:         -
 
 ID:             TST1-MUC3-0090
 INCIDENT:       ARSON
-WEAPON:         -
-PERP_INDIV:     -
-PERP_ORG:       -
-TARGET:         -
-VICTIM:         MARCH
-                THE FARABUNDO
-                LIBERATION FRONT
-                A SUSPENSION
-                ATTACKS
-                SABOTAGE OPERATIONS
+WEAPON:         POWER TOWER
+                NORTHWESTERN PART
+                GMT
+PERP_INDIV:     FRIDAY
+                CIVILIAN GOVERNMENT OFFICIALS
                 TRANSPORTATION
-                BUSINESSES
-                TELECOMMUNICATIONS
+                TALKS
+PERP_ORG:       SOURCES
+                BOMB
+                URBAN GUERRILLA COMMANDOS
+                THAT DECISION
+TARGET:         TEXT
+                BOMB
+                NO CASUALTIES
+                SOURCES
+                FRIDAY
+                CIVILIAN GOVERNMENT OFFICIALS
+VICTIM:         SAN SALVADOR
+                MEANS
+                TRANSPORTATION
+                TALKS
 
      SCORES for TST1-MUC3-0090
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
-Weapons         0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
-Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/9)         0.00
+Weapons         0.00 (0/1)	   0.00 (0/3)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/4)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/4)         0.00
+Targets         0.00 (0/1)	   0.00 (0/6)         0.00
+Victims         0.00 (0/0)	   0.00 (0/4)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/5)	   0.00 (0/10)        0.00
+TOTAL           0.00 (0/5)	   0.00 (0/22)        0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -271,34 +648,71 @@ VICTIM:         JESUIT PRIESTS / JESUIT PRIESTS' / PRIESTS
 ID:             TST1-MUC3-0093
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     OURS
-                COLONEL PONCE
-                PROOF
-                DESPERATION
-                THE JESUIT
-                ASSASSINATION
-PERP_ORG:       -
-TARGET:         -
-VICTIM:         ALL
+PERP_INDIV:     PLURALIST GOVERNMENT
+                REPRESENTATIVES
+                PATRIOTIC GROUPS
+                NATION
+                SALVADORANS
+                NIGHT
+                BLOOD
+                IGNACIO ELLACURIA
+                JESUITS
+                MONSIGNOR
+                ARNULFO
+                ROMERO
+                NUNS
+                PRIESTS
+                WORDS INDISTINCT
+                SEMINARIANS
+                YOUTHS
+PERP_ORG:       VICTORY
+                IMPERIALISM
+                NIGHT
                 PEOPLE
-                EVERYTHING NECESSARY
-                THIS CORRUPT
-                THE PEOPLE
-                THE NEIGHBORHOODS
-                AREAS
-                THE LIBERATION
+                CAPITAL
+                BLOOD
+                JESUITS
+                ARNULFO
+                ROMERO
+                NUNS
+                PRIESTS
+                WORDS INDISTINCT
+                SEMINARIANS
+                YOUTHS
+TARGET:         -
+VICTIM:         PEOPLE
+                SAN SALVADOR
+                STRUGGLE
+                INFORMATION
+                GOVERNMENT
+                EL SALVADOR
+                IMPERIALISM
+                CAPITAL
+                BLOOD
+                IGNACIO ELLACURIA
+                JESUITS
+                MONSIGNOR
+                ARNULFO
+                ROMERO
+                NUNS
+                PRIESTS
+                WORDS INDISTINCT
+                SEMINARIANS
+                YOUTHS
+                FREEDOM
+                EXPRESSION
 
      SCORES for TST1-MUC3-0093
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        1.00 (1/1)	   0.17 (1/6)         0.29
-Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/17)        0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/14)        0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/8)         0.00
+Victims         1.00 (1/1)	   0.05 (1/21)        0.09
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.13 (2/15)        0.22
+TOTAL           0.67 (2/3)	   0.04 (2/53)        0.07
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -307,10 +721,10 @@ TOTAL           0.67 (2/3)	   0.13 (2/15)        0.22
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.50 (4/8)	   0.50 (4/8)         0.50
-Weapons         0.00 (0/3)	   0.00 (0/1)         0.00
-Perp_Ind        0.17 (1/6)	   0.10 (1/10)        0.12
-Perp_Org        0.00 (0/4)	   0.00 (0/0)         0.00
-Targets         0.00 (0/2)	   0.00 (0/0)         0.00
-Victims         0.00 (0/10)	   0.00 (0/20)        0.00
+Weapons         0.00 (0/3)	   0.00 (0/8)         0.00
+Perp_Ind        0.33 (2/6)	   0.02 (2/124)       0.03
+Perp_Org        0.25 (1/4)	   0.01 (1/79)        0.02
+Targets         0.00 (0/2)	   0.00 (0/32)        0.00
+Victims         0.20 (2/10)	   0.01 (2/223)       0.02
 --------        --------------     --------------     ----
-TOTAL           0.15 (5/33)	   0.13 (5/39)        0.14
+TOTAL           0.27 (9/33)	   0.02 (9/474)       0.04
