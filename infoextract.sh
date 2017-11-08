@@ -9,6 +9,7 @@ python -m spacy.en.download --force all
 python -m spacy.en.download all
 pip install nltk
 python nltk_download.py
+python project.py
 ./testFinal.sh $1
 
 

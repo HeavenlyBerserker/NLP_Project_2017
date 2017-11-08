@@ -21,9 +21,31 @@ Instructions so far:
 2. [Optional] To start learning process. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
 	
 	python project.py
+
+a ######################################################
+External sources:
+nltk
+spacy
+
+b ######################################################
+Time Estimate:
+	For file prediction
+		< 1s per file
 	
+	For training:
+		< 20s total
+
+
+c ######################################################
+Team member contributions.
+
+Hong Xu: Was responsible for writing the code to parse the files into usable text format. Created the system to create patterns and find triggers. Implemented a way to classify incidents by frequency of certain words. Responsible for the testing and experimentation on the test files.
+
+Zhang Jie: 
 	
-#######################################################
+d ######################################################
+
+
 
 Change log:
 2017-10-29 Added readme file and did some modifications to the code.
