@@ -499,6 +499,7 @@ def trigsCat(relSents, stops, sents,typ, pos):
 
 	#print(ctrigs)
 	return ctrigs
+	
 #Function#########################################################
 #Prints items in array
 def printList(sentences,skip):

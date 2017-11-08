@@ -10,21 +10,18 @@ Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language P
 #######################################################
 Instructions so far:
 
-1. Install python repository nlkt:
-	
-	sudo pip install -U nltk
-	
-	Open python and install suggested subpackages including:
-	
-	import nltk
-  	nltk.download('averaged_perceptron_tagger')
-  	nltk.download('maxent_ne_chunker')
-  	nltk.download('words')
+1. To install python repositories and test the system on a file, run test.sh with the filename to test and answers as a single argument:
 
+	./infoextract.sh <textfile>
 	
-2. Run project.py with no arguments. Suggested version 2.7.12
+	For instance, if using the following code, prediction would run on "sample-textfile.txt" for input text and "sample-answers.txt" for input answers file.:
 	
-	python2 project.py
+	./infoextract.sh sample 
+
+2. [Optional] To start learning process. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
+	
+	python project.py
+	
 	
 #######################################################
 
@@ -34,3 +31,12 @@ Change log:
 			its answers, parsed answers, raw text, and parsed sentences.
 2017-10-29 Added finding important words
 2017-11-04 Figured out parser and created some patterns. Work in progress.
+2017-11-04 Wrote a custom parser using the nltk tagger. Results are okay. Higher correct answer instances in answers.
+2017-11-05 Wrote predict.py to start evaluating answers.
+2017-11-05 Tried using verbs and verb phrases as trigger words. Experiments failed, so we are using any word with high P log F score.
+2017-11-06 Struggled with finding better parsers, expecially in terms of separating subjects, DOs and PPs.
+2017-11-06 Tried different configurations for detecting incidents by exploring the ratio between words that appear in articles vs other articles, capped at around 50% recall.
+2017-11-06 With prunning of some answers, obtained a recall of 20%, but still low precision of 1%.
+2017-11-06 Improved recall to ~25%.
+2017-11-07 Trying to improve system to no avail.
+

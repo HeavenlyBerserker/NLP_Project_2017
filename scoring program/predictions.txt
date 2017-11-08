@@ -1,502 +1,216 @@
 
-ID:             TST1-MUC3-0006
-INCIDENT:       ATTACK
-WEAPON:         -
-PERP INDIV:     RESPONSIBILITY
-                MURDER
-                ANTIOQUIA POLICE
-                COLONEL WALDEMAR FRANKLIN QUINTERO
-                THIS MORNING
-                ANTIOQUIA DEPARTMENT GOVERNOR
-                VEHICLE
-                AMERICA NEIGHBORHOOD
-                BLOCKS
-                GOVERNOR ANTONIO ROLDAN
-                COL QUINTERO
-                WHITE NISSAN PATROL VEHICLE
-                STOP
-                RED LIGHT
-                CARRERA
-                CROSSING
-                REMOVAL
-                BODY
-                ATTACK
-                SHOTS
-PERP ORG:       EXCERPTS
-                XTRADITABLES TODAY
-                RESPONSIBILITY
-                MURDER
-                COLONEL WALDEMAR FRANKLIN QUINTERO
-                THIS MORNING
-                MEDELLIN
-                REPORT
-                COL QUINTERO
-TARGET:         AMERICA NEIGHBORHOOD
-                WHITE NISSAN PATROL VEHICLE
-                STOP
-                RED LIGHT
-                CARRERA
-                CROSSING
-                ADVANTAGE
-                THIS CIRCUMSTANCE
-                VOLLEYS
-                VEHICLE
-VICTIM:         RESPONSIBILITY
-                MURDER
-                ANTIOQUIA POLICE
-                COLONEL WALDEMAR FRANKLIN QUINTERO
-                THIS MORNING
-                MEDELLIN
-                CRIMINAL ATTACK
-                OFFICER
-                SCANT
-                MONTH
-                ANTIOQUIA DEPARTMENT GOVERNOR
-                POLICEMAN
-                ANOTHER POLICEMAN
-                RRORIST ATTACK
-                POLICE ESCORT
-                BEHEST
-                DRUG TRAFFICKING
-                DEATH THREATS
-                BEGIN
-                VARGAS
-                THIS MORNING ANTIOQUIA POLICE COMMANDER COL WALDEMAR FRANKLIN QUINTERO
-                RESIDENCE
-                TASKS
-                AMERICA NEIGHBORHOOD
-                COL QUINTERO
-                WHITE NISSAN PATROL VEHICLE
-                STOP
-                RED LIGHT
-                CARRERA
-                CROSSING
-                ADVANTAGE
-                THIS CIRCUMSTANCE
-                VOLLEYS
-                SUBMACHINEGUN FIRE
-                POLICE DRIVER
-                VEHICLE
-                JUDGE
-                DISTRICT COURT
-                REMOVAL
-                BODY
-                SEVERAL TYPES
-                SHOTS
-
-ID:             TST1-MUC3-0018
-INCIDENT:       KIDNAPPING
+ID:             DEV-MUC3-0006
+INCIDENT:       BOMBING
 WEAPON:         -
 PERP INDIV:     TEXT
-                DATE
-                ARMY
-                NO KNOWLEDGE
-                REPORT
-                GUATEMALAN GOVERNMENT
-                PRESIDENT
-                CRISTIANI
-                INVESTIGATIONS
-                THAT COUNTRY
-                DEATH
-                SALVADORAN LEFTIST LEADER HECTOR OQUELI COLINDRES
-                UNIDENTIFIED INDIVIDUALS
-                LA AURORA AIRPORT
-                PRESIDENT CEREZO
-                YESTERDAY
-                SPOKESMEN
-PERP ORG:       PRESIDENT CEREZO
-                OCCASION
-                MEETING
-                FARABUNDO
-                LIBERATION
-                FRONT
-                DELEGATION
-                SALVADORAN GOVERNMENT
-                THAT OCCASION PRESIDENT CEREZO
-                BOTH DELEGATIONS
-TARGET:         -
-VICTIM:         TEXT
-                DATE
-                ARMY
-                NO KNOWLEDGE
-                REPORT
-                GUATEMALAN GOVERNMENT
-                PRESIDENT
-                CRISTIANI
-                INVESTIGATIONS
-                THAT COUNTRY
-                DEATH
-                SALVADORAN LEFTIST LEADER HECTOR OQUELI COLINDRES
-                OQUELI
-                LEADER
-                NATIONAL REVOLUTIONARY MOVEMENT
-                MNR
-                FLORES
-                GUATEMALAN SOCIAL DEMOCRATIC LEADER
-                JANUARY
-                GUATEMALA CITY
-                LA AURORA AIRPORT
-                CARACAS
-
-ID:             TST1-MUC3-0019
-INCIDENT:       KIDNAPPING
-WEAPON:         -
-PERP INDIV:     ARENA
-                ALLIANCE
-                LEADER
-                INSTITUTION
-                FORCES
-                THAT
-                PROBLEM
-                END
-                BEGIN
-                JESUITS
-                CASE
-                SALVADORANS
-                PRESS AGENCIES
-                DECISION
-                SALVADORAN PRESIDENT
-                MILITARY MEN
-                MURDER
-                DIVISION
-                PARTY
-                THIS
-                PRESIDENT CRISTIANI
-                OTHER FORMER LEGISLATORS
-PERP ORG:       REPORT
-                MAURICIO FUNES
-                TEXT
-                ABSENCE
-                NATIONAL PRESS
-                ROBERTO
-                ARENA
-                ALLIANCE
-                LEADER
-                BEGIN
-                SOME
-                MEMBERS
-                HOPE
-                COUNTRY
-                I
-                REMENDOUS OFFENSIVE
-                END
-                ARENA LEADER
-                MAJ ROBERTO
-                AN ARENA DEPUTY
-TARGET:         -
-VICTIM:         REPORT
-                MAURICIO FUNES
-                TEXT
-                ABSENCE
-                NATIONAL PRESS
-                ROBERTO
-                BEGIN
-                SOME
-                MEMBERS
-                POLITICAL REASONS
-                TROOPS
-                END
-                AUTHORITIES
-                JESUITS
-                CASE
-                ARGUMENT
-                SUPPORT GROUPS
-                SALVADORANS
-                CIVILIANS
-                MILITARY MEN
-                MURDER
-                DIVISION
-                PARTY
-                LEAST
-                PRESIDENT CRISTIANI
-                THIS
-                REASON
-                PRIDE
-                FRIENDS
-                SALVADORAN GOVERNMENT
-                DIALOGUE
-                FMLN
-                I
-                RESULTS
-                THESE TALKS
-                COMPLIANCE
-                COMMITMENTS
-                MAJ ROBERTO
-                AN ARENA DEPUTY
-                THIS YEAR
-                TIME
-                ELECTIONS
-                OTHER FORMER LEGISLATORS
-
-ID:             TST1-MUC3-0062
-INCIDENT:       KIDNAPPING
-WEAPON:         ANY MORE DETAILS
-                CASTROITE ELN
-                ATTACKS
-                PROPOSAL
-                GOVERNMENT
-PERP INDIV:     NATIONAL LIBERATION
-                COMMUNIQUE SENT
-                ROLDAN BETANCUR
-                PEACE PLAN
-                GOVERNMENT
-                ATTACKS
-                MESSAGE
-                EL TIGRE
-                LETTER
-                FEW HOURS
-                PASTRANA BORRERO
-                NEW PEACE INITIATIVE
-                WEEK
-                BEHALF
-                PARDO RUEDA
-                PRESIDENTIAL ADVISER
-                OP
-                COMMANDER
-                PRELIMINARY AGREEMENT
-                BEGINNING
-                DIRECT DIALOGUE
-                GUERRILLA GROUPS
-                SPOKESMEN
-                POLITICAL PARTIES
-                CARLOS ANDRES
-PERP ORG:       TEXT
-                ARMY
-                ELN
-                GOVERNOR
-                NORTHWESTERN ANTIOQUIA DEPARTMENT
-                FEW HOURS
-                REPORTS
-                ARMED MOVEMENT
-                GUERRILLA GROUPS
-                COUNTRY
-                POLICE INSPECTOR
-                FRIDAY
-                THIS PURPOSE
-                ROLDAN BETANCUR
-                THAT TIME
-                GOVERNMENT
-                CARLOS PIZARRO LEON GOMEZ
-                DOCUMENT
-TARGET:         -
-VICTIM:         NATIONAL LIBERATION
-                COMMUNIQUE SENT
-                ROLDAN BETANCUR
-                PEACE PLAN
-                GOVERNMENT
-                ATTACKS
-                MESSAGE
-                EL TIGRE
-                ANY MORE DETAILS
-                CASTROITE ELN
-                PROPOSAL
-                LETTER
-                FEW HOURS
-                PASTRANA BORRERO
-                FORMER PRESIDENT
-                MEMBER
-                OPPOSITION SOCIAL CONSERVATIVE PARTY
-                PSC
-                PARTY
-                NEW PEACE INITIATIVE
-                WEEK
-                JANUARY
-                THAT TIME
-                BEHALF
-                PARDO RUEDA
-                PRESIDENTIAL ADVISER
-                PEACE
-                OP
-                COMMANDER
-                CARLOS PIZARRO LEON GOMEZ
-                PRELIMINARY AGREEMENT
-                BEGINNING
-                DIRECT DIALOGUE
-                GUERRILLA GROUPS
-                SPOKESMEN
-                POLITICAL PARTIES
-                PARLIAMENT
-                FARC
-                UNILATERAL TRUCE
-                CONVERSATIONS
-                THESE AGREEMENTS
-                COUNTRY
-                REBEL MOVEMENTS
-                TODAY
-                CARACAS
-                INAUGURATION
-                CARLOS ANDRES
-                PRESIDENT
-                MEETING
-                CHIEFS
-                PARTIES
-                PRESIDENTS JULIO
-                TURBAY
-
-ID:             TST1-MUC3-0068
-INCIDENT:       ATTACK
-WEAPON:         -
-PERP INDIV:     TEXT
-                BODIES
-                SPANISH JESUITS
-                UNIFORMED INDIVIDUALS
-                SPANISH GOVERNMENT
-                TODAY
-                SPANISH PRIME MINISTER
-                FUTURE CONFIDENCE
-                ALFREDO CRISTIANI
-                BEGIN
-                GONZALEZ
-                GREATEST POSSIBLE EFFORT
-                CITIZENS
-                SALVADORAN CITIZENSHIP
-                SOME
-                THIS MURDER
-                END
-                SPANISH DIPLOMATIC DELEGATION
-                UNDERSECRETARY
-PERP ORG:       END
-                SPANISH DIPLOMATIC DELEGATION
-                BURIAL
-                JESUITS
-TARGET:         GOVERNMENT
-                RESPONSE
-                THIS REQUEST
-                AN IMMEDIATE INVESTIGATION
-                MURDERS
-                SOME PEOPLE
-                THIS APPALLING ATTACK
-VICTIM:         TEXT
-                BODIES
-                SPANISH JESUITS
-                SAN SALVADOR TODAY
-                EXPLANATIONS
-                TODAY
-                SPANISH PRIME MINISTER
-                FUTURE CONFIDENCE
-                GOVERNMENT
-                RESPONSE
-                THIS REQUEST
-                AN IMMEDIATE INVESTIGATION
-                BEGIN
-                GONZALEZ
-                GREATEST POSSIBLE EFFORT
-                MURDERS
-                SOME PEOPLE
-                TERMS
-                CITIZENS
-                SOME
-                THIS APPALLING ATTACK
-                THIS MURDER
-                CONFIDENCE
-                REGARD
-                END
-                SPANISH DIPLOMATIC DELEGATION
-                FOREIGN AFFAIRS
+                SALVADORAN ARMY TODAY
+                CITIES
                 EL SALVADOR
+                MILITARY SOURCES
+                ARTILLERY FIRE
+PERP ORG:       MILITARY SOURCES
+                WEEK
+                GUERRILLAS
+                CANTON
+                ARMED FORCES PRESS COMMITTEE
+TARGET:         SURVEILLANCE
+                MOBILIZATIONS
+                CAPITAL CITY
+                ENTRANCES
+                EXITS
+                NIGHT
+                STORES
+VICTIM:         USULUTAN
+                SANTA ELENA
+                ARTILLERY FIRE
+                DECEMBER
+                EL NISPERAL
+                SANTA
+                CASUALTIES
+                NORTHERN SAN SALVADOR
+                OTHER ACTIONS
+                VARIOUS PARTS
 
-ID:             TST1-MUC3-0082
-INCIDENT:       KIDNAPPING
+ID:             DEV-MUC3-0012
+INCIDENT:       ATTACK
 WEAPON:         -
 PERP INDIV:     -
-PERP ORG:       -
-TARGET:         PLACE
-                VICINITY
-                AN EXPLOSIVE DEVICE
-                FMLN
-                ANOTHER ACTION
-                INSURGENTS
-                CLASH
-                BRIGADE SOLDIERS
-                CUSCATLAN DEPARTMENT
-VICTIM:         MORAZAN DEPARTMENT
-                PERQUIN
-                TREASURY POLICE OFFICERS
-                NIGHT
-                COMMANDOS
-                SOYAPANGO
-                INCIDENT
-                ANOTHER ACTION
-                INSURGENTS
-                SAN PEDRO PERULAPAN JURISDICTION
+PERP ORG:       THIS MORNING
+                GROUP
+TARGET:         -
+VICTIM:         THIS MORNING
+                GROUP
+                SUBVERSIVES
+                AN ARMED TERRORIST ATTACK
+                FORMER DEFENSE MINISTER DIVISON GENERAL ENRIQUE LOPEZ ALBUJAR
+                AUTHORITIES
+                APPROPRIATE OPERATIONS
+                CRIMINALS
 
-ID:             TST1-MUC3-0090
+ID:             DEV-MUC3-0014
 INCIDENT:       ARSON
-WEAPON:         POWER TOWER
-                NORTHWESTERN PART
-                GMT
-PERP INDIV:     FRIDAY
-                CIVILIAN GOVERNMENT OFFICIALS
-                TRANSPORTATION
-                TALKS
-PERP ORG:       SOURCES
-                BOMB
-                URBAN GUERRILLA COMMANDOS
-                THAT DECISION
-TARGET:         TEXT
-                BOMB
-                NO CASUALTIES
-                SOURCES
-                FRIDAY
-                CIVILIAN GOVERNMENT OFFICIALS
-VICTIM:         SAN SALVADOR
-                MEANS
-                TRANSPORTATION
-                TALKS
+WEAPON:         -
+PERP INDIV:     TEXT
+                GOVERNMENT SPOKESMAN
+                INVESTIGATIONS
+                BRIEF STATEMENT
+                PRESS
+                SANDOVAL
+                SALVADORAN PRESIDENT ALFREDO CRISTIANI
+                PERIOD
+                ANNOUNCE
+                NAMES
+                INDIVIDUALS
+                SUNDAY
+                PEOPLE
+                MURDER
+                NO TORTURE
+                MISTREATMENT
+                WORDS
+                MURDERERS
+                VICTIMS
+                SPOKESMAN
+                MURDERED JESUITS
+                SHOTS
+                AUTOPSIES
+                SALVADORAN FORENSIC DOCTORS
+                COMMISSION
+                MEMBERS
+                ARMY
+                CIVILIANS
+                PLACE
+                EXPLOSIONS
+PERP ORG:       CRISTIANI
+                MEMBERS
+                ARMED FORCES
+                CRIME
+                GOVERNMENT
+                THOSE INDIVIDUALS
+                JUSTICE
+                REGARDLESS
+TARGET:         -
+VICTIM:         SALVADORAN PRESIDENT ALFREDO CRISTIANI
+                SAN SALVADOR
+                SUNDAY
+                SANDOVAL
+                GROUPS
+                CLERGYMEN
+                ANOTHER
+                MAIDS
+                RESULTS
+                CRIME COMMISSION
+                CHARGE
+                CASE
+                WORDS
+                SPOKESMAN
+                MURDERED JESUITS
+                AUTOPSIES
+                MURDER
+                BLASTS
+                SHOTS
+                VARIOUS HEADQUARTERS
+                VARIOUS CALIBER
+                SOVIET
 
-ID:             TST1-MUC3-0093
+ID:             DEV-MUC3-0023
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     PLURALIST GOVERNMENT
-                REPRESENTATIVES
-                PATRIOTIC GROUPS
-                NATION
-                SALVADORANS
-                NIGHT
-                BLOOD
-                IGNACIO ELLACURIA
-                JESUITS
-                MONSIGNOR
-                ARNULFO
-                ROMERO
-                NUNS
-                PRIESTS
-                WORDS INDISTINCT
-                SEMINARIANS
-                YOUTHS
-PERP ORG:       VICTORY
-                IMPERIALISM
-                NIGHT
+PERP INDIV:     FORMER DEFENSE MINISTER ENRIQUE LOPEZ ALBUJAR
+                DRAGNET OPERATION
                 PEOPLE
-                CAPITAL
-                BLOOD
-                JESUITS
-                ARNULFO
-                ROMERO
-                NUNS
-                PRIESTS
-                WORDS INDISTINCT
-                SEMINARIANS
-                YOUTHS
+                CHARACTERISTICS
+                WITNESSES
+PERP ORG:       TEXT
+                MRTA
+                TUPAC AMARU REVOLUTIONARY MOVEMENT
+                TODAY
+                LEAFLETS
+                RESPONSIBILITY
+                MURDER
+                DRAGNET OPERATION
+                PEOPLE
+                CHARACTERISTICS
+                OPERATION
+                SPECIALIZED UNITS
+                REPORTER
+                PATH
 TARGET:         -
-VICTIM:         PEOPLE
-                SAN SALVADOR
-                STRUGGLE
-                INFORMATION
-                GOVERNMENT
-                EL SALVADOR
-                IMPERIALISM
-                CAPITAL
-                BLOOD
-                IGNACIO ELLACURIA
-                JESUITS
-                MONSIGNOR
-                ARNULFO
-                ROMERO
-                NUNS
-                PRIESTS
-                WORDS INDISTINCT
-                SEMINARIANS
-                YOUTHS
-                FREEDOM
-                EXPRESSION
+VICTIM:         TEXT
+                MRTA
+                TUPAC AMARU REVOLUTIONARY MOVEMENT
+                TODAY
+                LEAFLETS
+                RESPONSIBILITY
+                MURDER
+                FORMER DEFENSE MINISTER ENRIQUE LOPEZ ALBUJAR
+                XISTENCE
+                MURDER CASE
+                DETAINEES
+                DRAGNET OPERATION
+                PEOPLE
+                CHARACTERISTICS
+                REPORTER
+                DIAZ SALVADOR
+                THESE OPERATIONS
+                COLD BLOOD
+                POLICE
+                IDENTIKITS
+                MURDERERS
+                SOME IDENTIKITS
+                SPECIALIZED UNITS
+                CHNICAL POLICE
+                THESE IDENTIKITS
+
+ID:             DEV-MUC3-0025
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     DISAPPEARANCE
+                KIDNAPPING
+                MNR ASSISTANT SECRETARY GENERAL HECTOR OQUELI COLINDRES
+                JANUARY
+                GUATEMALA
+                MEN
+                AIRPORT
+                BOARD
+                FLIGHT
+                HECTOR OQUELI
+PERP ORG:       JANUARY
+                SOCIALIST INTERNATIONAL DELEGATION
+                THAT COUNTRY
+                NICARAGUA
+                REPORTS
+                OQUELI
+                COMPANION GILDA FLORES
+                MEMBER
+                SOCIAL DEMOCRATIC PARTY
+TARGET:         -
+VICTIM:         COMMUNIQUE
+                MOVEMENT
+                TEXT
+                MNR
+                DISAPPEARANCE
+                KIDNAPPING
+                MNR ASSISTANT SECRETARY GENERAL HECTOR OQUELI COLINDRES
+                JANUARY
+                ECUADOR
+                CONVENTION
+                SOCIALIST INTERNATIONAL COMMITTEE
+                OQUELI
+                SECRETARY
+                REPORTS
+                COMPANION GILDA FLORES
+                MEMBER
+                SOCIAL DEMOCRATIC PARTY
+                GUATEMALA
+                MEN
+                AIRPORT
+                BOARD
+                FLIGHT
+                INTERNATIONAL COMMUNITY
+                DEMOCRATIC GOVERNMENTS
+                WORLD
+                IMMEDIATE RELEASE
+                HECTOR OQUELI
+                COMPANION
+                TOTAL CLARIFICATION
+                THIS ATTACK

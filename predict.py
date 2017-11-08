@@ -61,11 +61,11 @@ def main(argv):
 
 	
 	
-	files = processFilesFinal('sample-textfile.txt','')
-	printFiles2(files)
+	files = processFilesFinal(argv[1] + "-textfile.txt",'')
+	#printFiles2(files)
 
-	#predictions = predict(files, patterns, triggers, words,1)
-	predictions = predict(t1Files, patterns, triggers, words,0)
+	predictions = predict(files, patterns, triggers, words,1)
+	#predictions = predict(t1Files, patterns, triggers, words,0)
 
 	writePred(predictions)
 
@@ -371,9 +371,13 @@ def readAndParseFileFinal(filein, filean):
 	good = ''
 	for word in words:
 		if (word.startswith("DEV-MUC") or word.startswith("TST1-MUC") or word.startswith("TST2-MUC")) and len(good) > 1:
-			rawText.append([good[good.index("--"):],word])
+			rawText.append([good[good.index("--"):],filter(None,good.split(" "))[0]])
+			#print(word)
+
 			good = ''
 		good += ' ' + word
+	#print(filter(None,good.split(" "))[0])
+	rawText.append([good[good.index("--"):],filter(None,good.split(" "))[0]])
 	#print(rawText)
 
 	for f in rawText:
