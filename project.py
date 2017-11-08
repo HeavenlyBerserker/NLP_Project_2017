@@ -37,8 +37,8 @@ from spacy.language import EntityRecognizer
 
 
 def main(argv):
-	print(wn.synsets("jump")[0].pos() == "v")
-	print(nltk.pos_tag(["kill"]))
+	#print(wn.synsets("jump")[0].pos() == "v")
+	#print(nltk.pos_tag(["kill"]))
 
 	#[print(sent.root) for sent in en_doc.sents]
 	#print(WordNetLemmatizer().lemmatize('being','v'))
@@ -63,16 +63,18 @@ def main(argv):
 
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
-
+	print("Loading 20%")
 
 	patterns, trigs, words = paternize(files)
 
+	print("Loading 80%")
 
 	writePats(patterns, "output/patterns.txt")
 	writeTrigs(trigs, "output/triggers.txt")
 	writeWords(words, "output/words.txt")
 	#printFiles(t1Files)
 
+	print("Loading 100%")
 
 	print(argv)
 
@@ -534,7 +536,7 @@ def processFiles(dirtxt, dirans, startswith):
 #Function breaks down files into an array of sentences contained in files[i][1][1]
 #Also includes entities in files[i][1][2]
 def extractSentences(files):
-	nlp = spacy.load('en')
+	#nlp = spacy.load('en')
 	for i in range(len(files)):
 		#print("Processing " + str(i) +"/" + str(len(files)) + " files")
 		file = files[i][1][0]
@@ -547,6 +549,7 @@ def extractSentences(files):
 			sentences[j] = re.sub('\n', ' ', sentences[j])
 			#tokens = nltk.word_tokenize(sentences[j])
 			#tagged = nltk.pos_tag(tokens)
+			'''
 			doc=nlp(unicode(sentences[j].lower()))
 			
 			chunks = []
@@ -557,6 +560,7 @@ def extractSentences(files):
 				chunk.append(unicodedata.normalize('NFKD', np.root.dep_).encode('ascii','ignore'))
 				chunk.append(unicodedata.normalize('NFKD', np.root.head.text.upper()).encode('ascii','ignore'))
 				chunks.append(chunk)
+			'''
 
 
 			##################Test lab##########################
