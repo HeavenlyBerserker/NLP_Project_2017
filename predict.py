@@ -18,7 +18,7 @@ import os
 #NLP tools
 import nltk
 import spacy
-from spacy.en import English
+from spacy.lang.en import English
 from nltk import Tree
 import en_core_web_sm
 import unicodedata
