@@ -18,6 +18,8 @@ Instructions so far:
 	
 	./infoextract.sh sample 
 
+		
+	
 2. [Optional] To start learning process. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
 	
 	python project.py
@@ -30,10 +32,13 @@ spacy
 b ######################################################
 Time Estimate:
 	For file prediction
-		< 1s per file
+		<1s per file
 	
 	For training:
-		< 20s total
+		<45s total
+		
+	Total for samples:
+		~120s
 
 
 c ######################################################
@@ -44,7 +49,11 @@ Hong Xu: Was responsible for writing the code to parse the files into usable tex
 Zhang Jie: 
 	
 d ######################################################
+Progress, problems and limitations:
 
+	We have built a system similar to autoslog, however, we have struggled to find a way to classify words into classes (location, person, inanimate object, untangible). Without this, our precission has suffered severely.
+	
+	At the moment, our recall hovers between 35% and 45%, whereas our precision is low at 3% to 5%. Due to the inconsistency between the two scores, we can only achieve f-measures between 7% and 10%. In future builds, we aim to bring up the precision so it matches the recall in order to bring up our score. We have deviced various methods to classify our responses, from figuring out their class (location, person, inanimate object, untangible) to deeply examining the origins of every chosen word. Furthermore, we also hope to bring up the recall by trimming and further engineering our outputs.
 
 
 Change log:
