@@ -342,6 +342,8 @@ def findTriggers(sents, ans, ans2, raw, vps):
 	star = []
 	svic = []
 
+	allWeaponsDic = {}
+
 	for i in range(len(sents)):
 		if ans2[i][1][0] == "INCIDENT":
 			sinc.append([raw[i], ans2[i][1][1][0]])
@@ -353,6 +355,11 @@ def findTriggers(sents, ans, ans2, raw, vps):
 				for answer in an:
 					if answer[2] == "WEAPON":
 						swe.append(sent)
+						#print(answer)
+						if answer[0] not in allWeaponsDic:
+							allWeaponsDic[answer[0]] = 1
+						else:
+							allWeaponsDic[answer[0]] += 1
 					elif answer[2] == "PERP INDIV":
 						sind.append(sent)
 					elif answer[2] == "PERP ORG":
@@ -361,6 +368,16 @@ def findTriggers(sents, ans, ans2, raw, vps):
 						star.append(sent)
 					elif answer[2] == "VICTIM":
 						svic.append(sent)
+
+	allWeapons = []
+	for key in allWeaponsDic:
+		allWeapons.append([key, allWeaponsDic[key]])
+
+	allWeapons = sorted(allWeapons, key=lambda x: x[1], reverse=True)	
+
+	saveWeaps(allWeapons)
+
+	#printList(allWeapons,0)
 
 	stops = ["ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN", "TEXT"]
 	file = open("developset/stopwords.txt", 'r')
@@ -372,6 +389,7 @@ def findTriggers(sents, ans, ans2, raw, vps):
 
 	#printList(sinc, 2)
 	incident = incidentDet(sinc, stops, sents,"INCIDENT", vps)
+	#print(swe)
 	weapon = trigsCat(swe, stops, sents,"WEAPON", vps)
 	indiv= trigsCat(sind, stops, sents,"PERP INDIV", vps)
 	org = trigsCat(sorg,stops, sents,"PERP ORG", vps)
@@ -384,6 +402,11 @@ def findTriggers(sents, ans, ans2, raw, vps):
 	#print(allTrigs)
 
 	return allTrigs, incident
+
+def saveWeaps(weapons):
+	file = open("output/weapons.txt", "w")
+	for w in weapons:
+		file.write(w[0] + "/" + str(w[1]) + "\n")
 
 def tokNtag(pos, ind):
 	token=[]

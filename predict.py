@@ -77,6 +77,7 @@ def predict(files, patterns, triggers, words, test):
 	sentences = []
 	raw = []
 
+
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
 		if not test:
@@ -106,6 +107,8 @@ def predict(files, patterns, triggers, words, test):
 	count = 0
 	right = 0
 	problems = {}
+	weapons = getWeaps()
+	printList(weapons, 0)
 	for i in range(len(tags)):
 		print("Working... " + str(float(i)/float(len(tags))) + "%")
 		count += 1
@@ -130,6 +133,10 @@ def predict(files, patterns, triggers, words, test):
 				'''if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
 					print(raw[i])'''
 
+		for weapon in weapons:
+			if weapon[0] in raw[i] and weapon[1] > 0:
+				predict.append(['WEAPON', weapon[0]])
+
 		for j in range(len(tags[i])):
 			sentence = tags[i][j]
 			sent = sentences[i][j]
@@ -142,7 +149,7 @@ def predict(files, patterns, triggers, words, test):
 				#print(entry)
 				for p in patterns:
 					for trig in trigs:
-						if p[1] == entry[2] and p[0] == trig and p[2] == trigs[trig]:
+						if p[2] != "WEAPON" and p[1] == entry[2] and p[0] == trig and p[2] == trigs[trig]:
 							#predict.append([sentences[i][tags[i].index(sentence)],p[2], entry[0], entry, p])
 							if [p[2], entry[0]] not in predict and len(entry[0]) > 0:
 								predict.append([p[2], entry[0]])
@@ -177,6 +184,15 @@ def predict(files, patterns, triggers, words, test):
 		#print(out)
 
 	return predictions
+
+def getWeaps():
+	file = open("output/weapons.txt", "r")
+	weaps = []
+	for line in file:
+		if len(line) > 0:
+			sp = line.rstrip("\n").split("/")
+			weaps.append([sp[0], int(sp[1])])
+	return weaps
 
 #Write predict file
 def writePred(predictions):

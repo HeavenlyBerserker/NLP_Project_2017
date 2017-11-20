@@ -1,7 +1,8 @@
 
 ID:             DEV-MUC3-0006
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                ARTILLERY
 PERP INDIV:     TEXT
                 SALVADORAN ARMY TODAY
                 CITIES
@@ -49,7 +50,9 @@ VICTIM:         THIS MORNING
 
 ID:             DEV-MUC3-0014
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         GRENADE
+                GRENADES
+                MACHINE-GUN
 PERP INDIV:     TEXT
                 GOVERNMENT SPOKESMAN
                 INVESTIGATIONS
@@ -275,11 +278,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0042
 INCIDENT:       BOMBING
-WEAPON:         STICKS
-                EMBASSY FACILITIES
-                MIRAFLORES DISTRICT
-                DAMAGE
-                NO CASUALTIES
+WEAPON:         DYNAMITE
+                DYNAMITE STICKS
 PERP INDIV:     TEXT
                 TEN TERRORISTS
                 FIRST POLICE REPORTS
@@ -418,7 +418,9 @@ VICTIM:         INTERVIEW
 
 ID:             DEV-MUC3-0059
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         GRENADE
+                GRENADES
+                BULLET
 PERP INDIV:     JUNIN DEPARTMENT
                 LIMA
 PERP ORG:       -
@@ -506,13 +508,12 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0075
 INCIDENT:       BOMBING
-WEAPON:         FUSE
-                DAWN
-                ONDUTEL
-                HONDURAN TELECOMMUNICATIONS
-                OFFICE
-                NORTH
-                THIS CAPITAL
+WEAPON:         BOMB
+                DYNAMITE
+                BULLET
+                DYNAMITE AND A FUSE
+                BOMB BLAST
+                BULLETS
 PERP INDIV:     SAN PEDRO SULA
                 VIOLENCE
 PERP ORG:       FPM
@@ -567,7 +568,8 @@ VICTIM:         DYNAMITE
 
 ID:             DEV-MUC3-0078
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     -
 PERP ORG:       FMLN GUERRILLAS
 TARGET:         AN UNIDENTIFIED OFFICE
@@ -676,8 +678,9 @@ VICTIM:         REPORT
 
 ID:             DEV-MUC3-0093
 INCIDENT:       ATTACK
-WEAPON:         BATTALION OFFICERS
-                SOLDIERS
+WEAPON:         TRUCK
+                SUBMACHINEGUN
+                MACHINEGUN
 PERP INDIV:     COLOMBIA
                 ARMY LIEUTENANT
                 SOLDIERS
@@ -775,7 +778,8 @@ VICTIM:         WEEKEND
 
 ID:             DEV-MUC3-0100
 INCIDENT:       BOMBING
-WEAPON:         DYNAMITE CHARGE
+WEAPON:         DYNAMITE
+                DYNAMITE CHARGE
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         -
@@ -787,15 +791,8 @@ VICTIM:         DYNAMITE CHARGE
 
 ID:             DEV-MUC3-0106
 INCIDENT:       BOMBING
-WEAPON:         DIALOGUE PROCESS
-                GOVERNMENT
-                OCTOBER DYNAMITE ATTACK
-                UNITED NATIONS
-                GUARANTEES
-                OPPOSITION ORGANIZATIONS
-                DYNAMITE ATTACK
-                PRESIDENT
-                CRISTIANI
+WEAPON:         BOMB
+                DYNAMITE
 PERP INDIV:     SALVADORAN GUERRILLAS
                 OAS
                 CATHOLIC CHURCH
@@ -963,7 +960,7 @@ VICTIM:         SAN FRANCISCO JAVIER
 
 ID:             DEV-MUC3-0160
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         DOWNTOWN SAN SALVADOR
@@ -1063,10 +1060,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0198
 INCIDENT:       BOMBING
-WEAPON:         GUERRILLAS TODAY
-                DYNAMITE ATTACK
-                EMBASSY WAREHOUSE
-                GUERRILLAS
+WEAPON:         DYNAMITE
 PERP INDIV:     TEXT
                 AN ATTACK OFFICIAL SOURCES
                 SOURCES REPORT TODAY
@@ -1235,7 +1229,8 @@ VICTIM:         EXCERPTS
 
 ID:             DEV-MUC3-0204
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
 PERP INDIV:     COLONEL
                 STATION CORRESPONDENT SORTO
                 TELEPHONE
@@ -1301,7 +1296,7 @@ VICTIM:         INTERVIEW
 
 ID:             DEV-MUC3-0220
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         BICYCLE
@@ -1483,7 +1478,8 @@ VICTIM:         SALVADORAN PRESIDENT ALFREDO
 
 ID:             DEV-MUC3-0258
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                BULLETS
 PERP INDIV:     TODAY
                 SHOTS
                 VEHICLE
@@ -1578,9 +1574,9 @@ VICTIM:         INDIVIDUAL
 
 ID:             DEV-MUC3-0268
 INCIDENT:       ATTACK
-WEAPON:         POLICE
-                ARMS
-                STICKS
+WEAPON:         DYNAMITE
+                MACHINEGUNS
+                MACHINEGUN
 PERP INDIV:     HUGO ZALAZAR
                 SINGLE TRADE UNION CONFEDERATION
                 BOLIVIAN PEASANT WORKERS
@@ -1724,14 +1720,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0278
 INCIDENT:       ARSON
-WEAPON:         TEXT
-                REBELS
-                COUNTRY
-                OIL PIPELINE
-                VEHICLES
-                MIDDLE
-                IGHWAY
-                DRIVERS
+WEAPON:         DYNAMITE
+                TRUCK
 PERP INDIV:     GUERRILLAS
                 NATIONAL LIBERATION
 PERP ORG:       TEXT
@@ -1798,10 +1788,7 @@ VICTIM:         FORCES
 
 ID:             DEV-MUC3-0286
 INCIDENT:       BOMBING
-WEAPON:         BUS
-                STORE
-                BOMB
-                AN EMPTY BUS
+WEAPON:         BOMB
 PERP INDIV:     CALLAO
                 COOPERATION
                 MAOIST PERSUASION
@@ -1896,9 +1883,8 @@ VICTIM:         REPORTS
 
 ID:             DEV-MUC3-0293
 INCIDENT:       BOMBING
-WEAPON:         CHARGE
-                BUS
-                FISHERMEN
+WEAPON:         DYNAMITE
+                CHARGE OF DYNAMITE
 PERP INDIV:     RRORISTS
                 DYNAMITE
 PERP ORG:       -
@@ -2024,7 +2010,9 @@ VICTIM:         EL SALVADOR CAMPUS
 
 ID:             DEV-MUC3-0302
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                TRUCK
+                BULLETS
 PERP INDIV:     SHOP
                 TIMES
                 BULLETS
@@ -2038,7 +2026,9 @@ VICTIM:         REPORTS
 
 ID:             DEV-MUC3-0310
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
+                FOUR BOMBS
 PERP INDIV:     COMMUNIQUE
                 SALVADORAN
                 TEXT
@@ -2296,7 +2286,7 @@ VICTIM:         CORDOBA DEPARTMENT
 
 ID:             DEV-MUC3-0334
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         -
@@ -2329,7 +2319,8 @@ VICTIM:         EMERGENCY
 
 ID:             DEV-MUC3-0338
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     REPORT
                 ROSSIE CASTILLO
                 TEXT
@@ -2572,7 +2563,7 @@ VICTIM:         SPEECH
 
 ID:             DEV-MUC3-0352
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUN
 PERP INDIV:     HOURS
                 AN ATTACK
 PERP ORG:       -
@@ -2592,7 +2583,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0355
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                CAR BOMB
 PERP INDIV:     TEXT
                 MIGUEL MAZA
                 CHIEF
@@ -2928,7 +2920,7 @@ VICTIM:         REPORT
 
 ID:             DEV-MUC3-0374
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     LIMITATIONS
                 RAGE
 PERP ORG:       -
@@ -2982,8 +2974,7 @@ VICTIM:         COLOMBIAN PRESIDENTIAL HOPEFUL LUIS CARLOS GALAN
 
 ID:             DEV-MUC3-0380
 INCIDENT:       ATTACK
-WEAPON:         MILITARY DETACHMENT
-                CABANAS DEPARTMENT
+WEAPON:         -
 PERP INDIV:     CLASHES
                 ARMY TROOPS
                 GUERRILLAS
@@ -3249,7 +3240,7 @@ VICTIM:         EUROPEAN POLITICAL COOPERATION
 
 ID:             DEV-MUC3-0399
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         EXPLOSIVES
 PERP INDIV:     ANTIOQUIA
                 ALERT
 PERP ORG:       MEANWHILE
@@ -3302,7 +3293,9 @@ VICTIM:         CHARGE
 
 ID:             DEV-MUC3-0407
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                ROCKET
+                BOMB SET IN AN ICE CREAM CART
 PERP INDIV:     -
 PERP ORG:       TEXT
                 ANOTHER ATTACK
@@ -3332,7 +3325,8 @@ VICTIM:         MEDELLIN
 
 ID:             DEV-MUC3-0420
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         DYNAMITE
+                DYNAMITE CHARGE
 PERP INDIV:     SECURITY
 PERP ORG:       -
 TARGET:         -
@@ -3356,7 +3350,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0427
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     DEFENSE
                 SAN SALVADOR
 PERP ORG:       TEXT
@@ -3396,7 +3390,7 @@ VICTIM:         DEFENSE
 
 ID:             DEV-MUC3-0434
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     FRAMEWORK
                 CURRENT STATE
                 SETS SENTENCES
@@ -3436,7 +3430,7 @@ VICTIM:         EDUARDO MARTINEZ ROMERO
 
 ID:             DEV-MUC3-0449
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     GOVERNMENTS
                 PEOPLES
                 WILLS
@@ -3458,7 +3452,11 @@ VICTIM:         BOGOTA TODAY
 
 ID:             DEV-MUC3-0475
 INCIDENT:       ATTACK
-WEAPON:         ARTILLERY
+WEAPON:         BOMB
+                HELICOPTER GUNSHIP
+                C-47 AIRCRAFT
+                ARTILLERY
+                HELICOPTER GUNSHIPS
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         RESULT
@@ -3622,11 +3620,9 @@ VICTIM:         I
 
 ID:             DEV-MUC3-0523
 INCIDENT:       BOMBING
-WEAPON:         HOTEL
-                PEOPLE
-                VIOLENCE
-                LITTLE
-                MONTH
+WEAPON:         BOMB
+                BOMBS
+                POWERFUL BOMB
 PERP INDIV:     INTELLIGENCE SERVICES
                 GONZALO RODRIGUEZ GACHA
                 MEJICANO
@@ -3715,7 +3711,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0525
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         EXPLOSIVES
 PERP INDIV:     TEXT
                 BARCO
                 SOME
@@ -3870,7 +3866,7 @@ VICTIM:         TODAY
 
 ID:             DEV-MUC3-0550
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         PERSONS
@@ -3885,7 +3881,7 @@ VICTIM:         BOMBINGS
 
 ID:             DEV-MUC3-0554
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     SEVERAL DECREES TODAY
                 REPORTERS
                 ANY PROBLEMS
@@ -4009,11 +4005,9 @@ VICTIM:         DRUG TRAFFICKING ACTIVITIES
 
 ID:             DEV-MUC3-0563
 INCIDENT:       BOMBING
-WEAPON:         ARMED FORCES PRESS COMMITTEE
-                COPREFA
-                NIGHT
-                OCTOBER
+WEAPON:         BOMB
                 POWERFUL BOMB
+                TRUCK
 PERP INDIV:     -
 PERP ORG:       GUERILLAS
                 SOLDIERS
@@ -4042,7 +4036,8 @@ VICTIM:         CLASHES
 
 ID:             DEV-MUC3-0568
 INCIDENT:       BOMBING
-WEAPON:         AMBASSADOR JULIAN LICASTRO
+WEAPON:         BOMB
+                DYNAMITE
 PERP INDIV:     EFFORTS
                 DRUG TRAFFICKING
                 TERRORIST
@@ -4163,7 +4158,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0577
 INCIDENT:       KIDNAPPING
-WEAPON:         -
+WEAPON:         BOMB
+                EXPLOSIVES
 PERP INDIV:     TELEVISION IMPRESARIO HECTOR DELGADO PARKER
                 POLAY
                 PERUVIAN POLICE
@@ -4498,10 +4494,7 @@ VICTIM:         NEGOTIATIONS
 
 ID:             DEV-MUC3-0586
 INCIDENT:       BOMBING
-WEAPON:         SQUARE EARLY
-                THIS MORNING
-                RRORIST
-                GRENADE
+WEAPON:         GRENADE
 PERP INDIV:     THIS INCLUDE REPRESENTATIVES
                 SENATORS
 PERP ORG:       -
@@ -4537,7 +4530,8 @@ VICTIM:         VIOLENCE
 
 ID:             DEV-MUC3-0592
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                CAR BOMB
 PERP INDIV:     OFFICIALS
                 NAME
 PERP ORG:       -
@@ -4546,8 +4540,10 @@ VICTIM:         BARRANQUILLA RESIDENTS
 
 ID:             DEV-MUC3-0601
 INCIDENT:       ATTACK
-WEAPON:         EXPLOSIVES
-                SUBVERSIVE ELEMENTS
+WEAPON:         ROCKET
+                EXPLOSIVES
+                MACHINEGUNS
+                MACHINEGUN
 PERP INDIV:     EXPLOSIVES
                 SUBVERSIVE ELEMENTS
 PERP ORG:       SECOND REPORT NOTES
@@ -4691,12 +4687,8 @@ VICTIM:         REPORT
 
 ID:             DEV-MUC3-0605
 INCIDENT:       BOMBING
-WEAPON:         CARBOMB
-                TONIGHT
-                RESIDENTIAL SECTOR
-                THIS COLOMBIAN PORT
-                PEOPLE
-                DAMAGE
+WEAPON:         BOMB
+                CARBOMB
 PERP INDIV:     AREA
                 POLICE
 PERP ORG:       -
@@ -4748,7 +4740,8 @@ VICTIM:         POLICEMEN
 
 ID:             DEV-MUC3-0618
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
 PERP INDIV:     SAN SALVADOR
 PERP ORG:       STAFF
                 MINUTES
@@ -4781,7 +4774,8 @@ VICTIM:         STAFF
 
 ID:             DEV-MUC3-0619
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                EXPLOSIVE DEVICE
 PERP INDIV:     REPORT
                 RENE HURTADO
                 TEXT
@@ -4822,12 +4816,8 @@ VICTIM:         BOMB
 ID:             DEV-MUC3-0620
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-                CAR
-                FENSATRAS
-                SALVADORAN WORKERS NATIONAL UNION FEDERATION
-                BUILDING
-                STRONG EXPLOSION
-                LICENSE PLATE NUMBER
+                CAR BOMB
+                TRUCK
 PERP INDIV:     REPORT
                 RAUL BELTRAN
                 TEXT
@@ -4863,7 +4853,8 @@ VICTIM:         PEOPLE
 
 ID:             DEV-MUC3-0624
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     EXCERPTS
                 MINISTRY SOURCES
                 TODAY
@@ -4916,17 +4907,7 @@ VICTIM:         MEMBER
 
 ID:             DEV-MUC3-0625
 INCIDENT:       BOMBING
-WEAPON:         PRESIDENT
-                DYNAMITE ATTACKS
-                UNION
-                HUMANITARIAN ORGANIZATION
-                PEOPLE
-                CONDOLENCES
-                VICTIMS
-                RELATIVES
-                GOVERNMENT
-                ARMY SECTORS
-                DIALOGUE
+WEAPON:         DYNAMITE
 PERP INDIV:     TEXT
 PERP ORG:       PRESIDENT
                 DYNAMITE ATTACKS
@@ -4980,16 +4961,9 @@ VICTIM:         MAYOR
 
 ID:             DEV-MUC3-0634
 INCIDENT:       BOMBING
-WEAPON:         DYNAMITE ATTACK
-                ADQUARTERS
-                SALVADORAN WORKERS NATIONAL UNION FEDERATION
-                PRESIDENCY
-                DEATH SQUADS
-                ATTACK
+WEAPON:         BOMB
+                DYNAMITE
                 POWERFUL BOMB
-                FENASTRAS HEADQUARTERS
-                PEOPLE
-                VELAZQUEZ
 PERP INDIV:     TEXT
                 NICARAGUAN GOVERNMENT TODAY
                 COMMUNIQUE
@@ -5038,21 +5012,7 @@ VICTIM:         COMMUNIQUE
 
 ID:             DEV-MUC3-0635
 INCIDENT:       BOMBING
-WEAPON:         LIBERATION FRONT
-                DIALOGUE
-                GOVERNMENT
-                DYNAMITE ATTACK
-                ADQUARTERS
-                LABOR UNION
-                OCTOBER
-                SALVADORAN WORKERS NATIONAL UNION FEDERATION
-                OTHER RELIGIOUS
-                MARCH
-                BODIES
-                WORKERS
-                FENASTRAS HEADQUARTERS
-                METERS
-                NATIONAL POLICE GARRISON
+WEAPON:         DYNAMITE
 PERP INDIV:     TEXT
                 GUERRILLAS
                 ANNOUNCEMENT TODAY
@@ -5660,7 +5620,7 @@ VICTIM:         WASHINGTON
 
 ID:             DEV-MUC3-0644
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     QUINCHIA
                 BOGOTA
                 RISARALDA
@@ -6011,12 +5971,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0667
 INCIDENT:       BOMBING
-WEAPON:         FRONT DOORS
-                POLITICAL PARTY HEADQUARTERS
-                BANKS
-                OTHERS
-                PESOS
-                PERSONS
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     INJURED PERSONS
                 SOCIAL SECURITY
                 JORGE HOSPITAL
@@ -6063,7 +6019,11 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0675
 INCIDENT:       ATTACK
-WEAPON:         CIUDAD MERLIOT
+WEAPON:         BOMB
+                EXPLOSIVE DEVICES
+                MACHINEGUNS
+                EXPLOSIVE DEVICE
+                MACHINEGUN
 PERP INDIV:     HOURS
                 LAUNCHING
                 GUERRILLA OFFENSIVE
@@ -6103,7 +6063,9 @@ VICTIM:         MACHINEGUNS
 
 ID:             DEV-MUC3-0677
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BULLET
+                MACHINEGUN
 PERP INDIV:     PEOPLE
                 INSTITUTIONS
                 DOZENS
@@ -6147,7 +6109,7 @@ VICTIM:         PEOPLE
 
 ID:             DEV-MUC3-0680
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     NOVEMBER
                 GMT
                 SALVADORAN GUERRILLAS
@@ -6195,7 +6157,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0686
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUNS
+                MACHINEGUN
 PERP INDIV:     ATTENTION
                 REPORTS
                 CAPITAL CONFIRM
@@ -6337,7 +6300,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0693
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     TEXT
                 SALVADORAN
                 BROTHERS
@@ -6429,7 +6392,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0697
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         GRENADE
+                GRENADES
 PERP INDIV:     REPORT
                 FMLN
                 FARABUNDO
@@ -6552,7 +6516,10 @@ VICTIM:         COMMUNIQUE
 
 ID:             DEV-MUC3-0708
 INCIDENT:       ATTACK
-WEAPON:         VICTIMS
+WEAPON:         BOMB
+                BOMBS
+                ROCKET
+                ROCKETS
 PERP INDIV:     TEXT
                 SALVADORAN WORKERS NATIONAL UNION FEDERATION
                 FENASTRAS
@@ -6613,7 +6580,7 @@ VICTIM:         VICTIMS
 
 ID:             DEV-MUC3-0711
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     TEXT
                 EYEWITNESSES
                 ARMY TROOPS
@@ -6654,7 +6621,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0718
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     FASCIST NATURE
                 REGIME
                 LA TANDONA
@@ -6722,7 +6689,8 @@ VICTIM:         COMMUNIQUE
 
 ID:             DEV-MUC3-0759
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                MACHINEGUN
 PERP INDIV:     SALVADORAN RED CROSS
                 AMBULANCES
                 FIGHTING
@@ -6739,7 +6707,7 @@ VICTIM:         EL SALVADOR
 
 ID:             DEV-MUC3-0760
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     TEXT
                 COMMUNIQUE
                 PACAS CASTRO
@@ -6815,7 +6783,9 @@ VICTIM:         REPUGNANT CRIME
 
 ID:             DEV-MUC3-0762
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BULLET
+                BULLETS
 PERP INDIV:     COMMUNIQUE
                 COMMAND
                 FARABUNDO
@@ -6948,7 +6918,10 @@ VICTIM:         COMMUNIQUE
 
 ID:             DEV-MUC3-0766
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                AK-47S
+                M-16S
+                BULLETS
 PERP INDIV:     TEXT
                 QUESTION
                 POSSIBILITY
@@ -7006,7 +6979,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0769
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                BULLETS
 PERP INDIV:     ELLACURIA
                 DEATH
                 PRIESTS
@@ -7101,7 +7075,13 @@ VICTIM:         THOSE RESPONSIBLE
 
 ID:             DEV-MUC3-0771
 INCIDENT:       ATTACK
-WEAPON:         AMMUNITION
+WEAPON:         GRENADE
+                ROCKET
+                EXPLOSIVES
+                MORTAR
+                MACHINEGUNS
+                SUBMACHINEGUN
+                MACHINEGUN
 PERP INDIV:     REPORT
                 COLONEL RENE EMILIO PONCE
                 CHAIRMAN
@@ -7256,7 +7236,10 @@ VICTIM:         NO ONE
 
 ID:             DEV-MUC3-0777
 INCIDENT:       ATTACK
-WEAPON:         PRIESTS
+WEAPON:         BOMB
+                BOMBS
+                ROCKET
+                ROCKETS
 PERP INDIV:     FIRST TIME
                 RIUMPHALIST TONE
                 SALVADORAN ARMY
@@ -7369,7 +7352,10 @@ VICTIM:         AMBASSADOR WILLIAM WALKER
 
 ID:             DEV-MUC3-0779
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                MACHINEGUNS
+                MACHINEGUN
+                BULLETS
 PERP INDIV:     FMLN TERRORISTS
                 SALVADORAN GOVERNMENT
                 PEOPLE
@@ -7407,7 +7393,7 @@ VICTIM:         HEARD
 
 ID:             DEV-MUC3-0780
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     INTENTION
                 JESUIT PRIESTS
                 SALVADORAN SOCIETY
@@ -7479,7 +7465,7 @@ VICTIM:         REPORT
 
 ID:             DEV-MUC3-0781
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     VILLALOBOS
                 UNIDENTIFIED REPORTER
                 LEADERS
@@ -7523,7 +7509,7 @@ VICTIM:         VILLALOBOS
 
 ID:             DEV-MUC3-0782
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     TEXT
                 SALVADORAN OPPOSITION POLITICAL PARTIES
                 PEOPLE
@@ -7589,7 +7575,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0784
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     UNITY GENERAL COMMAND
                 TEXT
                 INTERFERENCE
@@ -7809,7 +7795,9 @@ VICTIM:         STATEMENT
 
 ID:             DEV-MUC3-0787
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                MACHINEGUNS
+                MACHINEGUN
 PERP INDIV:     CRISTIANI
                 EL SALVADOR
 PERP ORG:       REPORT
@@ -7854,7 +7842,7 @@ VICTIM:         REPORT
 
 ID:             DEV-MUC3-0788
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     CHURCH
                 OMELAND
                 PEOPLE
@@ -7945,7 +7933,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0794
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     INOCENCIO ARIAS
                 FOREIGN AFFAIRS
                 JESUITS
@@ -8002,7 +7990,10 @@ VICTIM:         EL SALVADOR
 
 ID:             DEV-MUC3-0798
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                MACHINEGUNS
+                ARTILLERY
+                MACHINEGUN
 PERP INDIV:     POSITIONS
                 REPORTS
                 ZACATECOLUCA
@@ -8133,7 +8124,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0804
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     TEXT
                 INOCENTE ARIAS
                 SPANISH
@@ -8209,14 +8200,9 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0805
 INCIDENT:       BOMBING
-WEAPON:         UNIDENTIFIED PERSONS
+WEAPON:         DYNAMITE
                 EXPLOSIVES
-                WALLS
-                DIPLOMATIC RESIDENCE
-                WORDS
-                LIBERATION FRONT
-                REFERENCE
-                POLITICAL VIOLENCE
+                PACKAGES OF DYNAMITE
 PERP INDIV:     TEXT
                 GROUP
                 UNIDENTIFIED PERSONS
@@ -8269,8 +8255,13 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0807
 INCIDENT:       ARSON
-WEAPON:         AMMUNITION
-                WEAPONS
+WEAPON:         GRENADE
+                EXPLOSIVES
+                MORTAR
+                MACHINEGUNS
+                TRUCK
+                SUBMACHINEGUN
+                MACHINEGUN
 PERP INDIV:     MILITARY DETACHMENTS
                 RESPONSIBILITY
                 NUMBER
@@ -8380,7 +8371,7 @@ VICTIM:         MORAZAN
 
 ID:             DEV-MUC3-0811
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     FARABUNDO MARTI NATIONAL LIBERATION FRONT
                 UNIDENTIFIED REPORTER
                 MR CRISTIANI
@@ -8449,7 +8440,7 @@ VICTIM:         FARABUNDO MARTI NATIONAL LIBERATION FRONT
 
 ID:             DEV-MUC3-0814
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     SALVADOR SAMAYOA
                 UNIDENTIFIED REPORTER
                 STATEMENTS
@@ -8575,7 +8566,7 @@ VICTIM:         SALVADOR SAMAYOA
 
 ID:             DEV-MUC3-0815
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     FMLN
                 UNIDENTIFIED REPORTER
                 SOLUTION
@@ -8783,7 +8774,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0826
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUNS
+                MACHINEGUN
 PERP INDIV:     REPORT
                 MURDERERS
                 JESUITS
@@ -8879,8 +8871,9 @@ VICTIM:         FUNERAL
 
 ID:             DEV-MUC3-0828
 INCIDENT:       ATTACK
-WEAPON:         TRANSLITERATED
-                BOMB STRIKES
+WEAPON:         BOMB
+                MISSILES AND, PROBABLY, NAPALM
+                MISSILES
 PERP INDIV:     INTERFERENCE
                 SALVADORAN CONFLICT
                 ARMY SUBUNITS
@@ -8905,7 +8898,7 @@ VICTIM:         EL SALVADOR
 
 ID:             DEV-MUC3-0832
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     AFP
                 EYEWITNESSES
 PERP ORG:       AFP
@@ -9016,7 +9009,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0848
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     -
 PERP ORG:       -
 TARGET:         -
@@ -9295,7 +9288,9 @@ VICTIM:         EASTERN EUROPE
 
 ID:             DEV-MUC3-0873
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                .22 CALIBER GUN
+                BULLETS
 PERP INDIV:     CORTES DEPARTMENT
                 THAT MR JUSTINIANO SAGASTUME RODRIGUEZ
                 REPRESENTATIVE
@@ -9318,7 +9313,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0877
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     DAYS
                 SALVADORAN ARMY
                 I
@@ -9531,10 +9526,8 @@ VICTIM:         OFFICIALS
 
 ID:             DEV-MUC3-0883
 INCIDENT:       BOMBING
-WEAPON:         PERSONNEL
-                BOMB
-                EXPANSION UNKNOWN
-                WINDOWS
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     POLITICAL COMMENTATOR GERMAN GAMONAL
                 ATTACK
 PERP ORG:       RADIO MINERIA
@@ -9571,7 +9564,8 @@ VICTIM:         POLITICAL COMMENTATOR GERMAN GAMONAL
 
 ID:             DEV-MUC3-0890
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                MACHINEGUN
 PERP INDIV:     CLASHES
                 SOURCE
                 SAN MIGUEL DEPARTMENT
@@ -9642,7 +9636,7 @@ VICTIM:         JUSTICE
 
 ID:             DEV-MUC3-0905
 INCIDENT:       KIDNAPPING
-WEAPON:         -
+WEAPON:         ARTILLERY
 PERP INDIV:     TEXT
                 SPORADIC SHOOTING
                 SAME TIME
@@ -9858,7 +9852,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0924
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     CONGRESS
                 MONSIGNOR ROMERO
 PERP ORG:       TEXT
@@ -9901,6 +9895,7 @@ VICTIM:         TEXT
 ID:             DEV-MUC3-0930
 INCIDENT:       BOMBING
 WEAPON:         EXPLOSIVES
+                TNT
 PERP INDIV:     TEXT
                 VIOLENT CLASHES
                 SALVADORAN GUERRILLA FORCES
@@ -9980,7 +9975,7 @@ VICTIM:         SAN SALVADOR
 
 ID:             DEV-MUC3-0933
 INCIDENT:       ATTACK
-WEAPON:         USULUTAN
+WEAPON:         BOMB
 PERP INDIV:     SALVADORANS
                 THIS AFTERNOON
 PERP ORG:       -
@@ -9998,7 +9993,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0938
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                CAR BOMB
 PERP INDIV:     TEXT
                 COLOMBIA
                 PRESIDENT CARLOS LEMOS
@@ -10075,7 +10071,8 @@ VICTIM:         AYLWIN
 
 ID:             DEV-MUC3-0943
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                HELICOPTER GUNSHIP
 PERP INDIV:     SAN SALVADOR
                 SOLDIERS
 PERP ORG:       FMLN ANTIAIRCRAFT UNITS
@@ -10114,12 +10111,9 @@ VICTIM:         SAN SALVADOR
 
 ID:             DEV-MUC3-0945
 INCIDENT:       BOMBING
-WEAPON:         TRUCK
+WEAPON:         BOMB
                 DYNAMITE
-                ADQUARTERS
-                DEPARTMENT
-                COLOMBIA
-                INVESTIGATIONS POLICE
+                TRUCK
 PERP INDIV:     BARCO
                 TERRORISTS
                 DYNAMITE
@@ -10200,7 +10194,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0948
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                CAR BOMB
 PERP INDIV:     SECURITY
                 DAS DIRECTOR
                 SPANISH TERRORIST
@@ -10264,7 +10259,8 @@ VICTIM:         ELECTRICITY
 
 ID:             DEV-MUC3-0955
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                BULLETS
 PERP INDIV:     TEXT
                 SALVADORAN GOVERNMENT TODAY
                 BULLETS
@@ -10300,7 +10296,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0957
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     INTERVENTION
                 URNG GENERAL COMMAND
                 FMLN
@@ -10434,7 +10430,7 @@ VICTIM:         EL SALVADOR
 
 ID:             DEV-MUC3-0958
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MORTAR
 PERP INDIV:     TERRORISTS
                 SOYAPANGO MUNCIPALITY
                 SAN MIGUEL
@@ -10665,7 +10661,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0977
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     TEXT
                 PRESIDENT DANIEL ORTEGA
                 BOMBS
@@ -10905,7 +10902,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0987
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     GOVERNMENT
                 FOREIGN TELEVISION CAMERAMEN
                 CHILEANS
@@ -11020,7 +11017,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-0998
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     REQUEST
                 MARIA JULIA HERNANDEZ
                 END
@@ -11329,7 +11326,7 @@ VICTIM:         BUSINESSMAN ABILIO DINIZ
 
 ID:             DEV-MUC3-1013
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUN
 PERP INDIV:     COLONEL
                 CHIEF
                 STAFF
@@ -11392,7 +11389,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1020
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         9-MM WEAPONS
 PERP INDIV:     TEXT
                 OFFICIAL SOURCES
                 SECRETARY
@@ -11433,7 +11430,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1024
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     PERUVIAN CITIZENS
                 PANAMANIANS
                 ALL
@@ -11462,13 +11460,9 @@ VICTIM:         PANAMA MARIO CASTRO ARENAS TODAY
 
 ID:             DEV-MUC3-1032
 INCIDENT:       BOMBING
-WEAPON:         BATHROOM
-                BOMB
-                KG
+WEAPON:         BOMB
                 EXPLOSIVES
-                AMMONIUM GELIGNITE
-                AMMONIUM
-                FUEL OIL
+                1 KG OF EXPLOSIVES
 PERP INDIV:     -
 PERP ORG:       POLICE
 TARGET:         BOMB
@@ -12744,7 +12738,8 @@ VICTIM:         VIEW
 
 ID:             DEV-MUC3-1064
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                MACHINEGUN
 PERP INDIV:     BOMBING
                 NIGHT
 PERP ORG:       BOMBING
@@ -12757,9 +12752,9 @@ VICTIM:         RETIRED COLONEL
 
 ID:             DEV-MUC3-1068
 INCIDENT:       BOMBING
-WEAPON:         REBEL GROUP
-                MANY OPERATING
-                COUNTRY
+WEAPON:         BOMB
+                DYNAMITE
+                POWERFUL BOMB
 PERP INDIV:     CRUDE
 PERP ORG:       COLOMBIAN
                 VENEZUELAN AUTHORITIES
@@ -12880,7 +12875,9 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1078
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                MORTAR
+                TNT
 PERP INDIV:     TEXT
                 NATIONAL POLICE
                 NOVEMBER
@@ -13235,7 +13232,11 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1100
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                ROCKET
+                HELICOPTER GUNSHIP
+                ROCKETS
+                HELICOPTER GUNSHIPS
 PERP INDIV:     COMMUNIQUE
                 FARABUNDO
                 SALVADORAN AIR FORCE
@@ -13275,7 +13276,9 @@ VICTIM:         COMMUNIQUE
 
 ID:             DEV-MUC3-1103
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                ROCKET
+                ROCKETS
 PERP INDIV:     TEXT
                 SALVADORAN GOVERNMENT
                 SEVERAL CHILDREN
@@ -13352,7 +13355,7 @@ VICTIM:         MEDELLIN TODAY
 
 ID:             DEV-MUC3-1106
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
 PERP INDIV:     CHILE
                 MEMBERS
 PERP ORG:       COMMUNIST PARTY
@@ -13384,9 +13387,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1107
 INCIDENT:       BOMBING
-WEAPON:         POWERFUL DYNAMITE CHARGE
-                POLICE PATROL
-                SEARCH MISSION
+WEAPON:         DYNAMITE
+                DYNAMITE CHARGE
 PERP INDIV:     GUERRILLAS
                 ARBOLETES
 PERP ORG:       TEXT
@@ -13413,22 +13415,11 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1118
 INCIDENT:       BOMBING
-WEAPON:         FORCES PRESS COMMITTEE
-                REPORTS TODAY
-                FMLN
-                FARABUNDO
-                LIBERATION FRONT
-                CELLS
-                STICKS
-                ESTABLISHMENTS
-                SALVADOR
-                BANK
-                HOTEL
-                CAR DEALERSHIP
-                STORE
-                DIFFERENT CALIBERS
-                ALUMINUM POWDER
-                MATERIAL
+WEAPON:         DYNAMITE
+                GRENADE
+                EXPLOSIVES
+                DYNAMITE STICKS
+                TNT
 PERP INDIV:     MILITARY DETACHMENT
                 COPREFA REPORTS
                 SALVADORAN AIR FORCE
@@ -13525,7 +13516,7 @@ VICTIM:         PRIEST FRANCISCO ANTONIO AMICO FERRARI
 
 ID:             DEV-MUC3-1134
 INCIDENT:       BOMBING
-WEAPON:         FACT
+WEAPON:         BOMB
                 BOMBS
 PERP INDIV:     CRIME
                 MATTER
@@ -14039,7 +14030,8 @@ VICTIM:         INFORMATION
 
 ID:             DEV-MUC3-1175
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                BULLETS
 PERP INDIV:     GOVERNMENT ENRIQUE CORREA
                 GROUP RESPONSIBLE
                 ATTACK
@@ -14209,7 +14201,10 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1181
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BULLET
+                MACHINEGUN
+                BULLETS
 PERP INDIV:     TEXT
                 GENERAL RAFAEL VILLAMARIONA
                 CHIEF
@@ -14525,19 +14520,9 @@ VICTIM:         PARTY
 
 ID:             DEV-MUC3-1201
 INCIDENT:       BOMBING
-WEAPON:         POLICEMEN
-                CIVILIAN
-                VEHICLE
-                EXPLOSIVES
-                APRIL
-                POLICE PRECINCT
-                SOUTHWESTERN OUTSKIRTS
-                SAN SALVADOR
-                OFFICIAL REPORT REVEALS
-                COMPANY
-                CHNICAL POLICE INSTRUCTION CENTER
-                AN AGENCY
-                NATIONAL POLICE
+WEAPON:         EXPLOSIVES
+                TRUCK
+                VEHICLE LOADED WITH EXPLOSIVES
 PERP INDIV:     EXPLOSIVES
                 SAN SALVADOR
                 POLICEMEN
@@ -14670,11 +14655,10 @@ VICTIM:         MEDELLIN
 
 ID:             DEV-MUC3-1207
 INCIDENT:       BOMBING
-WEAPON:         ARMED FORCES
+WEAPON:         BOMB
                 BOMBS
-                YESTERDAY
-                SOLDIERS
-                CIVILIAN
+                EXPLOSIVES
+                EIGHT BOMBS
 PERP INDIV:     NEWS CONFERENCE
                 COLONEL
                 CHAIRMAN
@@ -14719,7 +14703,9 @@ VICTIM:         COLONEL
 
 ID:             DEV-MUC3-1208
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
+                CAR BOMB
 PERP INDIV:     NEWS CONFERENCE
                 COLONEL
                 CHAIRMAN
@@ -14880,10 +14866,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1222
 INCIDENT:       ATTACK
-WEAPON:         MATERIALS
-                MILITARY MATERIAL
-                FMLN
-                PRESS COMMUNIQUE
+WEAPON:         EXPLOSIVES
+                TRUCK
 PERP INDIV:     TEXT
                 COLONEL INOCENTE MONTANO
                 DEPUTY SECURITY MINISTER
@@ -14975,7 +14959,8 @@ VICTIM:         HONDURAS
 
 ID:             DEV-MUC3-1229
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         ROCKET
+                TRUCK
 PERP INDIV:     TEXT
                 INVESTIGATIONS
                 COUNTRY
@@ -15155,7 +15140,10 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1233
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
+                SUBMACHINEGUN
+                MACHINEGUN
+                BULLETS
 PERP INDIV:     BODYGUARDS
                 GUNMAN
                 DEATH
@@ -15242,7 +15230,7 @@ VICTIM:         HEADQUARTERS
 
 ID:             DEV-MUC3-1235
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUN
 PERP INDIV:     SPOKESMAN
                 CNPS
                 PEOPLE
@@ -15348,7 +15336,7 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1240
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         MACHINEGUN
 PERP INDIV:     INTERVIEW
                 MODERATOR
                 GONZALEZ
@@ -15601,7 +15589,7 @@ VICTIM:         SPEECH
 
 ID:             DEV-MUC3-1246
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BULLET
 PERP INDIV:     OPINIONS
                 PLACE
                 BEST
@@ -16420,14 +16408,8 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1283
 INCIDENT:       BOMBING
-WEAPON:         HEARD
-                CAPITAL
-                NIGHT
-                STREETS
-                AN AUSTRALIAN INTERNATIONAL TRANSPORT FIRM
-                SANTA ROSA STREETS
-                THAT CORNER
-                FEW WEEKS
+WEAPON:         BOMB
+                BOMBS
 PERP INDIV:     INDIVIDUALS
                 GUARD
                 CENTRAL HOSPITAL
@@ -16534,7 +16516,9 @@ VICTIM:         TEXT
 
 ID:             DEV-MUC3-1292
 INCIDENT:       ATTACK
-WEAPON:         -
+WEAPON:         BOMB
+                BOMBS
+                TERRORIST BOMBS
 PERP INDIV:     FOURTH DAY TODAY
 PERP ORG:       -
 TARGET:         -
@@ -16609,7 +16593,7 @@ VICTIM:         SMALL PLANE
 
 ID:             DEV-MUC3-1296
 INCIDENT:       BOMBING
-WEAPON:         -
+WEAPON:         GRENADE
 PERP INDIV:     ALLEGED URBAN GUERRILLA COMMANDOS
                 THIS
                 OPTIMISM
