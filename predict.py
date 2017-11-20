@@ -18,7 +18,7 @@ import os
 #NLP tools
 import nltk
 import spacy
-from spacy.lang.en import English
+from spacy.en import English
 from nltk import Tree
 import en_core_web_sm
 import unicodedata
@@ -61,10 +61,10 @@ def main(argv):
 
 	
 	
-	files = processFilesFinal(argv[1] + "-textfile.txt",'')
+	files = processFilesFinal("sample-textfile.txt",'')
 	#printFiles2(files)
 
-	predictions = predict(files, patterns, triggers, words,1)
+	predictions = predict(t1Files, patterns, triggers, words,0)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
 	writePred(predictions)
@@ -131,14 +131,29 @@ def predict(files, patterns, triggers, words, test):
 	'''
 	count = 0
 	right = 0
+	problems = {}
 	for i in range(len(tags)):
 		count += 1
 		predict = []
 		inc = predInc(raw[i], words)
+		'''if "BOMB" in raw[i] or "BOMBING" in raw[i] or "EXPLOSIVE" in raw[i] or "EXPLOSION" in raw[i]:
+			inc = "BOMBING"
+		if "KIDNAP" in raw[i]:
+			inc = "KIDNAPPING"'''
+		inc, proWord = dumbGuess(raw[i])
+		
 		predict.append(['INCIDENT', inc])
 		if not test:
 			if inc == ans[i][1][1][0]:
 				right += 1
+			else:
+				if inc + " != " + ans[i][1][1][0] not in problems:
+					problems[inc + " != " + ans[i][1][1][0]] = 1
+				else:
+					problems[inc + " != " + ans[i][1][1][0]] += 1
+				print("Wrong: " + proWord + "--"+ str(i) +"-- "+ inc + " != " + ans[i][1][1][0])
+				if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
+					print(raw[i])
 
 		for j in range(len(tags[i])):
 			sentence = tags[i][j]
@@ -160,26 +175,69 @@ def predict(files, patterns, triggers, words, test):
 		predict = clean(predict)
 
 		predicts.append(predict)
-		print("############################\nPredictions:")
-		printList(predict, 0)
-		if not test:
-			print("----------------------------\nActual Answers:")
-			printList(ans[i], 0)
-		if not test:
-			print("---------------------\nAnswers included in predictors")
-			prediRightPred(predict, ans[i])
-			print("---------------------\nAnswers predictor got right")
-			prediRight(predict, ans[i])
-			print("---------------------")
-		print("############################\n\n\n")
+		if test == 3:
+			print("############################\nPredictions:")
+			printList(predict, 0)
+			if not test:
+				print("----------------------------\nActual Answers:")
+				printList(ans[i], 0)
+			if not test:
+				print("---------------------\nAnswers included in predictors")
+				prediRightPred(predict, ans[i])
+				print("---------------------\nAnswers predictor got right")
+				prediRight(predict, ans[i])
+				print("---------------------")
+			print("############################\n\n\n")
+	problematic = []
+	for key in problems:
+		problematic.append([key, problems[key]])
+
+	problematic = sorted(problematic, key=lambda x: x[1], reverse=True)
 	if not test:
 		print("Right = " + str(right) + "/" + str(count))
+		printList(problematic, 0)
 
 	predictions = textifyPreds(predicts, files)
 	
 		#print(out)
 
 	return predictions
+
+def dumbGuess(text):
+	inc = "ATTACK"
+	word = "        "
+	b = ["EXPLODED", "EXPLOSION", "CAR BOMB", "DYNAMITE", "BY A BOMB", "PLACED A BOMB", "DETONATED", "TNT"]
+	k = ["KIDNAPPED", "KIDNAPPING OF","TOOK HOSTAGE", "HOSTAGE"]
+	a = ["SET FIRE", "BURNING"]
+	atta = ["MACHINEGUN"]
+
+
+	for w in a:
+		if w in text:
+			inc = "ARSON"
+			word = w
+
+	for w in b:
+		if w in text:
+			inc = "BOMBING"
+			word = w
+
+	for w in k:
+		if w in text:
+			inc = "KIDNAPPING"
+			word = w
+
+	for w in atta:
+		if w in text:
+			inc = "ATTACK"
+			word = w
+
+	for w in a:
+		if w in text:
+			inc = "ARSON"
+			word = w
+
+	return inc, word
 
 def clean(predict):
 	npredict = []
@@ -325,14 +383,14 @@ def predInc(text, words):
 			if token == word[0]:
 				incs[word[1]]+=word[2]
 
-	print(incs)
+	#print(incs)
 	maxval = 0
 	maxlab = 0
 	for key in incs:
 		if incs[key] > maxval:
 			maxval = incs[key]
 			maxlab = key
-	print(maxlab)
+	#print(maxlab)
 	return maxlab
 
 #Function#########################################################

@@ -19,7 +19,7 @@ import os
 #NLP tools
 import nltk
 import spacy
-from spacy.lang.en import English
+from spacy.en import English
 from nltk import Tree
 import en_core_web_sm
 import unicodedata
@@ -437,10 +437,19 @@ def incidentDet(relSents, stops, sents,typ, vps):
 						allWords[token+ty] += 1
 						#print(token + " " + ty)
 
+
+	#printDic(allWords)
 	trigs = []
 
 	for key in relWords:
-		trigs.append([key,round(float(relWords[key][0])/float(allWords[key+relWords[key][1]]) * math.log(allWords[key+relWords[key][1]]),4),relWords[key][1]])
+		denom = 0
+		for t in types:
+			if t is not relWords[key][1] and key+t in allWords:
+				denom += float(allWords[key+t])
+		if denom is not 0:
+			trigs.append([key,round(float(relWords[key][0])/denom * math.log(allWords[key+relWords[key][1]]),4),relWords[key][1]])
+
+	#printList(trigs, 0)
 
 	trigs = sorted(trigs, key=lambda x: x[1], reverse=True)
 
@@ -456,11 +465,16 @@ def incidentDet(relSents, stops, sents,typ, vps):
 			ctrigs.append([t[0], t[2],t[1]])
 			count[t[2]]+=1
 			c[t[2]] += t[1]
+	#printList(ctrigs, 0)
 	for i in range (len(ctrigs)):
-		ctrigs[i][2] = 1.0/float(count[ctrigs[i][1]])
+		ctrigs[i][2] = ctrigs[i][2]/float(c[ctrigs[i][1]])
 	printList(types,0)
 	#print(ctrigs)
 	return ctrigs
+
+def printDic(dic):
+	for key in dic:
+		print(key + " = " + str(dic[key]))
 
 def trigsCat(relSents, stops, sents,typ, pos):
 	relWords = {}
