@@ -64,38 +64,12 @@ def main(argv):
 	files = processFilesFinal("sample-textfile.txt",'')
 	#printFiles2(files)
 
-	predictions = predict(t1Files, patterns, triggers, words,0)
+	predictions = predict(t1Files, patterns, triggers, words,1)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
 	writePred(predictions)
 
 	print(argv)
-
-#Write predict file
-def writePred(predictions):
-	predictions = sorted(predictions)
-	file = open("scoring program/predictions.txt", 'w')
-	for line in predictions:
-		file.write(line + "\n")
-
-#Reads triggers from a file
-def readTrigs(name):
-	trigs = []
-	file = open(name, 'r')
-	for line in file:
-		trigs.append(line.rstrip('\n').upper().split('/'))
-	return trigs
-
-#Reads words from a file
-def readWords(name):
-	trigs = []
-	file = open(name, 'r')
-	for line in file:
-		temp = line.rstrip('\n').upper().split('/')
-		#print(temp)
-		temp[2] = float(temp[2])
-		trigs.append(temp)
-	return trigs
 
 def predict(files, patterns, triggers, words, test):
 	tags = []
@@ -133,6 +107,7 @@ def predict(files, patterns, triggers, words, test):
 	right = 0
 	problems = {}
 	for i in range(len(tags)):
+		print("Working... " + str(float(i)/float(len(tags))) + "%")
 		count += 1
 		predict = []
 		inc = predInc(raw[i], words)
@@ -151,9 +126,9 @@ def predict(files, patterns, triggers, words, test):
 					problems[inc + " != " + ans[i][1][1][0]] = 1
 				else:
 					problems[inc + " != " + ans[i][1][1][0]] += 1
-				print("Wrong: " + proWord + "--"+ str(i) +"-- "+ inc + " != " + ans[i][1][1][0])
-				if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
-					print(raw[i])
+				#print("Wrong: " + proWord + "--"+ str(i) +"-- "+ inc + " != " + ans[i][1][1][0])
+				'''if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
+					print(raw[i])'''
 
 		for j in range(len(tags[i])):
 			sentence = tags[i][j]
@@ -202,6 +177,33 @@ def predict(files, patterns, triggers, words, test):
 		#print(out)
 
 	return predictions
+
+#Write predict file
+def writePred(predictions):
+	predictions = sorted(predictions)
+	file = open("scoring program/predictions.txt", 'w')
+	for line in predictions:
+		file.write(line + "\n")
+
+#Reads triggers from a file
+def readTrigs(name):
+	trigs = []
+	file = open(name, 'r')
+	for line in file:
+		trigs.append(line.rstrip('\n').upper().split('/'))
+	return trigs
+
+#Reads words from a file
+def readWords(name):
+	trigs = []
+	file = open(name, 'r')
+	for line in file:
+		temp = line.rstrip('\n').upper().split('/')
+		#print(temp)
+		temp[2] = float(temp[2])
+		trigs.append(temp)
+	return trigs
+
 
 def dumbGuess(text):
 	inc = "ATTACK"
