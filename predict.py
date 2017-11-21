@@ -46,8 +46,16 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
-	t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
-	processAns('developset/answers', argv[0])
+	devtest = 0
+
+	t1Files = []
+
+	if devtest:
+		t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
+		processAns('developset/answers', argv[0])
+	else:
+		t1Files = processFiles('testset1/texts', 'testset1/answerkeys', argv[0])
+		processAns('testset1/answerkeys', argv[0])
 	#t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
 
 	patterns = readPats("output/patterns.txt")
@@ -58,8 +66,6 @@ def main(argv):
 	#printList(patterns, 0)
 	#printList(words,0)
 	#print(triggers)
-
-	
 	
 	files = processFilesFinal("sample-textfile.txt",'')
 	#printFiles2(files)
@@ -152,7 +158,8 @@ def predict(files, patterns, triggers, words, test):
 						if p[2] != "WEAPON" and p[1] == entry[2] and p[0] == trig and p[2] == trigs[trig]:
 							#predict.append([sentences[i][tags[i].index(sentence)],p[2], entry[0], entry, p])
 							if [p[2], entry[0]] not in predict and len(entry[0]) > 0:
-								predict.append([p[2], entry[0]])
+								#predict.append([p[2], entry[0]])
+								losAn = 0
 		
 		predict = clean(predict)
 
