@@ -1,0 +1,156 @@
+add/maids/VICTIM/
+condemned/PERP INDIV/
+oqueli/airport/VICTIM/
+stag/PERP INDIV/
+report/partially/destroyed/TARGET/
+be/TARGET/
+report/call/on/PERP INDIV/
+report/call/on/PERP ORG/
+insist/PERP INDIV/
+front/claimed/complicate/PERP ORG/
+continue/force/PERP INDIV/
+say/far/intercept/on/after/VICTIM/
+see/moment/place/PERP INDIV/
+are/VICTIM/
+be/salgado/as/propaganda/TARGET/
+text/report/after/VICTIM/
+arrive/VICTIM/
+text/report/be/PERP INDIV/
+[/by/say/PERP ORG/
+[/by/say/TARGET/
+allow/TARGET/
+kill/VICTIM/
+damage/VICTIM/
+describe/VICTIM/
+hours/be/by/explotion/bomb/do/explode/destroyed/TARGET/
+text/family/say/that/ask/VICTIM/
+text/polay/admit/hector/VICTIM/
+say/PERP ORG/
+be/received/PERP ORG/
+be/received/VICTIM/
+note/that/sabotage/TARGET/
+excerpt/report/carbomb/injure/TARGET/
+excerpt/report/carbomb/injure/VICTIM/
+damage/TARGET/
+text/guard/kill/be/TARGET/
+device/TARGET/
+text/cristiani/union/VICTIM/
+communique/accuses/bomb/exploded/kill/PERP INDIV/
+communique/accuses/bomb/exploded/kill/VICTIM/
+disclosed/kill/VICTIM/
+hurt/PERP ORG/
+withdrew/follow/TARGET/
+meet/VICTIM/
+text/kill/in/report/TARGET/
+text/report/mexicans/PERP INDIV/
+text/ask/tuesday/by/PERP ORG/
+call/PERP ORG/
+during/attacked/garrison/TARGET/
+attacked/TARGET/
+attacked/VICTIM/
+capture/VICTIM/
+say/of/hoist/thought/report/attack/PERP INDIV/
+sacked/cover/TARGET/
+attack/TARGET/
+attack/VICTIM/
+member/accuse/PERP INDIV/
+begin/TARGET/
+attention/kill/as/TARGET/
+text/pacas/say/PERP ORG/
+say/be/VICTIM/
+make/ellacuria/over/VICTIM/
+text/when/say/fall/PERP ORG/
+text/when/say/fall/VICTIM/
+text/are/VICTIM/
+kill/wear/be/PERP INDIV/
+want/who/massacred/VICTIM/
+asked/VICTIM/
+walker/asked/give/VICTIM/
+take/VICTIM/
+do/have/PERP ORG/
+do/have/VICTIM/
+go/find/VICTIM/
+find/VICTIM/
+expose/PERP ORG/
+assassinate/wear/PERP INDIV/
+say/rule/be/PERP INDIV/
+wear/PERP INDIV/
+justified/from/VICTIM/
+text/group/attacked/cause/report/TARGET/
+warn/continue/PERP INDIV/
+ask/PERP INDIV/
+roca/express/be/VICTIM/
+be/hear/PERP ORG/
+be/hear/VICTIM/
+add/that/circumstance/VICTIM/
+tell/murderers/remain/VICTIM/
+read/to/indistinct/kill/companion/fire/VICTIM/
+investigate/PERP INDIV/
+launched/guerrillas/by/PERP ORG/
+report/by/VICTIM/
+welcome/kill/government/government/VICTIM/
+be/have/as/representative/VICTIM/
+least/assumed/be/relation/punish/VICTIM/
+see/PERP INDIV/
+coprefa/said/belloso/battalion/carry/PERP INDIV/
+admit/VICTIM/
+have/bomb/TARGET/
+text/say/today/leave/mercy/PERP INDIV/
+text/say/today/leave/mercy/VICTIM/
+request/be/PERP INDIV/
+be/begin/meeting/break/types/especially/VICTIM/
+reject/be/PERP INDIV/
+report/attack/TARGET/
+text/police/kill/VICTIM/
+[/provide/formulate/say/PERP INDIV/
+report/text/carried/VICTIM/
+report/refuse/TARGET/
+report/refuse/VICTIM/
+text/admit/hold/continue/PERP INDIV/
+state/include/PERP INDIV/
+say/TARGET/
+restart/against/by/grid/TARGET/
+guard/TARGET/
+order/benavides/PERP INDIV/
+include/PERP INDIV/
+condemned/hector/VICTIM/
+villarreal/said/prosecute/PERP INDIV/
+villarreal/said/prosecute/VICTIM/
+arrest/flee/PERP INDIV/
+participate/turn/PERP INDIV/
+communique/text/today/begin/against/settlement/VICTIM/
+took/camp/TARGET/
+plant/PERP ORG/
+released/VICTIM/
+43033612/VICTIM/
+reveal/VICTIM/
+cristiani/well/ask/PERP ORG/
+mentioned/TARGET/
+have/VICTIM/
+text/as/PERP INDIV/
+gaviria/to/identified/send/PERP ORG/
+indicate/operation/be/order/PERP INDIV/
+add/want/are/aware/PERP INDIV/
+be/are/PERP INDIV/
+interview/reporter/ossa/say/ask/be/happened/PERP ORG/
+believe/ensure/PERP INDIV/
+discuss/today/kill/at/airport/VICTIM/
+point/neighborhood/VICTIM/
+--/report/near/locate/VICTIM/
+link/sarmiento/find/as/headquarters/PERP INDIV/
+reporter/think/VICTIM/
+note/coordinate/as/carried/VICTIM/
+be/continue/PERP INDIV/
+shot/report/PERP INDIV/
+text/report/belong/stag/PERP INDIV/
+text/movement/accused/PERP ORG/
+text/movement/accused/VICTIM/
+come/attack/TARGET/
+continue/VICTIM/
+affect/replace/aboard/flight/VICTIM/
+schedule/VICTIM/
+throw/onto/premises/VICTIM/
+begin/bomb/PERP INDIV/
+--/say/oqueli/in/VICTIM/
+suffer/fly/loja/VICTIM/
+identified/be/VICTIM/

@@ -19,7 +19,7 @@ import os
 #NLP tools
 import nltk
 import spacy
-from spacy.en import English
+from spacy.lang.en import English
 from nltk import Tree
 import en_core_web_sm
 import unicodedata
@@ -66,12 +66,21 @@ def main(argv):
 	print("Loading 20%")
 
 	patterns, trigs, words = paternize(files)
-
+	subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist = auto_slog(files)
+               
 	print("Loading 80%")
 
 	writePats(patterns, "output/patterns.txt")
 	writeTrigs(trigs, "output/triggers.txt")
 	writeWords(words, "output/words.txt")
+
+        writePats_autoslog(subjpatternlist, "output/subjpatterns.txt")
+        writePats_autoslog(csubjpatternlist, "output/csubjpatterns.txt")
+        writePats_autoslog(nsubjpasspatternlist, "output/nsubjpasspatterns.txt")
+        writePats_autoslog(csubjpasspatternlist, "output/csubjpasspatterns.txt")
+        writePats_autoslog(dobjpatternlist, "output/dobjpatterns.txt")
+        writePats_autoslog(pobjpatternlist, "output/pobjpatterns.txt")
+        
 	#printFiles(t1Files)
 
 	print("Loading 100%")
@@ -95,6 +104,286 @@ def writePats(pats, name):
 	file = open(name, 'w')
 	for line in pats:
 		file.write(line[0] + "/" +  line[1] + "/" + line[2] + "/" + str(line[3]) + "\n")
+
+#Writes patterns to a file
+def writePats_autoslog(pats, name):
+	file = open(name, 'w')
+	for line in pats:
+                length=len(line)
+                for i in range(0, length):
+                        file.write(str(line[i]) + "/")
+                file.write("\n")
+
+
+
+def auto_slog(files):
+        nlp=spacy.load('en')
+        sentences = []
+        imp = []
+
+        subjpatternlist=[]
+        csubjpatternlist=[]
+        nsubjpasspatternlist=[]
+        csubjpasspatternlist=[]
+        dobjpatternlist=[]
+        pobjpatternlist=[]
+
+	for i in range(len(files)):
+		sentences=files[i][1][1]
+		imp=files[i][1][2]
+
+                
+                for index in range(len(imp)):
+                        if len(imp[index])!=0:
+                                imp_in_one_sent=imp[index]
+                                #print imp_in_one_sent
+                                sent=sentences[index]
+                                #print sent
+                                doc=nlp(unicode(sent))
+                                #print "len(doc)"
+                                #print len(doc)
+                                
+                                imp_entry_len=len(imp_in_one_sent)
+                                for j in range(0, imp_entry_len):
+                                        one_key=imp_in_one_sent[j]
+                                        if one_key[2]=='VICTIM' or one_key[2]=='TARGET' or one_key[2]=='PERP INDIV' or one_key[2]=='PERP ORG':
+                                        #print one_key
+                                        #print "one_key[0].lower"
+                                        #print one_key[0].lower()
+                                                for word in doc:
+                                                        if word.text.encode('utf-8').lower()==one_key[0].lower() or word.text.encode('utf-8').lower() in one_key[0].lower() or one_key[0].lower() in word.text.encode('utf-8').lower():
+                                                                
+                                                                if word.dep_.encode('utf-8')=='subj':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('subj')
+                                                                        #one_pattern_entry.append(one_key[0])
+ 
+                                                                        
+                                                                        for current in doc:
+                                                                                if current.dep_.encode('utf-8')=="ROOT":
+                                                                                        if doc[current.i-1].dep_.encode('utf-8')=='aux':
+                                                                                                one_pattern_entry.append(doc[current.i-1].text.encode('utf-8'))
+                                                                                        one_pattern_entry.append(current.text.encode('utf-8'))
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        subjpatternlist.append(one_pattern_entry)
+                                                                
+                                                                if word.dep_.encode('utf-8')=='csubj':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('csubj')
+                                                                        #one_pattern_entry.append(one_key[0])
+     
+                                                                
+                                                                        for current in range(word.i, len(doc)):
+                                                                                if doc[current].dep_.encode('utf-8')=="ccomp" or doc[current].pos_.encode('utf-8')=='VERB':
+                                                                                        one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                        
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        csubjpatternlist.append(one_pattern_entry)
+                                                                
+                                                                if word.dep_.encode('utf-8')=='nsubjpass':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('nsubjpass')
+                                                                        #one_pattern_entry.append(one_key[0])
+ 
+
+                                                                
+                                                                        for current in range(word.i, len(doc)):
+                                                                                if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')=="auxpass":                                                                                       
+                                                                                        if doc[current+1].pos_.encode('utf-8')=='VERB':
+                                                                                                one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
+                                                                                                break
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        nsubjpasspatternlist.append(one_pattern_entry)
+                                                                
+                                                                
+                                                                if word.dep_.encode('utf-8')=='csubjpass':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('csubjpass')
+                                                                        #one_pattern_entry.append(one_key[0])
+                                                                         
+                                                                        
+                                                                        for current in range(word.i, len(doc)):
+                                                                                if doc[current].dep_.encode('utf-8')=="ccomp" or doc[current].pos_.encode('utf-8')=='VERB':
+                                                                                        one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        csubjpasspatternlist.append(one_pattern_entry)
+
+                                                        
+
+                                                                
+                                                                
+                                                                if word.dep_.encode('utf-8')=='dobj':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('dobj')
+                                                                        #one_pattern_entry.append(one_key[0])
+
+                                                                        for current in doc:
+                                                                                if current.dep_.encode('utf-8')=="ROOT":
+                                                                                        #if doc[current.i-1].dep_.encode('utf-8')=='aux':
+                                                                                                #one_pattern_entry.append(doc[current.i-1].lemma_.encode('utf-8'))
+                                                                                        one_pattern_entry.append(current.lemma_.encode('utf-8'))
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        subjpatternlist.append(one_pattern_entry)
+
+                                                                        '''
+                                                                        root_index=word.root.i
+                                                                        if doc[root_index-1].pos_.encode('utf-8')=="VERB" and doc[root_index-1].dep_.encode('utf-8')!="aux":
+                                                                                #if doc[root_index-1-1].pos_.encode('utf-8')=="VERB":
+#                                                                                        one_pattern_entry.append(doc[root_index-1-1].lemma_.encode('utf-8'))
+                                                                                one_pattern_entry.append(doc[root_index-1].lemma_.encode('utf-8'))
+                                                                        one_pattern_entry.append(doc[root_index].lemma_.encode('utf-8'))
+
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        dobjpatternlist.append(one_pattern_entry)
+                                                                        '''
+                                                                        '''
+                                                                        not_exit=True
+                                                                        current=word.i-1
+                                                                        ########SHOULD WE JUST EXTRACT ROOT HERE???????????????########################
+                                                                        while not_exit and current>=0:
+                                                                                                                                               
+                                                                                if doc[current].pos_.encode('utf-8')=="VERB":
+                                                                 
+          
+                                                                                        if doc[current-1].pos_.encode('utf-8')=="PART" or doc[current-1].pos_.encode('utf-8')=="VERB":
+                                                                                                one_pattern_entry.append(doc[current-1].text.encode('utf-8'))
+
+                                                                                        one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                        not_exit=False
+                                                                                current=current-1
+        
+                                                                                        
+       
+                                                                                        
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        dobjpatternlist.append(one_pattern_entry)
+                                                                        '''
+                                                        
+                                                                
+
+                                                                if word.dep_.encode('utf-8')=='pobj':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('pobj')
+                                                                        #one_pattern_entry.append(one_key[0])
+
+                                                                        if (doc[word.i-1].dep_.encode('utf-8')=="prep" or doc[word.i-1].pos_.encode('utf-8')=="ADP") and (doc[word.i-1-1].pos_.encode('utf-8')=="VERB" or doc[word.i-1-1].pos_.encode('utf-8')=="NOUN"):
+                                                                                if doc[word.i-1-1].pos_.encode('utf-8')=="VERB" and doc[word.i-1-1-1].pos_.encode('utf-8')=="VERB":
+                                                                                        one_pattern_entry.append(doc[word.i-1-1-1].text.encode('utf-8'))
+                                                                                        one_pattern_entry.append(doc[word.i-1-1].text.encode('utf-8'))
+                                                                                        one_pattern_entry.append(doc[word.i-1].text.encode('utf-8'))
+                                                                                                
+                                                                                else:
+                                                                                        one_pattern_entry.append(doc[word.i-1-1].text.encode('utf-8'))
+                                                                                        one_pattern_entry.append(doc[word.i-1].text.encode('utf-8'))
+                                                                                                
+                                                                               
+                                                                        '''
+                                                                        for current in range(0, word.i):
+                                                                                if doc[current].dep_.encode('utf-8')=="prep" and (doc[current-1].pos_.encode('utf-8')=="VERB" or doc[current-1].pos_.encode('utf-8')=="NOUN"):
+                                                                                #if (doc[current].pos_.encode('utf-8')=="ADP" or doc[current].dep_.encode('utf-8')=="prep" ) and (doc[current-1].pos_.encode('utf-8')=="VERB" or doc[current-1].pos_.encode('utf-8')=="NOUN"):
+                                                                                #if (doc[current].pos_.encode('utf-8')=="ADP" or doc[current].dep_.encode('utf-8')=="prep" or doc[current].dep_.encode('utf-8')=="agent" ) and (doc[current-1].pos_.encode('utf-8')=="VERB" or doc[current-1].pos_.encode('utf-8')=="NOUN"):
+                                                                                        
+                                                                                        if doc[current-1].pos_.encode('utf-8')=="VERB" and doc[current-1-1].pos_.encode('utf-8')=="VERB":
+                                                                                                one_pattern_entry.append(doc[current-1-1].text.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current-1].text.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                                break
+                                                                                        else:
+                                                                                                one_pattern_entry.append(doc[current-1].text.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                                break
+                                                                        '''
+
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        pobjpatternlist.append(one_pattern_entry)
+                                                        
+
+
+        subjpatternlist=clean_pattern(subjpatternlist)
+        csubjpatternlist=clean_pattern(csubjpatternlist)
+        nsubjpasspatternlist=clean_pattern(nsubjpasspatternlist)
+        csubjpasspatternlist=clean_pattern(csubjpasspatternlist)       
+        dobjpatternlist=clean_pattern(dobjpatternlist)
+        pobjpatternlist=clean_pattern(pobjpatternlist)
+
+        subjpatternlist=clear_pattern_again(subjpatternlist)
+        csubjpatternlist=clear_pattern_again(csubjpatternlist)
+        nsubjpasspatternlist=clear_pattern_again(nsubjpasspatternlist)
+        csubjpasspatternlist=clear_pattern_again(csubjpasspatternlist)       
+        dobjpatternlist=clear_pattern_again(dobjpatternlist)
+        pobjpatternlist=clear_pattern_again(pobjpatternlist)
+
+        subjpatternlist=trim_one(subjpatternlist)
+        csubjpatternlist=trim_one(csubjpatternlist)
+        nsubjpasspatternlist=trim_one(nsubjpasspatternlist)
+        csubjpasspatternlist=trim_one(csubjpasspatternlist)       
+        dobjpatternlist=trim_one(dobjpatternlist)
+        pobjpatternlist=trim_one(pobjpatternlist)
+
+        print "print subj list #####################################################################"
+        printList(subjpatternlist, 0)
+        print "print csubj list ####################################################################"
+        printList(csubjpatternlist, 0)
+        print "print nsubjpass list ################################################################"
+        printList(nsubjpasspatternlist, 0)
+        print "print csubpass list #################################################################"
+        printList(csubjpasspatternlist, 0)
+        print "print dobj list #####################################################################"
+        printList(dobjpatternlist, 0)
+        print "print pobj list #####################################################################cl"
+        printList(pobjpatternlist, 0)
+        return subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist
+
+
+def clean_pattern(patternlist):
+        for pattern_entry in patternlist:
+                if len(pattern_entry)==1:
+                        patternlist.remove(pattern_entry)
+        return patternlist
+                
+                        
+                        
+def clear_pattern_again(patternlist):
+        pats = []
+	for pat in patternlist:
+		inPats = -1
+		for i in range(len(pats)):
+                        length=len(pats[i])
+			if pat == pats[i][0:length]:
+				inPats = i
+		if inPats >= 0:
+                        length=len(pats[i])
+			pats[inPats][length-1] += 1
+		else:
+			p = list(pat)
+			p.append(1)
+			pats.append(p)
+
+	pats = sorted(pats, key=lambda x: x[len(x)-1], reverse=True)
+	uniquePats = []
+	for pat in pats:
+		repeated = False
+		for i in range(len(uniquePats)):
+                        uniquelength=len(uniquePats[i])
+                        patlength=len(pat)
+			if pat[0:patlength] == uniquePats[i][0:uniquelength]:
+				repeated = True
+		if not repeated:
+			uniquePats.append(pat)			
+	return uniquePats
+
+
+def trim_one(patternlist):
+        newpatternlist=[]
+        for entry in patternlist:
+                length=len(entry)
+                entry=entry[0:length-1]
+                newpatternlist.append(entry)
+        return newpatternlist
+
+
+
 
 def create_NER_training_data(files):
         train_data=[]

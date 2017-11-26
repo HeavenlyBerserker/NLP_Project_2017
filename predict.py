@@ -18,7 +18,7 @@ import os
 #NLP tools
 import nltk
 import spacy
-from spacy.en import English
+from spacy.lang.en import English
 from nltk import Tree
 import en_core_web_sm
 import unicodedata
@@ -62,6 +62,13 @@ def main(argv):
 	triggers = readTrigs("output/triggers.txt")
 	words = readWords("output/words.txt")
 
+	subjpatternlist = readPats_autoslog("output/subjpatterns.txt")
+        csubjpatternlist = readPats_autoslog("output/csubjpatterns.txt")
+        nsubjpasspatternlist = readPats_autoslog("output/nsubjpasspatterns.txt")
+        csubjpasspatternlist = readPats_autoslog("output/csubjpasspatterns.txt")
+        dobjpatternlist = readPats_autoslog("output/dobjpatterns.txt")
+        pobjpatternlist = readPats_autoslog("output/pobjpatterns.txt")
+
 	#printFiles(t1Files)
 	#printList(patterns, 0)
 	#printList(words,0)
@@ -70,14 +77,82 @@ def main(argv):
 	files = processFilesFinal("sample-textfile.txt",'')
 	#printFiles2(files)
 
-	predictions = predict(t1Files, patterns, triggers, words,1)
+	predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+	
+	#predictions=predict_auto_slog(t1Files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
 	writePred(predictions)
 
 	print(argv)
 
-def predict(files, patterns, triggers, words, test):
+def predict_auto_slog(files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist):
+        
+	nlp=spacy.load('en')
+	sentences = []
+	predicts = []
+
+	for i in range(len(files)):
+		sentences=(files[i][1][1])
+                one_doc_predict=[]
+		for j in range(len(sentences)):
+                        one_sent=sentences[j]
+                        doc=nlp(unicode(one_sent))
+                        for nc in doc.noun_chunks:
+                                
+                                if nc.root.dep_.encode('utf-8')=='subj':
+                                        for each_pattern in subjpatternlist:
+                                                if nc.root.root.text.encode('utf-8') in each_pattern:
+                                                        one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])
+
+
+                                elif nc.root.dep_.encode('utf-8')=='csubj':
+                                        for each_pattern in csubjpatternlist:
+                                                if nc.root.root.text.encode('utf-8') in each_pattern:
+                                                        one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])
+
+                                elif nc.root.dep_.encode('utf-8')=='nsubjpass':
+                                        for each_pattern in nsubjpasspatternlist:
+                                                for current in range(nc.root.i, len(doc)):
+                                                        if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])                                                      
+
+                                elif nc.root.dep_.encode('utf-8')=='csubjpass':
+                                        for each_pattern in csubjpasspatternlist:
+                                                for current in range(nc.root.i, len(doc)):
+                                                        if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])
+		
+                                elif nc.root.dep_.encode('utf-8')=='dobj':
+                                        for each_pattern in dobjpatternlist:
+                                                if len(each_pattern)==2:
+                                                        if nc.root.root.lemma_.encode('utf-8') in each_pattern:
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])
+
+                                                        
+
+                                elif nc.root.dep_.encode('utf-8')=='pobj':
+                                        for each_pattern in dobjpatternlist:
+                                                not_exit=True
+                                                current=nc.root.i-1
+                                                while not_exit and current>=0:
+                                                        if doc[current].dep_.encode('utf-8')=="prep" and doc[current].lemma_.encode('utf-8') in each_pattern and doc[current-1].lemma_.encode('utf-8') in each_pattern:
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')])
+
+                                                                not_exit=False
+                                                        current=current-1
+                                
+
+
+                predicts.append(one_doc_predict)
+              
+        predictions = textifyPreds(predicts, files)
+	
+		#print(out)
+
+	return predictions
+
+def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist):
 	tags = []
 	ans = []
 	sentences = []
@@ -93,6 +168,7 @@ def predict(files, patterns, triggers, words, test):
 
 	predicts = []
 
+        
 	'''
 	for i in range(len(tags)):
 		predict = []
@@ -110,6 +186,7 @@ def predict(files, patterns, triggers, words, test):
 		printList(ans[i], 0)
 		print("############################\n\n\n")
 	'''
+ 
 	count = 0
 	right = 0
 	problems = {}
@@ -120,10 +197,11 @@ def predict(files, patterns, triggers, words, test):
 		count += 1
 		predict = []
 		inc = predInc(raw[i], words)
-		'''if "BOMB" in raw[i] or "BOMBING" in raw[i] or "EXPLOSIVE" in raw[i] or "EXPLOSION" in raw[i]:
-			inc = "BOMBING"
-		if "KIDNAP" in raw[i]:
-			inc = "KIDNAPPING"'''
+		
+		#if "BOMB" in raw[i] or "BOMBING" in raw[i] or "EXPLOSIVE" in raw[i] or "EXPLOSION" in raw[i]:
+		#	inc = "BOMBING"
+		#if "KIDNAP" in raw[i]:
+		#	inc = "KIDNAPPING"
 		inc, proWord = dumbGuess(raw[i])
 		
 		predict.append(['INCIDENT', inc])
@@ -136,8 +214,8 @@ def predict(files, patterns, triggers, words, test):
 				else:
 					problems[inc + " != " + ans[i][1][1][0]] += 1
 				#print("Wrong: " + proWord + "--"+ str(i) +"-- "+ inc + " != " + ans[i][1][1][0])
-				'''if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
-					print(raw[i])'''
+				#if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
+				#	print(raw[i])
 
 		for weapon in weapons:
 			if weapon[0] in raw[i] and weapon[1] > 0:
@@ -164,6 +242,64 @@ def predict(files, patterns, triggers, words, test):
 		predict = clean(predict)
 
 		predicts.append(predict)
+
+	
+        #autoslog predict
+        nlp=spacy.load('en')
+	sentences = []
+
+	for i in range(len(files)):
+		sentences=(files[i][1][1])
+                one_doc_predict=predicts[i]
+                print "one_doc_predict"
+                printList(one_doc_predict, 0)
+		for j in range(len(sentences)):
+                        one_sent=sentences[j]
+                        doc=nlp(unicode(one_sent))
+                        for nc in doc.noun_chunks:
+                                if nc.root.dep_.encode('utf-8')=='subj':
+                                        for each_pattern in subjpatternlist:
+                                                if nc.root.root.text.encode('utf-8') in each_pattern:
+                                                        one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])
+
+
+                                elif nc.root.dep_.encode('utf-8')=='csubj':
+                                        for each_pattern in csubjpatternlist:
+                                                if nc.root.root.text.encode('utf-8') in each_pattern:
+                                                        one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])
+
+                                elif nc.root.dep_.encode('utf-8')=='nsubjpass':
+                                        for each_pattern in nsubjpasspatternlist:
+                                                for current in range(nc.root.i, len(doc)):
+                                                        if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])                                                      
+
+                                elif nc.root.dep_.encode('utf-8')=='csubjpass':
+                                        for each_pattern in csubjpasspatternlist:
+                                                for current in range(nc.root.i, len(doc)):
+                                                        if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])
+		
+                                elif nc.root.dep_.encode('utf-8')=='dobj':
+                                        for each_pattern in dobjpatternlist:
+                                                if len(each_pattern)==2:
+                                                        if nc.root.root.lemma_.encode('utf-8') in each_pattern:
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])
+
+                                                        
+
+                                elif nc.root.dep_.encode('utf-8')=='pobj':
+                                        for each_pattern in dobjpatternlist:
+                                                not_exit=True
+                                                current=nc.root.i-1
+                                                while not_exit and current>=0:
+                                                        if (doc[current].dep_.encode('utf-8')=="prep" or doc[current].pos_.encode('utf-8')=="ADP") and doc[current].text.encode('utf-8') in each_pattern and doc[current-1].text.encode('utf-8') in each_pattern:
+                                                                one_doc_predict.append([each_pattern[len(each_pattern)-2], nc.root.text.encode('utf-8')])
+                                                                not_exit=False
+                                                        current=current-1
+
+                                      
+	
 		if test == 3:
 			print("############################\nPredictions:")
 			printList(predict, 0)
@@ -177,6 +313,11 @@ def predict(files, patterns, triggers, words, test):
 				prediRight(predict, ans[i])
 				print("---------------------")
 			print("############################\n\n\n")
+
+	print "print predicts #####################################################"
+
+        printList(predicts,0)
+        
 	problematic = []
 	for key in problems:
 		problematic.append([key, problems[key]])
@@ -191,6 +332,11 @@ def predict(files, patterns, triggers, words, test):
 		#print(out)
 
 	return predictions
+
+
+
+
+
 
 def getWeaps():
 	file = open("output/weapons.txt", "r")
@@ -381,6 +527,19 @@ def prediRightPred(predict, answer):
 					if ans == pred[1] or ans in pred[1] or pred[1] in ans:
 						print(pred)
 
+def readPats_autoslog(filename):
+	file = open(filename, 'r')
+
+	pat = []
+
+	for line in file:
+		temp = line.split('/')
+		length=len(temp)
+		#temp[3] = int(temp[length-1].rstrip('\n'))
+		#print(temp)
+		pat.append(temp)
+
+	return pat
 
 def readPats(filename):
 	file = open(filename, 'r')
