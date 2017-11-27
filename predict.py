@@ -359,7 +359,7 @@ def getORGs():
 #Write predict file
 def writePred(predictions):
 	predictions = sorted(predictions)
-	file = open("scoring program/predictions.txt", 'w')
+	file = open("final-predictions.txt", 'w')
 	for line in predictions:
 		file.write(line + "\n")
 

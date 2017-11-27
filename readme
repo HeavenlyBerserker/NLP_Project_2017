@@ -14,14 +14,11 @@ Instructions so far:
 
 	./infoextract.sh <textfile>
 	
-	So to run it on tst1, run
+	For instance, to run it on tst1, run
 	
 	./infoextract.sh testset1/testset1-input.txt
-		
 	
-2. [Optional] To start learning process only. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
-	
-	python project.py
+	The final output file will be in the main directory (NLP_Project_2017) named final-predictions.txt.
 
 a ######################################################
 External sources:

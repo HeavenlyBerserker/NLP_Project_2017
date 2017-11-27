@@ -11,4 +11,4 @@ source venv/bin/activate
 #python project.py
 python predict.py testset1/testset1-input.txt
 cd scoring\ program/
-perl score-ie.pl predictions.txt ../testset1/testset1-anskeys.txt
+perl score-ie.pl ../final-predictions.txt ../testset1/testset1-anskeys.txt

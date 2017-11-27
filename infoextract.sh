@@ -11,4 +11,4 @@ pip install nltk
 python project.py
 python predict.py $1
 cd scoring\ program/
-perl score-ie.pl predictions.txt ../testset1/testset1-anskeys.txt
+#perl score-ie.pl ../final-predictions.txt ../testset1/testset1-anskeys.txt
