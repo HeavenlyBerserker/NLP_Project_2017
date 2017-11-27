@@ -46,17 +46,20 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
+	final = 1
+
 	devtest = 0
 
 	t1Files = []
-	'''
-	if devtest:
-		t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
-		#processAns('developset/answers', argv[0])
-	else:
-		t1Files = processFiles('testset1/texts', 'testset1/answerkeys', argv[0])
-		#processAns('testset1/answerkeys', argv[0])
-	'''
+	
+	if final == 0:
+		if devtest:
+			t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
+			processAns('developset/answers', "DEV")
+		else:
+			t1Files = processFiles('testset1/texts', 'testset1/answerkeys', "")
+			processAns('testset1/answerkeys', "")
+	
 	
 	#t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
 
@@ -80,8 +83,13 @@ def main(argv):
 	files = processFilesFinal(argv[0],'')
 	#printFiles2(files)
 
-	predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
-	
+	predictions = []
+
+	if final == 0:
+		predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+	else:
+		predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+
 	#predictions=predict_auto_slog(t1Files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
@@ -161,6 +169,13 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
 		for weapon in weapons:
 			if weapon[0] in raw[i] and weapon[1] > 0:
+				'''
+				if weapon[0] == "BOMB" or weapon[0] == "BOMBS":
+					if "DETONATE" in raw[i] or "SET OFF" in raw[i] or "EXPLODED" in raw[i] or "DESTROYED" in raw[i]:
+						predict.append(['WEAPON', weapon[0]])
+				else:
+					predict.append(['WEAPON', weapon[0]])
+				'''
 				predict.append(['WEAPON', weapon[0]])
 
 		org_count=0
@@ -282,7 +297,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
                                       
 	
-		if test == 3:
+		if test:
 			print("############################\nPredictions:")
 			printList(predict, 0)
 			if not test:
@@ -297,7 +312,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 			print("############################\n\n\n")
 
 
-	keeplose = "111111"
+	keeplose = "110000"
 	predicts = purgePredicts(predicts, keeplose)
 
 	print "print predicts #####################################################"
@@ -333,9 +348,6 @@ def purgePredicts(predicts, ar):
 		newpred.append(pred)
 
 	return newpred
-
-
-
 
 def getWeaps():
 	file = open("output/weapons.txt", "r")
@@ -475,7 +487,6 @@ def clean(predict):
 	#print(npredict)
 
 	return npredict
-
 
 def textifyPreds(predicts, files):
 	predictions = []
