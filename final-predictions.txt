@@ -108,8 +108,8 @@ ID:             DEV-MUC3-0118
 INCIDENT:       ATTACK
 WEAPON:         BOMB
                 BOMBS
-                EXPLOSIVE DEVICES
                 BULLET
+                EXPLOSIVE DEVICES
                 EXPLOSIVE DEVICE
 PERP INDIV:     -
 PERP ORG:       -
