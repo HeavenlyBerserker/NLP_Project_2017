@@ -46,16 +46,21 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
+	final = 1
+
 	devtest = 0
 
 	t1Files = []
-
-	if devtest:
-		t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
-		processAns('developset/answers', argv[0])
-	else:
-		t1Files = processFiles('testset1/texts', 'testset1/answerkeys', argv[0])
-		processAns('testset1/answerkeys', argv[0])
+	
+	if final == 0:
+		if devtest:
+			t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
+			processAns('developset/answers', "DEV")
+		else:
+			t1Files = processFiles('testset1/texts', 'testset1/answerkeys', "")
+			processAns('testset1/answerkeys', "")
+	
+	
 	#t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
 
 	patterns = readPats("output/patterns.txt")
@@ -75,11 +80,17 @@ def main(argv):
 	#printList(words,0)
 	#print(triggers)
 	
-	files = processFilesFinal("sample-textfile.txt",'')
+	print(argv[0])
+	files = processFilesFinal(argv[0],'')
 	#printFiles2(files)
 
-	predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
-	
+	predictions = []
+
+	if final == 0:
+		predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+	else:
+		predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+
 	#predictions=predict_auto_slog(t1Files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
@@ -97,7 +108,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
-		if not test:
+		if test:
 			ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
 		raw.append(files[i][1][0])
@@ -145,7 +156,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 		inc, proWord = dumbGuess(raw[i])
 		
 		predict.append(['INCIDENT', inc])
-		if not test:
+		if test:
 			if inc == ans[i][1][1][0]:
 				right += 1
 			else:
@@ -159,6 +170,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                 weapon_count=0
 		for weapon in weapons:
 			if weapon[0] in raw[i] and weapon[1] > 0 and weapon_count<2:
+
 				predict.append(['WEAPON', weapon[0]])
 				weapon_count=weapon_count+1
 
@@ -282,7 +294,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
                                       
 	
-		if test == 3:
+		if test:
 			print("############################\nPredictions:")
 			printList(predict, 0)
 			if not test:
@@ -298,15 +310,22 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 			
         predicts=clean_duplicate_in_predicts(predicts)
 
-        print "predicts ######################"
-        printList(predicts, 0)
+
+
+	keeplose = "110000"
+	predicts = purgePredicts(predicts, keeplose)
+
+	print "print predicts #####################################################"
+
+        printList(predicts,0)
+
         
 	problematic = []
 	for key in problems:
 		problematic.append([key, problems[key]])
 
 	problematic = sorted(problematic, key=lambda x: x[1], reverse=True)
-	if not test:
+	if test:
 		print("Right = " + str(right) + "/" + str(count))
 		printList(problematic, 0)
 
@@ -317,9 +336,19 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 	return predictions
 
 
+def purgePredicts(predicts, ar):
+	cats = {"INCIDENT": 0, "WEAPON":1, "PERP INDIV":2,"PERP ORG":3, "TARGET":4, "VICTIM":5}
 
+	newpred = []
 
+	for file in predicts:
+		pred = []
+		for predic in file:
+			if ar[cats[predic[0]]] == '1':
+				pred.append(predic)
+		newpred.append(pred)
 
+	return newpred
 
 def getWeaps():
 	file = open("output/weapons.txt", "r")
@@ -343,7 +372,7 @@ def getORGs():
 #Write predict file
 def writePred(predictions):
 	predictions = sorted(predictions)
-	file = open("scoring program/predictions.txt", 'w')
+	file = open("final-predictions.txt", 'w')
 	for line in predictions:
 		file.write(line + "\n")
 
@@ -489,7 +518,6 @@ def clean(predict):
 	#print(npredict)
 
 	return npredict
-
 
 def textifyPreds(predicts, files):
 	predictions = []

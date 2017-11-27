@@ -14,15 +14,11 @@ Instructions so far:
 
 	./infoextract.sh <textfile>
 	
-	For instance, if using the following code, prediction would run on "sample-textfile.txt" for input text and "sample-answers.txt" for input answers file.:
+	For instance, to run it on tst1, run
 	
-	./infoextract.sh sample 
-
-		
+	./infoextract.sh testset1/testset1-input.txt
 	
-2. [Optional] To start learning process. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
-	
-	python project.py
+	The final output file will be in the main directory (NLP_Project_2017) named final-predictions.txt.
 
 a ######################################################
 External sources:

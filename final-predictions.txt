@@ -1,0 +1,844 @@
+
+ID:             DEV-MUC3-0004
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0022
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0026
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0028
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0036
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0044
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                DYNAMITE
+                BOMBS
+                CAR BOMB
+                EXPLOSIVES
+                TRUCK
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0051
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                TNT
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0061
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0077
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0102
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0115
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+                BULLETS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0117
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0118
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+                BULLET
+                EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0126
+INCIDENT:       BOMBING
+WEAPON:         MORTAR
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0134
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0139
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0165
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0169
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0182
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0197
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0213
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0225
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0231
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0239
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0241
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0243
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0253
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0260
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0261
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0263
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0277
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0280
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0284
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0287
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0289
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0297
+INCIDENT:       BOMBING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0298
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0306
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVES
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0316
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                DYNAMITE CHARGE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0318
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0325
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0342
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0345
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0347
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0351
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0354
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0366
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0367
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0371
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0391
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0395
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0404
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0406
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0411
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0413
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                TRUCK
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0441
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                TRUCK
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0443
+INCIDENT:       BOMBING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0451
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0452
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0465
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0467
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0472
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0474
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                DYNAMITE
+                DYNAMITE STICKS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0480
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0487
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                DYNAMITE
+                BOMBS
+                DYNAMITE CHARGE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0501
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0502
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0504
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0528
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0539
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0552
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0557
+INCIDENT:       KIDNAPPING
+WEAPON:         EXPLOSIVES
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0559
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                CAR BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0561
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0565
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+                BULLETS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0875
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0876
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0887
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0888
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                ARTILLERY
+                HELICOPTER GUNSHIPS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                GRENADE
+                ROCKET
+                EXPLOSIVES
+                ROCKETS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0010
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0012
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0019
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0044
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVES
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0046
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0051
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0053
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0056
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0070
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0081
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0093
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0095
+INCIDENT:       BOMBING
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
