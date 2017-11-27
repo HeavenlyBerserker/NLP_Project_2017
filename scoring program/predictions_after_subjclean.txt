@@ -1,0 +1,97 @@
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                ARTILLERY
+                HELICOPTER GUNSHIPS
+PERP INDIV:     [0530 GMT
+                NO ELECTRICITY
+PERP ORG:       -
+TARGET:         ELECTRIC POWER SUBSTATION
+                SUBSTATION
+                NO ELECTRICITY
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
+                NO ELECTRICITY
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                GRENADE
+                ROCKET
+                EXPLOSIVES
+                ROCKETS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         DYNAMITE AND GRENADE ROCKET LAUNCHERS
+                THREATS
+VICTIM:         -
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     SIMULTANEOUS ATTACKS
+PERP ORG:       -
+TARGET:         LECTRICAL SYSTEM
+VICTIM:         AREAS
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         SOLDIERS
+VICTIM:         -
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     SIX JESUITS
+                MILITARY UNIFORMS
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SIX JESUITS
+                TELEPHONE CALLS
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ACTION
+                RECTOR
+                MILITARY UNIFORMS
+                PRIESTS
+                SALVADORAN GOVERNMENT
+PERP ORG:       PRESIDENT OSCAR ARIAS
+                "MASSACRES
+TARGET:         -
+VICTIM:         MULTIPLE ASSASSINATION
+                RECTOR
+                PRIESTS
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       CITIZENRY
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         HIS HOUSE
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         INFANTRY COMPANY
+                PYLONS
+                HELICOPTER
+VICTIM:         INFANTRY COMPANY
+                SIX PRISONERS

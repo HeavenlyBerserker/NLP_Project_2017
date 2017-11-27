@@ -1,0 +1,139 @@
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                ARTILLERY
+                HELICOPTER GUNSHIPS
+PERP INDIV:     [0530 GMT
+                NO ELECTRICITY
+PERP ORG:       FMLN
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+                GOVERNMENT
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT [FMLN]
+TARGET:         ELECTRIC POWER SUBSTATION
+                PRELIMINARY REPORTS
+                SUBSTATION
+                NO ELECTRICITY
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
+                NO ELECTRICITY
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                GRENADE
+                ROCKET
+                EXPLOSIVES
+                ROCKETS
+PERP INDIV:     -
+PERP ORG:       POLICE
+TARGET:         DYNAMITE AND GRENADE ROCKET LAUNCHERS
+                THREATS
+VICTIM:         -
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     SIMULTANEOUS ATTACKS
+PERP ORG:       FMLN
+                ARMED FORCES
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+                POLICE
+                ARENA
+                NATIONAL POLICE
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT [FMLN]
+                NATIONALIST REPUBLICAN ALLIANCE
+TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
+                THURSDAY
+                ZACAMIL NEIGHBORHOOD
+                LECTRICAL SYSTEM
+VICTIM:         AREAS
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     U.S.
+PERP ORG:       -
+TARGET:         SOLDIERS
+VICTIM:         -
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     JESUITS
+                ARMED INDIVIDUALS
+                MILITARY UNIFORMS
+                WITNESSES
+                CRIME
+PERP ORG:       ARMED FORCES
+                GOVERNMENT
+                MILITARY
+                POLICE
+                SALVADORAN GOVERNMENT
+TARGET:         WITNESSES
+                CRIME
+VICTIM:         JESUITS
+                JESUITS
+                TELEPHONE CALLS
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ACTION
+                RECTOR
+                MILITARY UNIFORMS
+                PRIESTS
+                SALVADORAN GOVERNMENT
+PERP ORG:       GOVERNMENT
+                ARMY
+                MILITARY
+                SALVADORAN GOVERNMENT
+TARGET:         SOURCES
+                EL SALVADOR'S JESUIT CURIA
+                EL SALVADOR'S CENTRAL AMERICAN UNIVERSITY
+VICTIM:         JESUITS
+                EL SALVADOR
+                MULTIPLE ASSASSINATION
+                RECTOR
+                PRIESTS
+                PRIESTS
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       GOVERNMENT
+                EXTRADITABLES
+                POLICE
+                XTRADITABLES
+                MEDELLIN
+TARGET:         -
+VICTIM:         HIS HOUSE
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     -
+PERP ORG:       FMLN
+                MILITARY
+                POLICE
+                ARENA
+                NATIONAL POLICE
+TARGET:         INFANTRY COMPANY
+                PYLONS
+                HELICOPTER
+VICTIM:         CONCHAGUA BATTALION
+                ROAD
+                ANAMOROS
+                LISLIQUE
+                INFANTRY COMPANY
+                PRISONERS

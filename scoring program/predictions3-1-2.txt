@@ -1,0 +1,95 @@
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                ARTILLERY
+                HELICOPTER GUNSHIPS
+PERP INDIV:     GMT
+                ELECTRICITY
+PERP ORG:       -
+TARGET:         SUBSTATION
+                SUBSTATION
+                ELECTRICITY
+VICTIM:         SUBSTATION
+                SOLDIER
+                ELECTRICITY
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                GRENADE
+                ROCKET
+                EXPLOSIVES
+                ROCKETS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         LAUNCHERS
+                THREATS
+VICTIM:         -
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     ATTACKS
+PERP ORG:       -
+TARGET:         SYSTEM
+VICTIM:         AREAS
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     JESUITS
+                UNIFORMS
+PERP ORG:       -
+TARGET:         -
+VICTIM:         JESUITS
+                CALLS
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ACTION
+                UNIFORMS
+                PRIESTS
+                GOVERNMENT
+PERP ORG:       ARIAS
+                MASSACRES
+TARGET:         -
+VICTIM:         ASSASSINATION
+                PRIESTS
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       CITIZENRY
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         HOUSE
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         COMPANY
+                PYLONS
+                HELICOPTER
+VICTIM:         COMPANY
+                PRISONERS

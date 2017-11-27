@@ -5,9 +5,10 @@ WEAPON:         HELICOPTER GUNSHIP
                 ARTILLERY
                 HELICOPTER GUNSHIPS
 PERP INDIV:     -
-PERP ORG:       -
+PERP ORG:       FMLN
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT
 TARGET:         -
-VICTIM:         -
+VICTIM:         SOLDIER
 
 ID:             TST1-MUC3-0004
 INCIDENT:       BOMBING
@@ -17,7 +18,7 @@ WEAPON:         DYNAMITE
                 EXPLOSIVES
                 ROCKETS
 PERP INDIV:     -
-PERP ORG:       -
+PERP ORG:       POLICE
 TARGET:         -
 VICTIM:         -
 
@@ -25,33 +26,47 @@ ID:             TST1-MUC3-0035
 INCIDENT:       ATTACK
 WEAPON:         BULLET
 PERP INDIV:     -
-PERP ORG:       -
-TARGET:         -
+PERP ORG:       FMLN
+                ARMED FORCES
+TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
+                THURSDAY
+                ZACAMIL NEIGHBORHOOD
 VICTIM:         -
 
 ID:             TST1-MUC3-0036
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-PERP INDIV:     -
+PERP INDIV:     U.S.
 PERP ORG:       -
-TARGET:         -
+TARGET:         SOLDIERS
 VICTIM:         -
 
 ID:             TST1-MUC3-0045
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     JESUITS
-PERP ORG:       -
+PERP INDIV:     SIX JESUITS
+                ARMED INDIVIDUALS
+                WITNESSES
+                CRIME
+PERP ORG:       ARMED FORCES
+                GOVERNMENT
 TARGET:         -
-VICTIM:         JESUITS
+VICTIM:         SIX JESUITS
+                SIX JESUITS
 
 ID:             TST1-MUC3-0050
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     PRIESTS
-PERP ORG:       -
+PERP INDIV:     RECTOR
+                PRIESTS
+PERP ORG:       GOVERNMENT
+                ARMY
 TARGET:         -
-VICTIM:         PRIESTS
+VICTIM:         JESUITS
+                EL SALVADOR
+                RECTOR
+                PRIESTS
+                PRIESTS
 
 ID:             TST1-MUC3-0072
 INCIDENT:       ATTACK
@@ -65,7 +80,8 @@ ID:             TST1-MUC3-0080
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP INDIV:     -
-PERP ORG:       -
+PERP ORG:       GOVERNMENT
+                EXTRADITABLES
 TARGET:         -
 VICTIM:         -
 
@@ -74,6 +90,10 @@ INCIDENT:       ATTACK
 WEAPON:         GRENADE
                 ROCKET
 PERP INDIV:     -
-PERP ORG:       -
+PERP ORG:       FMLN
+                MILITARY
 TARGET:         -
-VICTIM:         -
+VICTIM:         CONCHAGUA BATTALION
+                ROAD
+                ANAMOROS
+                LISLIQUE
