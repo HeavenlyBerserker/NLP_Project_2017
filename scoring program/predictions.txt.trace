@@ -17,24 +17,25 @@ ID:             TST1-MUC3-0002
 INCIDENT:       BOMBING
 WEAPON:         HELICOPTER GUNSHIP
                 ARTILLERY
-                HELICOPTER GUNSHIPS
 PERP_INDIV:     -
 PERP_ORG:       FMLN
                 FARABUNDO MARTI NATIONAL LIBERATION FRONT
-TARGET:         -
-VICTIM:         SOLDIER
+TARGET:         ELECTRIC POWER SUBSTATION
+                SUBSTATION
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
 
      SCORES for TST1-MUC3-0002
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
-Weapons         0.00 (0/0)	   0.00 (0/3)         0.00
+Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   1.00 (1/1)         1.00
+Targets         1.00 (1/1)	   0.50 (1/2)         0.67
+Victims         1.00 (1/1)	   0.50 (1/2)         0.67
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.29 (2/7)         0.33
+TOTAL           0.60 (3/5)	   0.33 (3/9)         0.43
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -57,11 +58,8 @@ ID:             TST1-MUC3-0004
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
                 GRENADE
-                ROCKET
-                EXPLOSIVES
-                ROCKETS
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -69,13 +67,13 @@ VICTIM:         -
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
-Weapons         1.00 (3/3)	   0.60 (3/5)         0.75
+Weapons         0.67 (2/3)	   1.00 (2/2)         0.80
 Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (4/8)	   0.57 (4/7)         0.53
+TOTAL           0.38 (3/8)	   1.00 (3/3)         0.55
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -94,12 +92,12 @@ VICTIM:         -
 ID:             TST1-MUC3-0035
 INCIDENT:       ATTACK
 WEAPON:         BULLET
-PERP_INDIV:     -
+PERP_INDIV:     SIMULTANEOUS ATTACKS
 PERP_ORG:       FMLN
                 ARMED FORCES
 TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
-                THURSDAY
                 ZACAMIL NEIGHBORHOOD
+                ELECTRICAL SYSTEM
 VICTIM:         -
 
      SCORES for TST1-MUC3-0035
@@ -107,12 +105,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
 Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/1)	   0.00 (0/3)         0.00
+Targets         1.00 (1/1)	   0.33 (1/3)         0.50
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.29 (2/7)         0.36
+TOTAL           0.75 (3/4)	   0.38 (3/8)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -133,7 +131,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
 PERP_INDIV:     U.S.
 PERP_ORG:       -
-TARGET:         SOLDIERS
+TARGET:         -
 VICTIM:         -
 
      SCORES for TST1-MUC3-0036
@@ -143,10 +141,10 @@ Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/1)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.50 (2/4)         0.50
+TOTAL           0.50 (2/4)	   0.67 (2/3)         0.57
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -169,15 +167,14 @@ VICTIM:         JESUITS
 ID:             TST1-MUC3-0045
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     SIX JESUITS
+PERP_INDIV:     JESUITS
                 ARMED INDIVIDUALS
                 WITNESSES
                 CRIME
 PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+                MILITARY
 TARGET:         -
-VICTIM:         SIX JESUITS
-                SIX JESUITS
+VICTIM:         JESUITS
 
      SCORES for TST1-MUC3-0045
 
@@ -187,9 +184,9 @@ Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.25 (1/4)	   0.25 (1/4)         0.25
 Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/2)         0.00
+Victims         0.50 (1/2)	   1.00 (1/1)         0.67
 --------        --------------     --------------     ----
-TOTAL           0.38 (3/8)	   0.33 (3/9)         0.35
+TOTAL           0.50 (4/8)	   0.50 (4/8)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -211,15 +208,13 @@ VICTIM:         IGNACIO ELLACURIA
 ID:             TST1-MUC3-0050
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     RECTOR
+PERP_INDIV:     ACTION
                 PRIESTS
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_ORG:       ARMY
+                MILITARY
 TARGET:         -
 VICTIM:         JESUITS
                 EL SALVADOR
-                RECTOR
-                PRIESTS
                 PRIESTS
 
      SCORES for TST1-MUC3-0050
@@ -230,9 +225,9 @@ Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.50 (2/4)	   0.40 (2/5)         0.44
+Victims         0.50 (2/4)	   0.67 (2/3)         0.57
 --------        --------------     --------------     ----
-TOTAL           0.50 (3/6)	   0.30 (3/10)        0.37
+TOTAL           0.50 (3/6)	   0.38 (3/8)         0.43
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -286,8 +281,8 @@ ID:             TST1-MUC3-0080
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                EXTRADITABLES
+PERP_ORG:       EXTRADITABLES
+                XTRADITABLES
 TARGET:         -
 VICTIM:         -
 
@@ -325,11 +320,13 @@ WEAPON:         GRENADE
 PERP_INDIV:     -
 PERP_ORG:       FMLN
                 MILITARY
-TARGET:         -
+TARGET:         INFANTRY COMPANY
+                HELICOPTER
 VICTIM:         CONCHAGUA BATTALION
                 ROAD
                 ANAMOROS
                 LISLIQUE
+                PRISONERS
 
      SCORES for TST1-MUC3-0092
 
@@ -338,10 +335,10 @@ Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/2)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/4)         0.00
+Targets         0.00 (0/2)	   0.00 (0/2)         0.00
+Victims         0.00 (0/0)	   0.00 (0/5)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.22 (2/9)         0.29
+TOTAL           0.40 (2/5)	   0.17 (2/12)        0.24
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -350,10 +347,10 @@ TOTAL           0.40 (2/5)	   0.22 (2/9)         0.29
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.89 (8/9)	   0.89 (8/9)         0.89
-Weapons         1.00 (4/4)	   0.33 (4/12)        0.50
-Perp_Ind        0.08 (1/13)	   0.14 (1/7)         0.10
-Perp_Org        1.00 (5/5)	   0.38 (5/13)        0.56
-Targets         0.00 (0/6)	   0.00 (0/4)         0.00
-Victims         0.30 (3/10)	   0.25 (3/12)        0.27
+Weapons         0.75 (3/4)	   0.38 (3/8)         0.50
+Perp_Ind        0.08 (1/13)	   0.12 (1/8)         0.10
+Perp_Org        1.00 (5/5)	   0.42 (5/12)        0.59
+Targets         0.33 (2/6)	   0.29 (2/7)         0.31
+Victims         0.40 (4/10)	   0.36 (4/11)        0.38
 --------        --------------     --------------     ----
-TOTAL           0.45 (21/47)	   0.37 (21/57)       0.40
+TOTAL           0.49 (23/47)	   0.42 (23/55)       0.45

@@ -1,0 +1,98 @@
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                ARTILLERY
+PERP INDIV:     -
+PERP ORG:       FMLN
+                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+TARGET:         ELECTRIC POWER SUBSTATION
+                SUBSTATION
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                GRENADE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     SIMULTANEOUS ATTACKS
+PERP ORG:       FMLN
+                ARMED FORCES
+TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
+                ZACAMIL NEIGHBORHOOD
+                ELECTRICAL SYSTEM
+VICTIM:         -
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     U.S.
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     JESUITS
+                ARMED INDIVIDUALS
+                WITNESSES
+                CRIME
+PERP ORG:       ARMED FORCES
+                MILITARY
+TARGET:         -
+VICTIM:         JESUITS
+                JESUITS
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ACTION
+                PRIESTS
+PERP ORG:       ARMY
+                MILITARY
+TARGET:         -
+VICTIM:         JESUITS
+                EL SALVADOR
+                PRIESTS
+                PRIESTS
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       EXTRADITABLES
+                XTRADITABLES
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     -
+PERP ORG:       FMLN
+                MILITARY
+TARGET:         INFANTRY COMPANY
+                HELICOPTER
+VICTIM:         CONCHAGUA BATTALION
+                ROAD
+                ANAMOROS
+                LISLIQUE
+                PRISONERS

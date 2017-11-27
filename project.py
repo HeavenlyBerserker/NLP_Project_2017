@@ -67,7 +67,8 @@ def main(argv):
 
 	patterns, trigs, words = paternize(files)
 	subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist = auto_slog(files)
-               
+
+        attrpatternlist=create_attr_pattern()
 	print("Loading 80%")
 
 	writePats(patterns, "output/patterns.txt")
@@ -80,6 +81,7 @@ def main(argv):
         writePats_autoslog(csubjpasspatternlist, "output/csubjpasspatterns.txt")
         writePats_autoslog(dobjpatternlist, "output/dobjpatterns.txt")
         writePats_autoslog(pobjpatternlist, "output/pobjpatterns.txt")
+        writePats_autoslog(pobjpatternlist, "output/attrpatterns.txt")
         
 	#printFiles(t1Files)
 
@@ -87,6 +89,16 @@ def main(argv):
 
 	print(argv)
 
+
+def create_attr_pattern():
+        attrpatternlist=[]
+        attrpatternlist.append(['VICTIM', 'be'])
+        attrpatternlist.append(['TARGET', 'be'])
+        attrpatternlist.append(['PERPETRATOR', 'be'])
+
+        return attrpatternlist
+        
+        
 #Writes words in
 def writeWords(trigs, name):
 	file = open(name, 'w')
@@ -167,11 +179,11 @@ def auto_slog(files):
                                                                                         if doc[current].tag_.encode('utf-8')=="VBP" or doc[current].tag_.encode('utf-8')=="HVS":
                                                                                                 one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         else:
-                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         not_exit=False
                                                                                 current=current+1
                                                                                         
@@ -202,11 +214,11 @@ def auto_slog(files):
                                                                                         if doc[current].tag_.encode('utf-8')=="VBP" or doc[current].tag_.encode('utf-8')=="HVS":
                                                                                                 one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         else:
-                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         not_exit=False
                                                                                 current=current+1
                                                                                         
@@ -252,7 +264,55 @@ def auto_slog(files):
                                                                         one_pattern_entry.append(one_key[2])
                                                                         csubjpasspatternlist.append(one_pattern_entry)
 
-                                                        
+                                                                    
+                                                                if word.dep_.encode('utf-8')=='dobj':
+                                                                        one_pattern_entry=[]
+                                                                        #one_pattern_entry.append('dobj')
+                                                                        #one_pattern_entry.append(one_key[0])
+                                                                        
+                                                                        '''
+                                                                
+                                                                        for current in doc:
+                                                                                if current.dep_.encode('utf-8')=="ROOT":
+                                                                                        #if doc[current.i-1].dep_.encode('utf-8')=='aux':
+                                                                                                #one_pattern_entry.append(doc[current.i-1].lemma_.encode('utf-8'))
+                                                                                        one_pattern_entry.append(current.lemma_.encode('utf-8'))
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        dobjpatternlist.append(one_pattern_entry)
+                                                                        '''
+
+                                                                        '''
+                                                                        root_index=word.root.i
+                                                                        if doc[root_index-1].pos_.encode('utf-8')=="VERB" and doc[root_index-1].dep_.encode('utf-8')!="aux":
+                                                                                #if doc[root_index-1-1].pos_.encode('utf-8')=="VERB":
+#                                                                                        one_pattern_entry.append(doc[root_index-1-1].lemma_.encode('utf-8'))
+                                                                                one_pattern_entry.append(doc[root_index-1].lemma_.encode('utf-8'))
+                                                                        one_pattern_entry.append(doc[root_index].lemma_.encode('utf-8'))
+
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        dobjpatternlist.append(one_pattern_entry)
+                                                                        '''
+                                                                        
+                                                                        not_exit=True
+                                                                        current=word.i-1
+                                                                        ########SHOULD WE JUST EXTRACT ROOT HERE???????????????########################
+                                                                        while not_exit and current>=0:
+                                                                                                                                               
+                                                                                if doc[current].pos_.encode('utf-8')=="VERB":         
+                                                                                        #if doc[current-1].pos_.encode('utf-8')=="PART" or doc[current-1].pos_.encode('utf-8')=="VERB":
+#                                                                                                one_pattern_entry.append(doc[current-1].text.encode('utf-8'))
+
+                                                                                        one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
+                                                                                        not_exit=False
+                                                                                current=current-1
+        
+                                                                                        
+       
+                                                                                        
+                                                                        one_pattern_entry.append(one_key[2])
+                                                                        dobjpatternlist.append(one_pattern_entry)
+                                                                
+
 
   
                                                                 if word.dep_.encode('utf-8')=='pobj':
@@ -320,6 +380,7 @@ def auto_slog(files):
 
 
         pobjpatternlist=clean_pobj(pobjpatternlist)
+        dobjpatternlist=clean_dobj(dobjpatternlist)
 
 
         print "print subj list #####################################################################"
@@ -385,12 +446,12 @@ def trim_one(patternlist):
 
 def subj_list_lemma(subjpatternlist):
         belist=['AM', 'am', 'IS', 'is', 'WAS', 'was', 'ARE', 'are', 'WERE', 'were']
-        havelist=['HAVE', 'HAS', 'HAD']
+        havelist=['HAVE', 'have', 'HAS', 'has','HAD', 'had']
         for entry in subjpatternlist:
                 if entry[0] in belist:
                         entry[0]='be'
                 if entry[0] in havelist:
-                        entry[0]='have'
+                        entry=entry.remove(entry[0])
         return subjpatternlist
 
 
@@ -723,7 +784,9 @@ def findTriggers(sents, ans, ans2, raw, vps):
 	for key in allORGDic:
 		allORGs.append([key, allORGDic[key]])
 
-	allORGs = sorted(allORGs, key=lambda x: x[1], reverse=True)	
+	allORGs = sorted(allORGs, key=lambda x: x[1], reverse=True)
+
+        allORGs = cleanORGs(allORGs)
 
 	saveORGs(allORGs)
 
@@ -758,6 +821,14 @@ def saveWeaps(weapons):
 	file = open("output/weapons.txt", "w")
 	for w in weapons:
 		file.write(w[0] + "/" + str(w[1]) + "\n")
+
+def cleanORGs(ORGs):
+        newORGs=[]
+        for entry in ORGs:
+                if entry[0] != 'POLICE' and entry[0] != 'GOVERNMENT':
+                        newORGs.append(entry)
+        return newORGs
+                        
 def saveORGs(ORGs):
 	file = open("output/ORGs.txt", "w")
 	for w in ORGs:

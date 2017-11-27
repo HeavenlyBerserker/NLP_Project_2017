@@ -3,34 +3,32 @@ ID:             TST1-MUC3-0002
 INCIDENT:       BOMBING
 WEAPON:         HELICOPTER GUNSHIP
                 ARTILLERY
-                HELICOPTER GUNSHIPS
 PERP INDIV:     -
 PERP ORG:       FMLN
                 FARABUNDO MARTI NATIONAL LIBERATION FRONT
-TARGET:         -
-VICTIM:         SOLDIER
+TARGET:         ELECTRIC POWER SUBSTATION
+                SUBSTATION
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
 
 ID:             TST1-MUC3-0004
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
                 GRENADE
-                ROCKET
-                EXPLOSIVES
-                ROCKETS
 PERP INDIV:     -
-PERP ORG:       POLICE
+PERP ORG:       -
 TARGET:         -
 VICTIM:         -
 
 ID:             TST1-MUC3-0035
 INCIDENT:       ATTACK
 WEAPON:         BULLET
-PERP INDIV:     -
+PERP INDIV:     SIMULTANEOUS ATTACKS
 PERP ORG:       FMLN
                 ARMED FORCES
 TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
-                THURSDAY
                 ZACAMIL NEIGHBORHOOD
+                ELECTRICAL SYSTEM
 VICTIM:         -
 
 ID:             TST1-MUC3-0036
@@ -38,34 +36,31 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
 PERP INDIV:     U.S.
 PERP ORG:       -
-TARGET:         SOLDIERS
+TARGET:         -
 VICTIM:         -
 
 ID:             TST1-MUC3-0045
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     SIX JESUITS
+PERP INDIV:     JESUITS
                 ARMED INDIVIDUALS
                 WITNESSES
                 CRIME
 PERP ORG:       ARMED FORCES
-                GOVERNMENT
+                MILITARY
 TARGET:         -
-VICTIM:         SIX JESUITS
-                SIX JESUITS
+VICTIM:         JESUITS
 
 ID:             TST1-MUC3-0050
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     RECTOR
+PERP INDIV:     ACTION
                 PRIESTS
-PERP ORG:       GOVERNMENT
-                ARMY
+PERP ORG:       ARMY
+                MILITARY
 TARGET:         -
 VICTIM:         JESUITS
                 EL SALVADOR
-                RECTOR
-                PRIESTS
                 PRIESTS
 
 ID:             TST1-MUC3-0072
@@ -80,8 +75,8 @@ ID:             TST1-MUC3-0080
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP INDIV:     -
-PERP ORG:       GOVERNMENT
-                EXTRADITABLES
+PERP ORG:       EXTRADITABLES
+                XTRADITABLES
 TARGET:         -
 VICTIM:         -
 
@@ -92,8 +87,10 @@ WEAPON:         GRENADE
 PERP INDIV:     -
 PERP ORG:       FMLN
                 MILITARY
-TARGET:         -
+TARGET:         INFANTRY COMPANY
+                HELICOPTER
 VICTIM:         CONCHAGUA BATTALION
                 ROAD
                 ANAMOROS
                 LISLIQUE
+                PRISONERS

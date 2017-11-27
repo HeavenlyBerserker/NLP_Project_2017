@@ -68,6 +68,7 @@ def main(argv):
         csubjpasspatternlist = readPats_autoslog("output/csubjpasspatterns.txt")
         dobjpatternlist = readPats_autoslog("output/dobjpatterns.txt")
         pobjpatternlist = readPats_autoslog("output/pobjpatterns.txt")
+        attrpatternlist = readPats_autoslog("output/attrpatterns.txt")
 
 	#printFiles(t1Files)
 	#printList(patterns, 0)
@@ -155,10 +156,11 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 				#print("Wrong: " + proWord + "--"+ str(i) +"-- "+ inc + " != " + ans[i][1][1][0])
 				#if inc + " != " + ans[i][1][1][0] == "ATTACK != KIDNAPPING":
 				#	print(raw[i])
-
+                weapon_count=0
 		for weapon in weapons:
-			if weapon[0] in raw[i] and weapon[1] > 0:
+			if weapon[0] in raw[i] and weapon[1] > 0 and weapon_count<2:
 				predict.append(['WEAPON', weapon[0]])
+				weapon_count=weapon_count+1
 
 		org_count=0
 		for org in ORGs:
@@ -214,24 +216,24 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                                         #print nc.root.head.lemma_.encode('utf-8')
                                         #print nc.root.head.dep_.encode('utf-8')
                                         for each_pattern in subjpatternlist:
-                                                if nc.root.head.lemma_.encode('utf-8') in each_pattern and nc.root.head.dep_.encode('utf-8')=='ROOT':
+                                                if nc.root.head.lemma_.encode('utf-8') == 'be' and nc.root.head.dep_.encode('utf-8')=='ROOT':
                                                         #print "nc.root.head.lemma_.encode('utf-8')"
                                                         #print each_pattern
                                                         #print nc.root.head.dep_.encode('utf-8')
                                                         
-                                                        if doc[nc.root.head.i+1].text.encode('utf-8') in each_pattern:
+                                                        if doc[nc.root.head.i+1].lemma_.encode('utf-8') in each_pattern or doc[nc.root.head.i+1].text.encode('utf-8') in each_pattern:
                                                                 #print "doc[nc.root.head.i+1].text.encode('utf-8')"
                                                                 #print doc[nc.root.head.i+1].text.encode('utf-8')
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
                                                                 one_doc_predict.append(one_predict)
-                                                '''
+                                                
                                                 else:
-                                                        if nc.root.head.text.encode('utf-8') in each_pattern:
+                                                        if nc.root.head.dep_.encode('utf-8') == 'ROOT' and nc.root.head.lemma_.encode('utf-8') in each_pattern:
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
                                                                 one_doc_predict.append(one_predict)
-                                                '''
+                                                
                                 elif nc.root.dep_.encode('utf-8')=='csubj':
                                         for each_pattern in csubjpatternlist:
                                                 if nc.root.head.text.encode('utf-8') in each_pattern:
@@ -258,14 +260,14 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                         
                                 elif nc.root.dep_.encode('utf-8')=='dobj':
                                         for each_pattern in dobjpatternlist:
-                                                        if nc.root.head.text.encode('utf-8') in each_pattern:
+                                                        if nc.root.head.lemma_.encode('utf-8') in each_pattern:
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
                                                                 one_doc_predict.append(one_predict)
 
                                                         
 
-                                elif nc.root.dep_.encode('utf-8')=='pobj':
+                                elif nc.root.dep_.encode('utf-8')=='pobj' and nc.root.ent_type_.encode('utf-8')!='DATE':
                                         for each_pattern in pobjpatternlist:
                                                 not_exit=True
                                                 current=nc.root.i-1
@@ -276,6 +278,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                                                                 one_doc_predict.append(one_predict)
                                                                 not_exit=False
                                                         current=current-1
+                                                
 
                                       
 	
@@ -292,10 +295,11 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 				prediRight(predict, ans[i])
 				print("---------------------")
 			print("############################\n\n\n")
+			
+        predicts=clean_duplicate_in_predicts(predicts)
 
-	print "print predicts #####################################################"
-
-        printList(predicts,0)
+        print "predicts ######################"
+        printList(predicts, 0)
         
 	problematic = []
 	for key in problems:
@@ -399,37 +403,67 @@ def dumbGuess(text):
 
 	return inc, word
 
+def clean_duplicate_in_predicts(predicts):
+        newcleanpredicts=[]
+        for each_doc in predicts:
+                print "in each_doc iteration"
+                each_doc=clean_one_doc_predict(each_doc)
+                newcleanpredicts.append(each_doc)               
+        return newcleanpredicts
+
+
+def clean_one_doc_predict(each_doc_predict):
+        cleanpredict=[]
+        for p in each_doc_predict:
+                print "in clean_one_doc_predict"
+                print p
+                inCP=-1
+                for i in range(len(cleanpredict)):
+                        if p == cleanpredict[i]:
+                                inCP=i
+                if inCP == -1:
+                         cleanpredict.append(p)
+        return cleanpredict
+                                
+
+
+
+                
 def clean_one_predict(one_predict):
-        
-	if one_predict[1][0:2]=="A ":
-                one_predict[1]=one_predict[1].lstrip("A ")
-        if one_predict[1][0:3]=="AN ":
-                one_predict[1]=one_predict[1].lstrip("AN ")
-        if one_predict[1][0:3] == "THE":
-                one_predict[1] = one_predict[1].lstrip("THE")
-	if one_predict[1][0:4] == "ONE ":
-                one_predict[1] = one_predict[1].lstrip("ONE ")
-        
-        if one_predict[1][0:4] == "TWO ":
-                one_predict[1] = one_predict[1].lstrip("TWO ")
-        if one_predict[1][0:6] == "THREE ":
-                one_predict[1] = one_predict[1].lstrip("THREE ")
-        if one_predict[1][0:5] == "FOUR ":
-                one_predict[1] = one_predict[1].lstrip("FOUR ")
-        if one_predict[1][0:5] == "FIVE ":
-                one_predict[1] = one_predict[1].lstrip("FIVE ")
-        if one_predict[1][0:4] == "SIX ":
-                one_predict[1] = one_predict[1].lstrip("SIX ")
-        if one_predict[1][0:6] == "SEVEN ":
-                one_predict[1] = one_predict[1].lstrip("SEVEN ")
-        if one_predict[1][0:6] == "EIGHT ":
-                one_predict[1] = one_predict[1].lstrip("EIGHT ")
-        if one_predict[1][0:5] == "NINE ":
-                one_predict[1] = one_predict[1].lstrip("NINE ")
-        if one_predict[1][0:4] == "TEN ":
-                one_predict[1] = one_predict[1].lstrip("TEN ")
-        if one_predict[1][0:1] == " ":
-                one_predict[1] = one_predict[1].lstrip(" ")
+
+        strip_count=0
+        while strip_count<3:
+                if one_predict[1][0:2]=="A ":
+                        one_predict[1]=one_predict[1].lstrip("A ")
+                if one_predict[1][0:3]=="AN ":
+                        one_predict[1]=one_predict[1].lstrip("AN ")
+                if one_predict[1][0:3] == "THE":
+                        one_predict[1] = one_predict[1].lstrip("THE")
+        	if one_predict[1][0:4] == "ONE ":
+                        one_predict[1] = one_predict[1].lstrip("ONE ")       
+                if one_predict[1][0:4] == "TWO ":
+                        one_predict[1] = one_predict[1].lstrip("TWO ")
+                if one_predict[1][0:6] == "THREE ":
+                        one_predict[1] = one_predict[1].lstrip("THREE ")
+                if one_predict[1][0:5] == "FOUR ":
+                        one_predict[1] = one_predict[1].lstrip("FOUR ")
+                if one_predict[1][0:5] == "FIVE ":
+                        one_predict[1] = one_predict[1].lstrip("FIVE ")
+                if one_predict[1][0:4] == "SIX ":
+                        one_predict[1] = one_predict[1].lstrip("SIX ")
+                if one_predict[1][0:6] == "SEVEN ":
+                        one_predict[1] = one_predict[1].lstrip("SEVEN ")
+                if one_predict[1][0:6] == "EIGHT ":
+                        one_predict[1] = one_predict[1].lstrip("EIGHT ")
+                if one_predict[1][0:5] == "NINE ":
+                        one_predict[1] = one_predict[1].lstrip("NINE ")
+                if one_predict[1][0:4] == "TEN ":
+                        one_predict[1] = one_predict[1].lstrip("TEN ")
+                if one_predict[1][0:1] == " ":
+                        one_predict[1] = one_predict[1].lstrip(" ")
+                        
+                strip_count=strip_count+1
+                        
 	return one_predict
 
 def clean(predict):
