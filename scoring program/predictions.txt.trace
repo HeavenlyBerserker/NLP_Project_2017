@@ -20,11 +20,9 @@ INCIDENT:       ATTACK
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         CIVILIANS
-                EL MOSOTO
+VICTIM:         -
 
      SCORES for DEV-MUC3-0004
 
@@ -32,11 +30,11 @@ VICTIM:         CIVILIANS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/3)	   0.00 (0/2)         0.00
+Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.14 (1/7)         0.17
+TOTAL           0.20 (1/5)	   0.33 (1/3)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -56,14 +54,9 @@ ID:             DEV-MUC3-0022
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         LOW-RANKING OFFICERS
-                POSSIBLE
-                END INTERNATIONAL PRESSURES
-                MONSIGNOR ROMERO
-                JESUIT FATHERS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0022
 
@@ -71,11 +64,11 @@ VICTIM:         LOW-RANKING OFFICERS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/5)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.12 (1/8)         0.17
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -95,8 +88,7 @@ ID:             DEV-MUC3-0026
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -106,11 +98,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.33 (1/3)         0.33
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -132,8 +124,7 @@ ID:             DEV-MUC3-0028
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMED FORCES
-                ARMY
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -143,11 +134,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (2/6)	   0.67 (2/3)         0.44
+TOTAL           0.17 (1/6)	   1.00 (1/1)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -168,16 +159,9 @@ ID:             DEV-MUC3-0036
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       MILITARY
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         BOTH BODIES
-                OQUELI
-                SOCIALIST INTERNATIONAL
-                LATIN AMERICA
-                NATIONAL REVOLUTIONARY MOVEMENT
-                EL SALVADOR
-                BOTH LEADERS
-                BODIES
+VICTIM:         -
 
      SCORES for DEV-MUC3-0036
 
@@ -185,11 +169,11 @@ VICTIM:         BOTH BODIES
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/8)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.10 (1/10)        0.14
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -215,8 +199,7 @@ WEAPON:         BOMB
                 EXPLOSIVES
                 TRUCK
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -226,11 +209,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (2/2)	   0.33 (2/6)         0.50
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (4/6)	   0.44 (4/9)         0.53
+TOTAL           0.50 (3/6)	   0.43 (3/7)         0.46
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -252,8 +235,7 @@ ID:             DEV-MUC3-0051
 INCIDENT:       BOMBING
 WEAPON:         BOMB
                 TNT
-PERP_INDIV:     INDIVIDUALS
-                NIGHT
+PERP_INDIV:     -
 PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
@@ -263,12 +245,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/2)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/3)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.17 (1/6)	   0.20 (1/5)         0.18
+TOTAL           0.17 (1/6)	   0.33 (1/3)         0.22
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -289,18 +271,9 @@ ID:             DEV-MUC3-0061
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-TARGET:         MSGR ROMERO
-                FOURTH CRIMINAL COURT
-VICTIM:         INVESTIGATIONS
-                MURDER
-                MSGR ARNULFO ROMERO
-                MSGR ARNULFO ROMERO
-                EVIDENCE
-                EVIDENCE
-                MATTER
-                MATTER
-                MSGR ROMERO
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0061
 
@@ -308,11 +281,11 @@ VICTIM:         INVESTIGATIONS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
-Targets         0.00 (0/0)	   0.00 (0/2)         0.00
-Victims         0.00 (0/1)	   0.00 (0/9)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.08 (1/13)        0.12
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -333,10 +306,9 @@ ID:             DEV-MUC3-0077
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       POLICE
-                MEDELLIN
-TARGET:         PEOPLE
-VICTIM:         PEOPLE
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0077
 
@@ -344,11 +316,11 @@ VICTIM:         PEOPLE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
-Targets         0.00 (0/0)	   0.00 (0/1)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.20 (1/5)         0.22
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -368,12 +340,9 @@ ID:             DEV-MUC3-0102
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         FENASTRAS
-                DEATH
-                10 UNION MEMBERS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0102
 
@@ -381,11 +350,11 @@ VICTIM:         FENASTRAS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/3)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.17 (1/6)         0.22
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -409,25 +378,22 @@ ID:             DEV-MUC3-0115
 INCIDENT:       ATTACK
 WEAPON:         BULLET
                 BULLETS
-PERP_INDIV:     PEASANTS
-PERP_ORG:       ARMED FORCES
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PEASANTS ' CORPSES
-                CORPSES
-                PEASANTS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0115
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/5)	   0.00 (0/3)         0.00
+Victims         0.00 (0/5)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.12 (1/8)	   0.11 (1/9)         0.12
+TOTAL           0.12 (1/8)	   0.33 (1/3)         0.18
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -449,7 +415,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -459,11 +425,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.25 (1/4)         0.25
+TOTAL           0.25 (1/4)	   0.33 (1/3)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -485,15 +451,13 @@ ID:             DEV-MUC3-0118
 INCIDENT:       ATTACK
 WEAPON:         BOMB
                 BOMBS
-                BULLET
                 EXPLOSIVE DEVICES
+                BULLET
                 EXPLOSIVE DEVICE
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         NEITHER TRUSHIN
-                TASS MISSION
+VICTIM:         -
 
      SCORES for DEV-MUC3-0118
 
@@ -501,11 +465,11 @@ VICTIM:         NEITHER TRUSHIN
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   0.20 (1/5)         0.33
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/2)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.14 (1/7)	   0.10 (1/10)        0.12
+TOTAL           0.14 (1/7)	   0.17 (1/6)         0.15
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -525,7 +489,7 @@ ID:             DEV-MUC3-0126
 INCIDENT:       BOMBING
 WEAPON:         MORTAR
 PERP_INDIV:     -
-PERP_ORG:       FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -535,11 +499,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   1.00 (1/1)         1.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (2/6)	   0.67 (2/3)         0.44
+TOTAL           0.17 (1/6)	   0.50 (1/2)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -563,11 +527,9 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       POLICE
-                NATIONAL POLICE
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         FRUIT STANDS
-                WE
+VICTIM:         -
 
      SCORES for DEV-MUC3-0134
 
@@ -575,11 +537,11 @@ VICTIM:         FRUIT STANDS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/4)	   0.00 (0/2)         0.00
+Victims         0.00 (0/4)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (2/6)	   0.29 (2/7)         0.31
+TOTAL           0.33 (2/6)	   0.67 (2/3)         0.44
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -600,7 +562,7 @@ ID:             DEV-MUC3-0139
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       AIR FORCE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -610,11 +572,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
+TOTAL           0.20 (1/5)	   1.00 (1/1)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -637,9 +599,9 @@ INCIDENT:       ATTACK
 WEAPON:         BOMB
                 POWERFUL BOMB
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         CHILEAN
+VICTIM:         -
 
      SCORES for DEV-MUC3-0165
 
@@ -647,11 +609,11 @@ VICTIM:         CHILEAN
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/3)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/1)         0.00
+Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.20 (1/5)         0.20
+TOTAL           0.20 (1/5)	   0.33 (1/3)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -671,25 +633,22 @@ VICTIM:         LUIS CASTRO ROMAN
 ID:             DEV-MUC3-0169
 INCIDENT:       ATTACK
 WEAPON:         BULLET
-PERP_INDIV:     DEMONSTRATORS
-                MEMBERS
-                DISTURBANCE
-                PERSONS
-PERP_ORG:       GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         WHO
+VICTIM:         -
 
      SCORES for DEV-MUC3-0169
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/4)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.12 (1/8)         0.17
+TOTAL           0.25 (1/4)	   0.50 (1/2)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -709,10 +668,9 @@ ID:             DEV-MUC3-0182
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SALVADORAN ATTORNEY GENERAL ROBERTO GARCIA ALVARADO
+VICTIM:         -
 
      SCORES for DEV-MUC3-0182
 
@@ -720,11 +678,11 @@ VICTIM:         SALVADORAN ATTORNEY GENERAL ROBERTO GARCIA ALVARADO
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/1)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.25 (1/4)         0.29
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -746,12 +704,8 @@ WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
 PERP_ORG:       -
-TARGET:         UP
-                BOMBS
-                BUILDING
-                EMBASSY
-                VIDEO EQUIPMENT
-VICTIM:         U.S. EMBASSY WAREHOUSE
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0197
 
@@ -760,10 +714,10 @@ Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/1)	   0.00 (0/5)         0.00
-Victims         0.00 (0/0)	   0.00 (0/1)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
+Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.22 (2/9)         0.33
+TOTAL           0.67 (2/3)	   0.67 (2/3)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -782,33 +736,22 @@ VICTIM:         U.S. MISSIONARIES / MISSIONARIES
 ID:             DEV-MUC3-0213
 INCIDENT:       ATTACK
 WEAPON:         MACHINEGUN
-PERP_INDIV:     SELF-STYLED ZARATE WILKA ARMED FORCES
-                LIBERATION [ FAL ] GROUP
-                DOWNTOWN LA PAZ
-                SHINING PATH
-                SHINING PATH
-                SHINING PATH
-                SHINING PATH
-                ZARATE WILKA GROUP
-                ZARATE WILKA GROUP
-PERP_ORG:       ARMED FORCES
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         U.S. MISSIONARIES
-                TWO MISSIONARIES
-                LA PAZ
+VICTIM:         -
 
      SCORES for DEV-MUC3-0213
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/9)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.33 (1/3)         0.50
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.12 (2/16)        0.21
+TOTAL           0.33 (1/3)	   0.50 (1/2)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -830,8 +773,7 @@ ID:             DEV-MUC3-0225
 INCIDENT:       ATTACK
 WEAPON:         BOMB
 PERP_INDIV:     -
-PERP_ORG:       ARMY
-                MILITARY
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -841,11 +783,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/1)	   0.00 (0/1)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/6)	   0.00 (0/4)         0.00
+TOTAL           0.00 (0/6)	   0.00 (0/2)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -865,11 +807,9 @@ ID:             DEV-MUC3-0231
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         AMERICAN CITIZENS
-                AID
-                U.S
+VICTIM:         -
 
      SCORES for DEV-MUC3-0231
 
@@ -877,11 +817,11 @@ VICTIM:         AMERICAN CITIZENS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.33 (1/3)         0.50
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           1.00 (2/2)	   0.40 (2/5)         0.57
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -901,26 +841,22 @@ VICTIM:         ANTONIO RODRIGUEZ PORTH
 ID:             DEV-MUC3-0239
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     RODRIGUEZ PORTH
-PERP_ORG:       NATIONALIST REPUBLICAN ALLIANCE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         ANTONIO RODRIGUEZ PORTH
-                PRESIDENCY
-                SUSPECTED URBAN GUERRILLAS
-                SAN SALVADOR
-                RODRIGUEZ PORTH
+VICTIM:         -
 
      SCORES for DEV-MUC3-0239
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.50 (1/2)	   0.20 (1/5)         0.29
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.25 (2/8)         0.33
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -941,28 +877,22 @@ VICTIM:         JOSE ANTONIO RODRIGUEZ PORTH
 ID:             DEV-MUC3-0241
 INCIDENT:       ATTACK
 WEAPON:         MACHINEGUN
-PERP_INDIV:     HIS BODYGUARD
-                ELECTIONS
-                RODRIGUEZ PORTH
-PERP_ORG:       GOVERNMENT
-                POLICE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SALVADORAN PRESIDENCY MINISTER JOSE ANTONIO RODRIGUEZ PORTH
-                TTACK
-                HIS BODYGUARD
-                RODRIGUEZ PORTH
+VICTIM:         -
 
      SCORES for DEV-MUC3-0241
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/3)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.33 (1/3)	   0.25 (1/4)         0.29
+Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.18 (2/11)        0.25
+TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -983,11 +913,9 @@ ID:             DEV-MUC3-0243
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PRESIDENCY MINISTER DR ANTONIO RODRIGUEZ PORTH
-                DR ANTONIO RODRIGUEZ PORTH
+VICTIM:         -
 
      SCORES for DEV-MUC3-0243
 
@@ -995,11 +923,11 @@ VICTIM:         PRESIDENCY MINISTER DR ANTONIO RODRIGUEZ PORTH
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.50 (1/2)	   0.50 (1/2)         0.50
+Perp_Org        0.00 (0/2)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.40 (2/5)         0.44
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1018,24 +946,22 @@ VICTIM:         ANTONIO RODRIGUEZ PORTH
 ID:             DEV-MUC3-0253
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     THAT RODRIGUEZ PORTH
-PERP_ORG:       ARMED FORCES
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SALVADORAN ARMY
-                THAT RODRIGUEZ PORTH
+VICTIM:         -
 
      SCORES for DEV-MUC3-0253
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.33 (2/6)         0.40
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1058,7 +984,7 @@ WEAPON:         BOMB
 PERP_INDIV:     -
 PERP_ORG:       -
 TARGET:         -
-VICTIM:         WE
+VICTIM:         -
 
      SCORES for DEV-MUC3-0260
 
@@ -1068,9 +994,9 @@ Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.67 (2/3)         0.50
+TOTAL           0.40 (2/5)	   1.00 (2/2)         0.57
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1091,26 +1017,22 @@ VICTIM:         PEOPLE
 ID:             DEV-MUC3-0261
 INCIDENT:       ATTACK
 WEAPON:         BOMB
-PERP_INDIV:     2 PEOPLE
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         FRIDAY
-                SAN SALVADOR CENTRAL MARKET
-                2 PEOPLE
-                ALL SALVADORANS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0261
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/2)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/2)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/4)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.14 (1/7)	   0.11 (1/9)         0.12
+TOTAL           0.14 (1/7)	   0.50 (1/2)         0.22
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1130,17 +1052,9 @@ ID:             DEV-MUC3-0263
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
 PERP_INDIV:     -
-PERP_ORG:       ELN
-                ARMY
-TARGET:         GASOLINE
-                THIS SECTION
-                PIPELINE DAILY
-VICTIM:         PACIFIC OIL PIPELINE
-                MULALO
-                PACIFIC PIPELINE
-                ELN
-                VALLE DEL CAUCA DEPARTMENT
-                PAST 6 MONTHS
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0263
 
@@ -1148,11 +1062,11 @@ VICTIM:         PACIFIC OIL PIPELINE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/1)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/1)	   0.00 (0/3)         0.00
-Victims         0.00 (0/0)	   0.00 (0/6)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
+Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.15 (2/13)        0.22
+TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1173,28 +1087,22 @@ VICTIM:         SOVIET CITIZENS
 ID:             DEV-MUC3-0277
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-PERP_INDIV:     ATTACK
-                MAOIST
-                PREVIOUS ATTACKS
-                LIMA
-                NEARBY PORT
-                CALLAO
-PERP_ORG:       SHINING PATH
-                POLICE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         ATTACK
+VICTIM:         -
 
      SCORES for DEV-MUC3-0277
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/6)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.38 (3/8)	   0.27 (3/11)        0.32
+TOTAL           0.25 (2/8)	   1.00 (2/2)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1213,23 +1121,22 @@ VICTIM:         SOVIET SAILORS / SAILORS / CREW MEMBERS
 ID:             DEV-MUC3-0280
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-PERP_INDIV:     NONE
-PERP_ORG:       GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         16 SOVIET SAILORS
-                NONE
+VICTIM:         -
 
      SCORES for DEV-MUC3-0280
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.33 (2/6)         0.40
+TOTAL           0.50 (2/4)	   1.00 (2/2)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1248,9 +1155,8 @@ VICTIM:         MAYORS OF COCORNA, SAN CARLOS, AND SAN FRANCISCO
 ID:             DEV-MUC3-0284
 INCIDENT:       KIDNAPPING
 WEAPON:         -
-PERP_INDIV:     COMMUNIQUE
-PERP_ORG:       ELN
-                GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1259,12 +1165,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.50 (2/4)         0.57
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1284,10 +1190,8 @@ ID:             DEV-MUC3-0287
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ELN
-                GOVERNMENT
-TARGET:         COUNTRY 'S PETROLEUM INSTALLATIONS
-                THAT INDUSTRY
+PERP_ORG:       -
+TARGET:         -
 VICTIM:         -
 
      SCORES for DEV-MUC3-0287
@@ -1296,11 +1200,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.40 (2/5)         0.50
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1323,7 +1227,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 POWERFUL BOMB
 PERP_INDIV:     -
-PERP_ORG:       FMLN
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1333,11 +1237,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.33 (1/3)	   0.50 (1/2)         0.40
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   1.00 (1/1)         1.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.43 (3/7)	   0.75 (3/4)         0.55
+TOTAL           0.29 (2/7)	   0.67 (2/3)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1358,7 +1262,7 @@ ID:             DEV-MUC3-0297
 INCIDENT:       BOMBING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1368,11 +1272,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/5)	   0.00 (0/2)         0.00
+TOTAL           0.00 (0/5)	   0.00 (0/1)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1393,23 +1297,22 @@ VICTIM:         DEATH
 ID:             DEV-MUC3-0298
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     APPROXIMATELY
-                USURP PRIVATE PROPERTY
-PERP_ORG:       GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         POOR FAMILIES
+VICTIM:         -
 
      SCORES for DEV-MUC3-0298
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.12 (1/8)	   0.20 (1/5)         0.15
+TOTAL           0.12 (1/8)	   1.00 (1/1)         0.22
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1429,16 +1332,8 @@ ID:             DEV-MUC3-0306
 INCIDENT:       ATTACK
 WEAPON:         EXPLOSIVES
 PERP_INDIV:     -
-PERP_ORG:       ELN
-                GOVERNMENT
-TARGET:         CANO LIMON-COVENAS OIL PIPELINE
-                COLOMBIA
-                CANO LIMON- COVENAS PIPELINE
-                DAMAGE
-                PACIFIC OIL PIPELINE
-                DINA-SALGAR OIL PIPELINE
-                CONSIDERATION
-                APPROXIMATELY
+PERP_ORG:       -
+TARGET:         -
 VICTIM:         -
 
      SCORES for DEV-MUC3-0306
@@ -1447,11 +1342,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
-Targets         1.00 (1/1)	   0.12 (1/8)         0.22
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.17 (2/12)        0.24
+TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1471,23 +1366,22 @@ ID:             DEV-MUC3-0316
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
                 DYNAMITE CHARGE
-PERP_INDIV:     IT
-PERP_ORG:       ELN
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         IT
+VICTIM:         -
 
      SCORES for DEV-MUC3-0316
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/1)         0.00
+Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.29 (2/7)         0.33
+TOTAL           0.40 (2/5)	   0.67 (2/3)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1507,8 +1401,7 @@ ID:             DEV-MUC3-0318
 INCIDENT:       ATTACK
 WEAPON:         BOMB
 PERP_INDIV:     -
-PERP_ORG:       POLICE
-                FPMR
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1518,11 +1411,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.50 (2/4)         0.44
+TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1544,11 +1437,9 @@ ID:             DEV-MUC3-0325
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMY
-                POLICE
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PARISHIONERS
-                CATHEDRAL
+VICTIM:         -
 
      SCORES for DEV-MUC3-0325
 
@@ -1556,11 +1447,11 @@ VICTIM:         PARISHIONERS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/3)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.20 (1/5)         0.20
+TOTAL           0.20 (1/5)	   1.00 (1/1)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1580,8 +1471,7 @@ ID:             DEV-MUC3-0342
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1591,11 +1481,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.33 (1/3)         0.33
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1650,12 +1540,9 @@ ID:             DEV-MUC3-0347
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         COLOMBIAN JUSTICE CARLOS VALENCIA
-                JUDICIAL BRANCH
-                JUSTICE
+VICTIM:         -
 
      SCORES for DEV-MUC3-0347
 
@@ -1663,11 +1550,11 @@ VICTIM:         COLOMBIAN JUSTICE CARLOS VALENCIA
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/3)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (1/2)	   0.17 (1/6)         0.25
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1688,9 +1575,9 @@ ID:             DEV-MUC3-0351
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         HER PERSONS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0351
 
@@ -1698,11 +1585,11 @@ VICTIM:         HER PERSONS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/1)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.33 (1/3)         0.29
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1723,8 +1610,8 @@ INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
 PERP_ORG:       -
-TARGET:         COUNTRY
-VICTIM:         LUIS CARLOS GALAN
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0354
 
@@ -1733,10 +1620,10 @@ Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/1)         0.00
-Victims         1.00 (1/1)	   1.00 (1/1)         1.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           1.00 (2/2)	   0.67 (2/3)         0.80
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1757,25 +1644,22 @@ VICTIM:         LUIS CARLOS GALAN
 ID:             DEV-MUC3-0366
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     SENATOR LUIS CARLOS GALAN
-                10,777 PERSONS
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SENATOR LUIS CARLOS GALAN
-                10,777 PERSONS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0366
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/3)	   0.00 (0/2)         0.00
+Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.14 (1/7)         0.18
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1794,26 +1678,22 @@ VICTIM:         LUIS CARLOS GALAN
 ID:             DEV-MUC3-0367
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     IT
-                SOLDIERS
-PERP_ORG:       MILITARY
-                MEDELLIN
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         IT
-                LUIS CARLOS GALAN
-                18 AUGUST
+VICTIM:         -
 
      SCORES for DEV-MUC3-0367
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.33 (1/3)         0.50
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.25 (2/8)         0.36
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1834,7 +1714,7 @@ INCIDENT:       ATTACK
 WEAPON:         EXPLOSIVE DEVICES
                 EXPLOSIVE DEVICE
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1844,11 +1724,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.25 (1/4)         0.29
+TOTAL           0.33 (1/3)	   0.33 (1/3)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1867,9 +1747,8 @@ VICTIM:         JUSTICE MARIA ELENA DIAZ / MARIA ELENA DIAZ
 ID:             DEV-MUC3-0391
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     AUTHORITIES
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1878,12 +1757,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.25 (1/4)         0.29
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1903,36 +1782,22 @@ VICTIM:         LUIS CARLOS GALAN
 ID:             DEV-MUC3-0395
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
-PERP_INDIV:     WHO
-                INVESTIGATIONS
-PERP_ORG:       GOVERNMENT
-TARGET:         DYNAMITE ATTACK
-                DYNAMITE ATTACK
-                DYNAMITE ATTACK
-                BOGOTA
-                BOGOTA
-                BOGOTA
-VICTIM:         SENATOR LUIS CARLOS GALAN
-                BOGOTA
-                18 AUGUST
-                GENERAL MIGUEL MAZA MARQUEZ
-                ADMINISTRATIVE DEPARTMENT
-                SECURITY
-                WHO
-                WHO
-                INVESTIGATIONS
+PERP_INDIV:     -
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0395
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/2)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
-Targets         0.00 (0/0)	   0.00 (0/6)         0.00
-Victims         0.00 (0/1)	   0.00 (0/9)         0.00
+Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/4)	   0.00 (0/20)        0.00
+TOTAL           0.00 (0/4)	   0.00 (0/2)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1952,8 +1817,7 @@ ID:             DEV-MUC3-0404
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -1963,11 +1827,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (1/2)	   0.33 (1/3)         0.40
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1986,22 +1850,22 @@ VICTIM:         LUIS CARLOS GALAN SARMIENTO
 ID:             DEV-MUC3-0406
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     SENATOR GALAN
+PERP_INDIV:     -
 PERP_ORG:       -
 TARGET:         -
-VICTIM:         SENATOR GALAN
+VICTIM:         -
 
      SCORES for DEV-MUC3-0406
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/1)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (1/2)	   0.33 (1/3)         0.40
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2022,11 +1886,9 @@ ID:             DEV-MUC3-0411
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       MILITARY
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         YOUNG MECHANICS STUDENT
-                ILLEGAL ACTIVITIES
-                THIS COUNTRY
+VICTIM:         -
 
      SCORES for DEV-MUC3-0411
 
@@ -2034,11 +1896,11 @@ VICTIM:         YOUNG MECHANICS STUDENT
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/3)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.20 (1/5)         0.20
+TOTAL           0.20 (1/5)	   1.00 (1/1)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2072,7 +1934,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 TRUCK
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2082,11 +1944,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/3)	   0.00 (0/0)         0.00
 Victims         0.00 (0/12)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.06 (1/17)	   0.25 (1/4)         0.10
+TOTAL           0.06 (1/17)	   0.33 (1/3)         0.10
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2107,8 +1969,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 TRUCK
 PERP_INDIV:     -
-PERP_ORG:       ELN
-                GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2118,11 +1979,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.20 (1/5)         0.25
+TOTAL           0.00 (0/3)	   0.00 (0/3)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2142,7 +2003,7 @@ ID:             DEV-MUC3-0443
 INCIDENT:       BOMBING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2152,11 +2013,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.20 (1/5)	   0.50 (1/2)         0.29
+TOTAL           0.20 (1/5)	   1.00 (1/1)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2181,9 +2042,9 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 POWERFUL BOMB
 PERP_INDIV:     -
-PERP_ORG:       MEDELLIN
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PEOPLE
+VICTIM:         -
 
      SCORES for DEV-MUC3-0451
 
@@ -2191,11 +2052,11 @@ VICTIM:         PEOPLE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/4)	   0.00 (0/0)         0.00
-Victims         0.50 (1/2)	   1.00 (1/1)         0.67
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.38 (3/8)	   0.60 (3/5)         0.46
+TOTAL           0.25 (2/8)	   0.67 (2/3)         0.36
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2214,30 +2075,22 @@ VICTIM:         COUNCILMAN
 ID:             DEV-MUC3-0452
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     GALEANO BERRIO
-                GALEANO BERRIO
-PERP_ORG:       GOVERNMENT
-                MILITARY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         GALEANO BERRIO
-                COUNCILMAN
-                CORDOBA DEPARTMENT
-                FRUSTRATED PLAN
-                CALI DRUG CARTEL
-                MEDELLIN CARTEL
-                U.S. DRUG MARKET
+VICTIM:         -
 
      SCORES for DEV-MUC3-0452
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.14 (1/7)         0.25
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.17 (2/12)        0.25
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2257,7 +2110,7 @@ ID:             DEV-MUC3-0465
 INCIDENT:       BOMBING
 WEAPON:         BOMB
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2267,11 +2120,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.67 (2/3)         0.57
+TOTAL           0.50 (2/4)	   1.00 (2/2)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2293,8 +2146,7 @@ WEAPON:         -
 PERP_INDIV:     -
 PERP_ORG:       -
 TARGET:         -
-VICTIM:         ORLANDO CUELLER OSORIO
-                12TH MUNICIPAL PENAL COURT
+VICTIM:         -
 
      SCORES for DEV-MUC3-0467
 
@@ -2304,9 +2156,9 @@ Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.50 (1/2)         0.67
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.67 (2/3)         0.67
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2326,14 +2178,9 @@ ID:             DEV-MUC3-0472
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
-TARGET:         FORCES
-                CEASE-FIRE
-                THIS IMPLYING
-                NATIONAL TERRITORY
-VICTIM:         MONSIGNOR OSCAR ARNULFO ROMERO
-                DEATH SQUADS
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0472
 
@@ -2341,11 +2188,11 @@ VICTIM:         MONSIGNOR OSCAR ARNULFO ROMERO
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
-Targets         0.00 (0/0)	   0.00 (0/4)         0.00
-Victims         0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.11 (1/9)         0.17
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2368,7 +2215,7 @@ WEAPON:         BOMB
                 DYNAMITE
                 DYNAMITE STICKS
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2378,11 +2225,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/1)	   0.00 (0/3)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.17 (1/6)	   0.20 (1/5)         0.18
+TOTAL           0.17 (1/6)	   0.25 (1/4)         0.20
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2401,25 +2248,22 @@ VICTIM:         PERQUIN CIVILIANS / CIVILIANS
 ID:             DEV-MUC3-0480
 INCIDENT:       ATTACK
 WEAPON:         BOMB
-PERP_INDIV:     THAT TWO SOLDIERS
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         THAT TWO SOLDIERS
-                BOMBINGS
-                CIVILIAN POPULATION
+VICTIM:         -
 
      SCORES for DEV-MUC3-0480
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/3)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.25 (2/8)         0.36
+TOTAL           0.33 (1/3)	   0.50 (1/2)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2446,8 +2290,7 @@ WEAPON:         BOMB
                 DYNAMITE CHARGE
 PERP_INDIV:     -
 PERP_ORG:       -
-TARGET:         17 KG
-                DYNAMITE
+TARGET:         -
 VICTIM:         -
 
      SCORES for DEV-MUC3-0487
@@ -2457,10 +2300,10 @@ Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (2/2)	   0.50 (2/4)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/3)	   0.00 (0/2)         0.00
+Targets         0.00 (0/3)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.43 (3/7)	   0.43 (3/7)         0.43
+TOTAL           0.43 (3/7)	   0.60 (3/5)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2525,34 +2368,22 @@ ID:             DEV-MUC3-0502
 INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
-PERP_INDIV:     THOUSANDS
-                PROMINENT POLITICIAN
-                IT
-                MORE THAN 100,000 PEOPLE
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         THOUSANDS
-                PROMINENT POLITICIAN
-                HECTARES
-                IT
-                MORE THAN 100,000 PEOPLE
-                ILLEGAL IMMIGRANTS
-                MEXICO
-                UNDOCUMENTED CENTRAL AMERICANS
-                GUATEMALA
+VICTIM:         -
 
      SCORES for DEV-MUC3-0502
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/4)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.33 (1/3)	   0.11 (1/9)         0.17
+Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.06 (1/18)        0.09
+TOTAL           0.00 (0/4)	   0.00 (0/3)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2573,11 +2404,9 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       MILITARY
-TARGET:         BANKS
-                CITY
-                MILITARY CONTROL
-VICTIM:         MINOR
+PERP_ORG:       -
+TARGET:         -
+VICTIM:         -
 
      SCORES for DEV-MUC3-0504
 
@@ -2585,11 +2414,11 @@ VICTIM:         MINOR
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
-Targets         0.00 (0/1)	   0.00 (0/3)         0.00
-Victims         1.00 (1/1)	   1.00 (1/1)         1.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.75 (3/4)	   0.38 (3/8)         0.50
+TOTAL           0.50 (2/4)	   0.67 (2/3)         0.57
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2645,11 +2474,8 @@ ID:             DEV-MUC3-0539
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ELN
-                GOVERNMENT
-TARGET:         COLOMBIAN OIL ENTERPRISE
-                NEWSMEN
-                COUNTRY
+PERP_ORG:       -
+TARGET:         -
 VICTIM:         -
 
      SCORES for DEV-MUC3-0539
@@ -2658,11 +2484,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/0)	   0.00 (0/3)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.33 (2/6)         0.40
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2686,33 +2512,22 @@ VICTIM:         FIDEL QUISPE
 ID:             DEV-MUC3-0552
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     MEMBERS
-                COLUMN
-                SHINING PATH MEMBERS
-                TTACK
-                HUANTA TOWN
-                AYACUCHO PROVINCE
-                RESULT
-PERP_ORG:       MILITARY
-                SHINING PATH
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         MEMBERS
-                HUANTA TOWN
-                AYACUCHO PROVINCE
-                RESULT
-                FEDERICO PAQUILLAUVI
+VICTIM:         -
 
      SCORES for DEV-MUC3-0552
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/7)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         0.17 (1/6)	   0.20 (1/5)         0.18
+Victims         0.00 (0/6)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.22 (2/9)	   0.13 (2/15)        0.17
+TOTAL           0.00 (0/9)	   0.00 (0/1)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2733,47 +2548,22 @@ VICTIM:         HECTOR DELGADO PARKER
 ID:             DEV-MUC3-0557
 INCIDENT:       KIDNAPPING
 WEAPON:         EXPLOSIVES
-PERP_INDIV:     PRESIDENTS
-                9 OCTOBER
-                TRUJILLO
-                LIMA
-                COUNTRIES
-                POLICE DOGS TRAINED
-                ROUNDUPS
-                DRIVER
-                KIDNAPPING
-                PEOPLE
-                WHOM
-                POLICE UNIFORMS
-                STREETS
-                LIMA
-                LLEGED LIEUTENANT
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PEOPLE
-                LIMA
-                ANY POSSIBLE
-                GUERRILLA MOVEMENTS
-                COURTS
-                ROUNDUPS
-                ROUNDUPS
-                DRIVER
-                DRIVER
-                KIDNAPPING
-                LLEGED LIEUTENANT
+VICTIM:         -
 
      SCORES for DEV-MUC3-0557
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/15)        0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.33 (1/3)	   0.09 (1/11)        0.14
+Victims         0.00 (0/3)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (2/6)	   0.07 (2/30)        0.11
+TOTAL           0.17 (1/6)	   0.50 (1/2)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2793,20 +2583,8 @@ ID:             DEV-MUC3-0559
 INCIDENT:       BOMBING
 WEAPON:         BOMB
                 CAR BOMB
-PERP_INDIV:     ITS PLACE
-                ECUADOR
-                PROPOSAL
-                TIME
-                FOREIGN MINISTERS
-                TRUJILLO
-                FOREIGN MINISTERS MEETING
-                FIRST MEETING
-                FIRST MEETING
-                ACAPULCO
-                SECOND MEETING
-                PUNTA DEL ESTE
-PERP_ORG:       MILITARY
-                POLICE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2815,12 +2593,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
-Perp_Ind        0.00 (0/0)	   0.00 (0/12)        0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           1.00 (2/2)	   0.12 (2/17)        0.21
+TOTAL           1.00 (2/2)	   0.67 (2/3)         0.80
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2840,7 +2618,7 @@ ID:             DEV-MUC3-0561
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2850,11 +2628,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (1/2)	   0.50 (1/2)         0.50
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2875,26 +2653,22 @@ ID:             DEV-MUC3-0565
 INCIDENT:       ATTACK
 WEAPON:         BULLET
                 BULLETS
-PERP_INDIV:     TALKS
-PERP_ORG:       FMLN
-                ARMED FORCES
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         WIFE
-                DEPUTY
-                EL
-                DIARIO DE HOY
+VICTIM:         -
 
      SCORES for DEV-MUC3-0565
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/4)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.20 (2/10)        0.29
+TOTAL           0.25 (1/4)	   0.33 (1/3)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2913,22 +2687,22 @@ VICTIM:         JESUIT PRIESTS / PRIESTS
 ID:             DEV-MUC3-0875
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     PRIESTS
-PERP_ORG:       GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PRIESTS
+VICTIM:         -
 
      SCORES for DEV-MUC3-0875
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   1.00 (1/1)         1.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.50 (2/4)         0.57
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2949,8 +2723,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -2960,11 +2733,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.40 (2/5)         0.40
+TOTAL           0.40 (2/5)	   0.67 (2/3)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -2983,28 +2756,22 @@ VICTIM:         PRIESTS
 ID:             DEV-MUC3-0887
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     PEOPLE
-                EL SALVADOR
-PERP_ORG:       FMLN
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PRIESTS
-                EL SALVADOR
-                U.S
-                MURDERS
-                HELLISH TORTURES
+VICTIM:         -
 
      SCORES for DEV-MUC3-0887
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.20 (1/5)         0.33
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.67 (2/3)	   0.20 (2/10)        0.31
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3025,8 +2792,7 @@ INCIDENT:       ATTACK
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                MILITARY
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3036,11 +2802,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.20 (1/5)         0.22
+TOTAL           0.25 (1/4)	   0.33 (1/3)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3062,10 +2828,9 @@ WEAPON:         HELICOPTER GUNSHIP
                 ARTILLERY
                 HELICOPTER GUNSHIPS
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SOLDIER
+VICTIM:         -
 
      SCORES for TST1-MUC3-0002
 
@@ -3073,11 +2838,11 @@ VICTIM:         SOLDIER
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/3)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   1.00 (1/1)         1.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.29 (2/7)         0.33
+TOTAL           0.00 (0/5)	   0.00 (0/4)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3104,7 +2869,7 @@ WEAPON:         DYNAMITE
                 EXPLOSIVES
                 ROCKETS
 PERP_INDIV:     -
-PERP_ORG:       POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3114,11 +2879,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (3/3)	   0.60 (3/5)         0.75
 Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (4/8)	   0.57 (4/7)         0.53
+TOTAL           0.50 (4/8)	   0.67 (4/6)         0.57
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3138,11 +2903,8 @@ ID:             TST1-MUC3-0035
 INCIDENT:       ATTACK
 WEAPON:         BULLET
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                ARMED FORCES
-TARGET:         1ST INFANTRY BRIGADE HEADQUARTERS
-                THURSDAY
-                ZACAMIL NEIGHBORHOOD
+PERP_ORG:       -
+TARGET:         -
 VICTIM:         -
 
      SCORES for TST1-MUC3-0035
@@ -3151,11 +2913,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
-Targets         0.00 (0/1)	   0.00 (0/3)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
+Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.29 (2/7)         0.36
+TOTAL           0.25 (1/4)	   0.50 (1/2)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3174,9 +2936,9 @@ VICTIM:         SOLDIERS / GROUP OF NINE U.S. SOLDIERS / GROUP OF NINE U.S. SOLD
 ID:             TST1-MUC3-0036
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-PERP_INDIV:     U.S
+PERP_INDIV:     -
 PERP_ORG:       -
-TARGET:         SOLDIERS
+TARGET:         -
 VICTIM:         -
 
      SCORES for TST1-MUC3-0036
@@ -3184,12 +2946,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
-Targets         0.00 (0/0)	   0.00 (0/1)         0.00
+Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.50 (2/4)         0.50
+TOTAL           0.50 (2/4)	   1.00 (2/2)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3212,27 +2974,22 @@ VICTIM:         JESUITS
 ID:             TST1-MUC3-0045
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     SIX JESUITS
-                ARMED INDIVIDUALS
-                WITNESSES
-                CRIME
-PERP_ORG:       ARMED FORCES
-                GOVERNMENT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         SIX JESUITS
-                SIX JESUITS
+VICTIM:         -
 
      SCORES for TST1-MUC3-0045
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.25 (1/4)	   0.25 (1/4)         0.25
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/4)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/2)	   0.00 (0/2)         0.00
+Victims         0.00 (0/2)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.38 (3/8)	   0.33 (3/9)         0.35
+TOTAL           0.12 (1/8)	   1.00 (1/1)         0.22
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3254,28 +3011,22 @@ VICTIM:         IGNACIO ELLACURIA
 ID:             TST1-MUC3-0050
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP_INDIV:     RECTOR
-                PRIESTS
-PERP_ORG:       GOVERNMENT
-                ARMY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         JESUITS
-                EL SALVADOR
-                RECTOR
-                PRIESTS
-                PRIESTS
+VICTIM:         -
 
      SCORES for TST1-MUC3-0050
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/2)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.50 (2/4)	   0.40 (2/5)         0.44
+Victims         0.00 (0/4)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (3/6)	   0.30 (3/10)        0.37
+TOTAL           0.17 (1/6)	   1.00 (1/1)         0.29
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3329,7 +3080,7 @@ ID:             TST1-MUC3-0080
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3339,11 +3090,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.50 (1/2)         0.33
+TOTAL           0.25 (1/4)	   1.00 (1/1)         0.40
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3365,13 +3116,9 @@ INCIDENT:       ATTACK
 WEAPON:         GRENADE
                 ROCKET
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                MILITARY
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         CONCHAGUA BATTALION
-                ROAD
-                ANAMOROS
-                LISLIQUE
+VICTIM:         -
 
      SCORES for TST1-MUC3-0092
 
@@ -3379,11 +3126,11 @@ VICTIM:         CONCHAGUA BATTALION
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/2)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
-Victims         0.00 (0/0)	   0.00 (0/4)         0.00
+Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.22 (2/9)         0.29
+TOTAL           0.20 (1/5)	   0.33 (1/3)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3439,12 +3186,7 @@ WEAPON:         -
 PERP_INDIV:     -
 PERP_ORG:       -
 TARGET:         -
-VICTIM:         JECAR NEGHME
-                MIR
-                REVOLUTIONARY LEFT
-                JECAR NEGHME
-                STREET
-                SANTIAGO
+VICTIM:         -
 
      SCORES for TST2-MUC4-0012
 
@@ -3454,9 +3196,9 @@ Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.17 (1/6)         0.29
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           1.00 (2/2)	   0.29 (2/7)         0.44
+TOTAL           0.50 (1/2)	   1.00 (1/1)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3475,25 +3217,22 @@ VICTIM:         ROBERTO ARMANDO RIVERA ESCOBAR
 ID:             TST2-MUC4-0019
 INCIDENT:       ATTACK
 WEAPON:         MACHINEGUN
-PERP_INDIV:     WHO
-PERP_ORG:       FMLN
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         NATIONAL FIRE DEPARTMENT DIRECTOR COLONEL ROBERTO ARMANDO RIVERA ESCOBAR
-                WHO
-                MACHINEGUN ATTACK
+VICTIM:         -
 
      SCORES for TST2-MUC4-0019
 
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.00 (0/0)	   0.00 (0/1)         0.00
-Perp_Org        1.00 (1/1)	   0.50 (1/2)         0.67
+Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/1)	   0.00 (0/3)         0.00
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.75 (3/4)	   0.38 (3/8)         0.50
+TOTAL           0.50 (2/4)	   1.00 (2/2)         0.67
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3513,31 +3252,22 @@ VICTIM:         SOLDIERS / GUARDS / NATIONAL GUARD PATROL
 ID:             TST2-MUC4-0044
 INCIDENT:       ATTACK
 WEAPON:         EXPLOSIVES
-PERP_INDIV:     NEZUELAN SOLDIERS
-                GUARDS
-                MEMBERS
-                COLOMBIAN GUERRILLAS
-                ARMY
-                NATIONAL LIBERATION ARMY
-                EXPLOSIVES
-PERP_ORG:       ARMY
-                MILITARY
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         NEZUELAN SOLDIERS
-                GUARDS
-                EXPLOSIVES
+VICTIM:         -
 
      SCORES for TST2-MUC4-0044
 
                 RECALL             PRECISION          F-MEASURE
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         1.00 (1/1)	   1.00 (1/1)         1.00
-Perp_Ind        0.50 (1/2)	   0.14 (1/7)         0.22
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/2)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
-Victims         1.00 (1/1)	   0.33 (1/3)         0.50
+Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.43 (3/7)	   0.21 (3/14)        0.29
+TOTAL           0.14 (1/7)	   0.50 (1/2)         0.22
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3557,8 +3287,7 @@ ID:             TST2-MUC4-0046
 INCIDENT:       BOMBING
 WEAPON:         BOMB
 PERP_INDIV:     -
-PERP_ORG:       POLICE
-                NATIONAL POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3568,11 +3297,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.25 (1/4)	   0.25 (1/4)         0.25
+TOTAL           0.25 (1/4)	   0.50 (1/2)         0.33
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3626,7 +3355,7 @@ ID:             TST2-MUC4-0053
 INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3636,11 +3365,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.33 (1/3)	   0.50 (1/2)         0.40
+TOTAL           0.33 (1/3)	   1.00 (1/1)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3663,9 +3392,9 @@ ID:             TST2-MUC4-0056
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP_INDIV:     -
-PERP_ORG:       ARMED FORCES
+PERP_ORG:       -
 TARGET:         -
-VICTIM:         PORTERS
+VICTIM:         -
 
      SCORES for TST2-MUC4-0056
 
@@ -3673,11 +3402,11 @@ VICTIM:         PORTERS
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        1.00 (1/1)	   1.00 (1/1)         1.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
-Victims         0.00 (0/4)	   0.00 (0/1)         0.00
+Victims         0.00 (0/4)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.29 (2/7)	   0.67 (2/3)         0.40
+TOTAL           0.14 (1/7)	   1.00 (1/1)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3699,9 +3428,8 @@ VICTIM:         JESUS FERNANDEZ
 ID:             TST2-MUC4-0070
 INCIDENT:       KIDNAPPING
 WEAPON:         -
-PERP_INDIV:     SALVADORAN TELEVISION JOURNALISTS
-PERP_ORG:       GOVERNMENT
-                POLICE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3710,12 +3438,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/4)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.14 (1/7)	   0.25 (1/4)         0.18
+TOTAL           0.14 (1/7)	   1.00 (1/1)         0.25
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3736,8 +3464,7 @@ INCIDENT:       BOMBING
 WEAPON:         BOMB
                 BOMBS
 PERP_INDIV:     -
-PERP_ORG:       GOVERNMENT
-                POLICE
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3747,11 +3474,11 @@ VICTIM:         -
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
 Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/1)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.50 (2/4)	   0.40 (2/5)         0.44
+TOTAL           0.50 (2/4)	   0.67 (2/3)         0.57
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3771,8 +3498,7 @@ ID:             TST2-MUC4-0093
 INCIDENT:       ATTACK
 WEAPON:         BOMB
 PERP_INDIV:     -
-PERP_ORG:       FMLN
-                FARABUNDO MARTI NATIONAL LIBERATION FRONT
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3782,11 +3508,11 @@ VICTIM:         -
 Incident        0.00 (0/1)	   0.00 (0/1)         0.00
 Weapons         0.00 (0/0)	   0.00 (0/1)         0.00
 Perp_Ind        0.00 (0/0)	   0.00 (0/0)         0.00
-Perp_Org        0.00 (0/1)	   0.00 (0/2)         0.00
+Perp_Org        0.00 (0/1)	   0.00 (0/0)         0.00
 Targets         0.00 (0/0)	   0.00 (0/0)         0.00
 Victims         0.00 (0/1)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.00 (0/3)	   0.00 (0/4)         0.00
+TOTAL           0.00 (0/3)	   0.00 (0/2)         0.00
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3807,8 +3533,8 @@ ID:             TST2-MUC4-0095
 INCIDENT:       BOMBING
 WEAPON:         EXPLOSIVE DEVICES
                 EXPLOSIVE DEVICE
-PERP_INDIV:     SE TERRORIST ACTIONS
-PERP_ORG:       AIR FORCE
+PERP_INDIV:     -
+PERP_ORG:       -
 TARGET:         -
 VICTIM:         -
 
@@ -3817,12 +3543,12 @@ VICTIM:         -
                 RECALL             PRECISION          F-MEASURE
 Incident        1.00 (1/1)	   1.00 (1/1)         1.00
 Weapons         1.00 (1/1)	   0.50 (1/2)         0.67
-Perp_Ind        0.00 (0/1)	   0.00 (0/1)         0.00
-Perp_Org        0.00 (0/0)	   0.00 (0/1)         0.00
+Perp_Ind        0.00 (0/1)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/0)	   0.00 (0/0)         0.00
 Targets         0.00 (0/2)	   0.00 (0/0)         0.00
 Victims         0.00 (0/0)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.40 (2/5)	   0.40 (2/5)         0.40
+TOTAL           0.40 (2/5)	   0.67 (2/3)         0.50
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -3832,9 +3558,9 @@ TOTAL           0.40 (2/5)	   0.40 (2/5)         0.40
                 RECALL             PRECISION          F-MEASURE
 Incident        0.83 (83/100)	   0.83 (83/100)      0.83
 Weapons         0.73 (32/44)	   0.34 (32/95)       0.46
-Perp_Ind        0.03 (2/69)	   0.02 (2/103)       0.02
-Perp_Org        0.47 (22/47)	   0.16 (22/140)      0.24
-Targets         0.02 (1/62)	   0.02 (1/44)        0.02
-Victims         0.14 (20/144)	   0.11 (20/175)      0.13
+Perp_Ind        0.00 (0/69)	   0.00 (0/0)         0.00
+Perp_Org        0.00 (0/47)	   0.00 (0/0)         0.00
+Targets         0.00 (0/62)	   0.00 (0/0)         0.00
+Victims         0.00 (0/144)	   0.00 (0/0)         0.00
 --------        --------------     --------------     ----
-TOTAL           0.34 (160/466)	   0.24 (160/657)     0.28
+TOTAL           0.25 (115/466)	   0.59 (115/195)     0.35

@@ -296,6 +296,10 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 				print("---------------------")
 			print("############################\n\n\n")
 
+
+	keeplose = "111111"
+	predicts = purgePredicts(predicts, keeplose)
+
 	print "print predicts #####################################################"
 
         printList(predicts,0)
@@ -316,6 +320,19 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 	return predictions
 
 
+def purgePredicts(predicts, ar):
+	cats = {"INCIDENT": 0, "WEAPON":1, "PERP INDIV":2,"PERP ORG":3, "TARGET":4, "VICTIM":5}
+
+	newpred = []
+
+	for file in predicts:
+		pred = []
+		for predic in file:
+			if ar[cats[predic[0]]] == '1':
+				pred.append(predic)
+		newpred.append(pred)
+
+	return newpred
 
 
 
