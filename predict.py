@@ -49,13 +49,15 @@ def main(argv):
 	devtest = 0
 
 	t1Files = []
-
+	'''
 	if devtest:
 		t1Files = processFiles('developset/texts', 'developset/answers', argv[0])
-		processAns('developset/answers', argv[0])
+		#processAns('developset/answers', argv[0])
 	else:
 		t1Files = processFiles('testset1/texts', 'testset1/answerkeys', argv[0])
-		processAns('testset1/answerkeys', argv[0])
+		#processAns('testset1/answerkeys', argv[0])
+	'''
+	
 	#t1Files = processFiles('developset/texts', 'developset/answers', "DEV")
 
 	patterns = readPats("output/patterns.txt")
@@ -74,10 +76,11 @@ def main(argv):
 	#printList(words,0)
 	#print(triggers)
 	
-	files = processFilesFinal("sample-textfile.txt",'')
+	print(argv[0])
+	files = processFilesFinal(argv[0],'')
 	#printFiles2(files)
 
-	predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+	predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	
 	#predictions=predict_auto_slog(t1Files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
@@ -96,7 +99,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
 	for i in range(len(files)):
 		tags.append(files[i][1][3])
-		if not test:
+		if test:
 			ans.append(files[i][2][1])
 		sentences.append(files[i][1][1])
 		raw.append(files[i][1][0])
@@ -144,7 +147,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 		inc, proWord = dumbGuess(raw[i])
 		
 		predict.append(['INCIDENT', inc])
-		if not test:
+		if test:
 			if inc == ans[i][1][1][0]:
 				right += 1
 			else:
@@ -302,7 +305,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 		problematic.append([key, problems[key]])
 
 	problematic = sorted(problematic, key=lambda x: x[1], reverse=True)
-	if not test:
+	if test:
 		print("Right = " + str(right) + "/" + str(count))
 		printList(problematic, 0)
 

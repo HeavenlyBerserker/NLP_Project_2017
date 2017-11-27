@@ -12,15 +12,10 @@ Instructions so far:
 
 1. To install python repositories and test the system on a file, run test.sh with the filename to test and answers as a single argument:
 
-	./infoextract.sh <textfile>
-	
-	For instance, if using the following code, prediction would run on "sample-textfile.txt" for input text and "sample-answers.txt" for input answers file.:
-	
-	./infoextract.sh sample 
-
+	./testFinal.sh <textfile>
 		
 	
-2. [Optional] To start learning process. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
+2. [Optional] To start learning process only. This may take a few dozen seconds, so run at your own peril. Run project.py with no arguments. Suggested version 2.7.12
 	
 	python project.py
 
