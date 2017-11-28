@@ -259,15 +259,21 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                                                         one_predict=clean_out_number(one_predict)
                                                         one_doc_predict.append(one_predict)
  
-                                ####TO IMPROVE##############
+								####TO IMPROVE##############
                                 if nc.root.dep_.encode('utf-8')=='nsubjpass':
                                         for each_pattern in nsubjpasspatternlist:
-                                                for current in range(nc.root.i, len(doc)):
-                                                        if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
-                                                                one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
-                                                                one_predict=clean_one_predict(one_predict)
-                                                                one_predict=clean_out_number(one_predict)
-                                                                one_doc_predict.append(one_predict)                                                    
+                                                not_exit=True
+                                                current=nc.root.i+1
+                                                while not_exit and current<len(doc):
+                                                        if doc[current].lemma_.encode('utf-8')=="be":
+                                                                if doc[current +1 ].pos_.encode('utf-8')=='VERB' and doc[current +1 ].text.encode('utf-8') in each_pattern: 
+                                                                        one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
+                                                                        one_predict=clean_one_predict(one_predict)
+                                                                        one_predict=clean_out_number(one_predict)
+                                                                        one_doc_predict.append(one_predict)                                                                  
+                                                                        not_exit=False
+                                                        current=current+1  
+
 
                                 if nc.root.dep_.encode('utf-8')=='csubjpass':
                                         for each_pattern in csubjpasspatternlist:

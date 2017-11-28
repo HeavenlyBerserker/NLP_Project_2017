@@ -1,36 +1,36 @@
 involve/PERP INDIV/
 rescue/VICTIM/
-murder/VICTIM/
-force/VICTIM/
-burn/TARGET/
 kill/VICTIM/
-bomb/TARGET/
-explode/TARGET/
-sabotage/TARGET/
-injure/VICTIM/
 damage/TARGET/
-guard/TARGET/
-assassinate/VICTIM/
+sabotage/TARGET/
+link/PERP INDIV/
+warn/PERP INDIV/
 attacked/TARGET/
 attacked/VICTIM/
-capture/VICTIM/
-destroy/TARGET/
-accuse/PERP INDIV/
-accuse/VICTIM/
-uncontroll/PERP INDIV/
-warn/PERP INDIV/
-investigate/PERP INDIV/
-attack/TARGET/
-blow/TARGET/
-prosecute/PERP INDIV/
-wound/VICTIM/
+guard/TARGET/
 identify/PERP INDIV/
-suspect/PERP INDIV/
-link/PERP INDIV/
-recover/VICTIM/
-release/VICTIM/
-involve/PERP INDIV/
+capture/VICTIM/
 arrest/PERP INDIV/
+accuse/PERP INDIV/
+blow/TARGET/
+destroy/TARGET/
+injure/VICTIM/
+wound/VICTIM/
+murder/VICTIM/
+explode/TARGET/
+bomb/TARGET/
 locate/PERP INDIV/
-pursue/PERP INDIV/
+release/VICTIM/
+suspect/PERP INDIV/
+attack/TARGET/
+recover/VICTIM/
 condemn/PERP INDIV/
+pursue/PERP INDIV/
+uncontroll/PERP INDIV/
+burn/TARGET/
+accuse/VICTIM/
+assassinate/VICTIM/
+force/VICTIM/
+prosecute/PERP INDIV/
+involve/PERP INDIV/
+investigate/PERP INDIV/
