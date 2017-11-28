@@ -1,6 +1,10 @@
 NLP Project 2017
 Project by Hong Xu and Jie Zhang
 Written on python 2.7.12
+#!/bin/bash
+For any questions, please contact Hong Xu u0867999@utah.edu
+Input: file to test as argument to ./infoextract.sh
+Output: final-predictions.txt in main directory
 
 Created October 28 2017
 Sources for nltk: http://www.nltk.org/book_1ed/
@@ -8,7 +12,7 @@ Credit to : Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language P
 
 
 #######################################################
-Instructions so far:
+Instructions:
 
 1. To install python repositories and test the system on a file, run test.sh with the filename to test and answers as a single argument:
 
@@ -28,30 +32,56 @@ spacy
 b ######################################################
 Time Estimate:
 	For file prediction
-		<1s per file
+		~10s per file
 	
 	For training:
-		<45s total
+		<300s total
 		
-	Total for samples:
-		~120s
+	Total for testset1 samples:
+		<30 min
 
 
 c ######################################################
 Team member contributions.
 
-Hong Xu: Was responsible for writing the code to parse the files into usable text format. Created the system to create patterns and find triggers. Implemented a way to classify incidents by frequency of certain words. Responsible for the testing and experimentation on the test files.
+Hong Xu: Was responsible for writing the code to parse the files into usable text format. 
+Created the system to create automatic patterns and find triggers. Implemented a way to classify incidents by frequency of certain words. 
+Responsible for the testing and experimentation on the test files.
+Was responsible of finding incidents, first by unigrams and bigrams, then by testing rules.
+Also responsible for finding weapons, and wrote part of the code for perp_org.
+Tested on cade machines and made sure all the libraries installed correctly, the venv was set up 
+correctly and the code ran correctly and in a format that was acceptable.
 
 Zhang Jie: Read AutoSlog paper and understand basic steps/concepts.
 Tried to implement a NER system that will learn words in the categories and tried to classify new words seen. So far does not work well.
 Implemented a method that extracts relatively long sentence chunks as patterns.
+Used NER-taggers to create patterns to test on the data.
+Handwrote patterns to test on the data.
+Did some preprocessing to sharpen answers.
 	
 d ######################################################
-Progress, problems and limitations:
+Results and final thoughts:
 
-	We have built a system similar to autoslog, however, we have struggled to find a way to classify words into classes (location, person, inanimate object, untangible). Without this, our precission has suffered severely.
-	
-	At the moment, our recall hovers between 35% and 45%, whereas our precision is low at 3% to 5%. Due to the inconsistency between the two scores, we can only achieve f-measures between 7% and 10%. In future builds, we aim to bring up the precision so it matches the recall in order to bring up our score. We have deviced various methods to classify our responses, from figuring out their class (location, person, inanimate object, untangible) to deeply examining the origins of every chosen word. Furthermore, we also hope to bring up the recall by trimming and further engineering our outputs.
+	The project was overall very interesting and we have learned a lot from it regardless of our performance.
+
+	At first, we tried to created a fully automated system reminiscent of autoslog, but after multiple
+failed trials decided on using more systems along the lines of ngrams, at least in terms of incidents
+and weapons, again to no avail. Finally, we decided to go old-school and hand-pick valid patterns 
+from the created patterns to input into our final system. Turns out this technique yielded the best results
+and although they only hovered around 35%, we were quite pleased with the results. In truth, if we had
+only considered incidents, weapons, and perp org, our system would reach 40%, but we decided it was
+better to be mediocre at the well rounded task than to ignore entries.
+
+	After this project, we have definetely gained respect for working automated systems and hope
+that this will improve further in the future. However, we do believe that deeper language understanding
+will be required to improve on the state of the art performances using primarily methods reminiscent of
+statistical studies on datasets. 
+
+	Summing up, after testing various automatic methods, we decided on using hand written rules to
+improve our system, aware of the intricacies inherent to the domain-restricted event extraction task
+which elude automatic systems. This has, in turn, spiked our curiosity as to what the state of the art
+in this task really looks like, including the subtle advances that seem to be steadily improving our
+the performace on the task.
 
 
 Change log:
@@ -68,4 +98,4 @@ Change log:
 2017-11-06 With prunning of some answers, obtained a recall of 20%, but still low precision of 1%.
 2017-11-06 Improved recall to ~25%.
 2017-11-07 Trying to improve system to no avail.
-
+2017-11-15 to 2017-11-28 Final push: tried to implement multiple systems, did extensive testing and converted everything into turn-in format.

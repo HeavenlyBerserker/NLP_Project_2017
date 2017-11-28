@@ -1,3 +1,5 @@
+#!/bin/bash
+rm -rf venv
 pip install --user virtualenv
 mkdir venv
 python -m virtualenv venv

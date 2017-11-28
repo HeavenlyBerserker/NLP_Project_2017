@@ -46,7 +46,7 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
-	final = 0
+	final = 1
 
 	devtest = 0
 
@@ -95,6 +95,8 @@ def main(argv):
 	#predictions = predict(t1Files, patterns, triggers, words,0)
 
 	writePred(predictions)
+
+	print("The final predictions have been written to final-predictions.txt in the NLP_Project_2017  directory.")
 
 	print(argv)
 

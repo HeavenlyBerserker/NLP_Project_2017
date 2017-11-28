@@ -16,7 +16,8 @@ WEAPON:         -
 PERP INDIV:     -
 PERP ORG:       FMLN
 TARGET:         -
-VICTIM:         MONSIGNOR ROMERO
+VICTIM:         LOW-RANKING OFFICERS
+                MONSIGNOR ROMERO
                 JESUIT FATHERS
                 OVER 7,000 PEOPLE
 
@@ -76,7 +77,8 @@ WEAPON:         MINE
 PERP INDIV:     -
 PERP ORG:       GOVERNMENT
 TARGET:         -
-VICTIM:         MSGR ARNULFO ROMERO
+VICTIM:         INVESTIGATIONS
+                MSGR ARNULFO ROMERO
                 MSGR ROMERO
 
 ID:             DEV-MUC3-0077
@@ -84,7 +86,7 @@ INCIDENT:       KIDNAPPING
 WEAPON:         -
 PERP INDIV:     KIDNAPPERS
                 M
-PERP ORG:       MEDELLIN
+PERP ORG:       NATIONAL POLICE
 TARGET:         -
 VICTIM:         -
 
@@ -150,11 +152,12 @@ WEAPON:         VEHICLE
 PERP INDIV:     TROOPS
                 THIS NEW COWARDLY ACTION
                 OFFICERS
-                VIDES CASANOVA'S TROOPS
+                VIDES CASANOVA 'S TROOPS
 PERP ORG:       AIR FORCE
 TARGET:         -
 VICTIM:         REPORTER ROBERTO NAVAS
                 REPORTERS ROBERTO NAVAS
+                INDISCRIMINATE SHOOTING
                 THAT JOURNALIST ROBERTO NAVAS
                 ROBERTO NAVAS
 
@@ -166,7 +169,7 @@ PERP INDIV:     ATTACK
 PERP ORG:       -
 TARGET:         CHILEAN
                 SHOCK WAVE
-                INSTITUTE'S WINDOWS
+                INSTITUTE 'S WINDOWS
                 CULTURAL INSTITUTE
 VICTIM:         -
 
@@ -236,7 +239,7 @@ ID:             DEV-MUC3-0239
 INCIDENT:       ATTACK
 WEAPON:         -
 PERP INDIV:     -
-PERP ORG:       -
+PERP ORG:       NATIONALIST REPUBLICAN ALLIANCE
 TARGET:         -
 VICTIM:         ANTONIO RODRIGUEZ PORTH
                 RODRIGUEZ PORTH
@@ -296,6 +299,7 @@ VICTIM:         2 PEOPLE
 ID:             DEV-MUC3-0263
 INCIDENT:       BOMBING
 WEAPON:         DYNAMITE
+                5 KG OF DYNAMITE
 PERP INDIV:     -
 PERP ORG:       ELN
 TARGET:         PACIFIC OIL PIPELINE
@@ -336,7 +340,7 @@ INCIDENT:       ATTACK
 WEAPON:         -
 PERP INDIV:     -
 PERP ORG:       ELN
-TARGET:         COUNTRY'S PETROLEUM INSTALLATIONS
+TARGET:         COUNTRY 'S PETROLEUM INSTALLATIONS
 VICTIM:         -
 
 ID:             DEV-MUC3-0289
@@ -360,11 +364,12 @@ VICTIM:         APPROXIMATELY SIX PERSONS
 
 ID:             DEV-MUC3-0298
 INCIDENT:       ATTACK
-WEAPON:         FIREARMS
+WEAPON:         MOLOTOV COCKTAILS
+                FIREARMS
 PERP INDIV:     APPROXIMATELY
 PERP ORG:       GOVERNMENT
 TARGET:         -
-VICTIM:         -
+VICTIM:         POOR FAMILIES
 
 ID:             DEV-MUC3-0306
 INCIDENT:       ATTACK
@@ -372,7 +377,7 @@ WEAPON:         EXPLOSIVES
 PERP INDIV:     COLOMBIAN TOWNS
 PERP ORG:       ELN
 TARGET:         1 METER
-                COLOMBIA'S OIL PIPELINES
+                COLOMBIA 'S OIL PIPELINES
                 GOVERNMENT
                 OIL INDUSTRY
                 CANO LIMON-COVENAS OIL PIPELINE
@@ -407,7 +412,9 @@ PERP INDIV:     SALOMON ENRIQUE
                 ME
 PERP ORG:       ARMY
 TARGET:         -
-VICTIM:         IR PAINS
+VICTIM:         PARISHIONERS
+                YOU
+                ME
 
 ID:             DEV-MUC3-0342
 INCIDENT:       ATTACK
@@ -532,11 +539,12 @@ VICTIM:         SENATOR GALAN
 ID:             DEV-MUC3-0411
 INCIDENT:       ATTACK
 WEAPON:         -
-PERP INDIV:     "ATLACATL" BATTALION SOLDIERS
+PERP INDIV:     `` ATLACATL '' BATTALION SOLDIERS
                 WHO
 PERP ORG:       MILITARY
 TARGET:         -
 VICTIM:         YOUNG MECHANICS STUDENT
+                `` ATLACATL '' BATTALION SOLDIERS
                 INNOCENT YOUNG MAN
 
 ID:             DEV-MUC3-0413
@@ -616,7 +624,7 @@ WEAPON:         BOMB
                 DYNAMITE
 PERP INDIV:     -
 PERP ORG:       -
-TARGET:         HONORARY CONSUL'S AUTOMOBILE
+TARGET:         HONORARY CONSUL 'S AUTOMOBILE
 VICTIM:         -
 
 ID:             DEV-MUC3-0480
@@ -627,6 +635,7 @@ PERP ORG:       FMLN
 TARGET:         -
 VICTIM:         THAT TWO SOLDIERS
                 ARMED FORCES
+                BOMBINGS
 
 ID:             DEV-MUC3-0487
 INCIDENT:       BOMBING
@@ -655,14 +664,17 @@ WEAPON:         BOMB
 PERP INDIV:     CARTELS
                 PROMINENT POLITICIAN
                 BANKER RAMIRO CASTILLO LOVE
-PERP ORG:       ARMY
+PERP ORG:       ARMED FORCES
 TARGET:         -
 VICTIM:         THOUSANDS
+                HECTARES
                 POLITICIANS
                 IT
                 MORE THAN 100,000 PEOPLE
                 GOVERNMENT
                 ARMY
+                ILLEGAL IMMIGRANTS
+                UNDOCUMENTED CENTRAL AMERICANS
 
 ID:             DEV-MUC3-0504
 INCIDENT:       BOMBING
@@ -717,14 +729,15 @@ PERP INDIV:     PRESIDENTS
                 LLEGED LIEUTENANT
 PERP ORG:       ARMY
 TARGET:         -
-VICTIM:         ROUNDUPS
+VICTIM:         PEOPLE
+                ROUNDUPS
                 DRIVER
                 HIS BODYGUARD
 
 ID:             DEV-MUC3-0559
 INCIDENT:       BOMBING
 WEAPON:         BOMB
-                VEHICLE
+                CAR BOMB
 PERP INDIV:     FOREIGN MINISTERS
                 FOREIGN MINISTERS MEETING
                 FIRST MEETING
@@ -779,6 +792,7 @@ PERP INDIV:     PEOPLE
 PERP ORG:       FMLN
 TARGET:         -
 VICTIM:         PRIESTS
+                MURDERS
                 WHO
 
 ID:             DEV-MUC3-0888
@@ -830,7 +844,8 @@ ID:             TST1-MUC3-0036
 INCIDENT:       BOMBING
 WEAPON:         BOMB
                 HOMEMADE BOMB
-PERP INDIV:     SOLDIERS
+PERP INDIV:     U.S
+                SOLDIERS
                 Y
                 SUSPECTS
 PERP ORG:       -
