@@ -46,7 +46,7 @@ def main(argv):
 	#[i][2][1] = parsed answers
 	#See printed output for more details
 
-	final = 1
+	final = 0
 
 	devtest = 0
 
@@ -87,9 +87,9 @@ def main(argv):
 	predictions = []
 
 	if final == 0:
-		predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+		predictions = predict(t1Files, patterns, triggers, words,1, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist, attrpatternlist)
 	else:
-		predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
+		predictions = predict(files, patterns, triggers, words,0, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist, attrpatternlist)
 
 	#predictions=predict_auto_slog(t1Files, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist)
 	#predictions = predict(t1Files, patterns, triggers, words,0)
@@ -99,7 +99,7 @@ def main(argv):
 	print(argv)
 
 
-def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist):
+def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist, attrpatternlist):
 	tags = []
 	ans = []
 	sentences = []
@@ -176,7 +176,7 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 
 		org_count=0
 		for org in ORGs:
-			if org[0] in raw[i] and org[1] > 0 and org_count<2:
+			if org[0] in raw[i] and org[1] > 0 and org_count<1:
 				predict.append(['PERP ORG', org[0]])
 				org_count=org_count+1
 				
@@ -228,72 +228,117 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
                                         #print nc.root.head.lemma_.encode('utf-8')
                                         #print nc.root.head.dep_.encode('utf-8')
                                         for each_pattern in subjpatternlist:
-                                                if nc.root.head.lemma_.encode('utf-8') == 'be' and nc.root.head.dep_.encode('utf-8')=='ROOT':
+                                                if nc.root.head.lemma_.encode('utf-8') == 'be':
                                                         #print "nc.root.head.lemma_.encode('utf-8')"
                                                         #print each_pattern
                                                         #print nc.root.head.dep_.encode('utf-8')
                                                         
-                                                        if doc[nc.root.head.i+1].lemma_.encode('utf-8') in each_pattern or doc[nc.root.head.i+1].text.encode('utf-8') in each_pattern:
+                                                        if doc[nc.root.head.i+1].text.encode('utf-8') in each_pattern:
                                                                 #print "doc[nc.root.head.i+1].text.encode('utf-8')"
                                                                 #print doc[nc.root.head.i+1].text.encode('utf-8')
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
                                                                 one_doc_predict.append(one_predict)
                                                 
                                                 else:
-                                                        if nc.root.head.dep_.encode('utf-8') == 'ROOT' and nc.root.head.lemma_.encode('utf-8') in each_pattern:
+                                                        if nc.root.head.text.encode('utf-8') in each_pattern:
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
                                                                 one_doc_predict.append(one_predict)
                                                 
-                                elif nc.root.dep_.encode('utf-8')=='csubj':
+                                if nc.root.dep_.encode('utf-8')=='csubj':
                                         for each_pattern in csubjpatternlist:
                                                 if nc.root.head.text.encode('utf-8') in each_pattern:
                                                         one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                         one_predict=clean_one_predict(one_predict)
+                                                        one_predict=clean_out_number(one_predict)
                                                         one_doc_predict.append(one_predict)
  
-
-                                elif nc.root.dep_.encode('utf-8')=='nsubjpass':
+                                ####TO IMPROVE##############
+                                if nc.root.dep_.encode('utf-8')=='nsubjpass':
                                         for each_pattern in nsubjpasspatternlist:
                                                 for current in range(nc.root.i, len(doc)):
                                                         if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
                                                                 one_doc_predict.append(one_predict)                                                    
 
-                                elif nc.root.dep_.encode('utf-8')=='csubjpass':
+                                if nc.root.dep_.encode('utf-8')=='csubjpass':
                                         for each_pattern in csubjpasspatternlist:
                                                 for current in range(nc.root.i, len(doc)):
                                                         if doc[current].pos_.encode('utf-8')=='VERB' and doc[current].dep_.encode('utf-8')!='auxpass' and doc[current].text.encode('utf-8') in each_pattern:                                        
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
                                                                 one_doc_predict.append(one_predict)
                         
-                                elif nc.root.dep_.encode('utf-8')=='dobj':
+                                if nc.root.dep_.encode('utf-8')=='dobj':
                                         for each_pattern in dobjpatternlist:
-                                                        if nc.root.head.lemma_.encode('utf-8') in each_pattern:
-                                                                one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
-                                                                one_predict=clean_one_predict(one_predict)
-                                                                one_doc_predict.append(one_predict)
-
+                                                not_exit=True
+                                                current=nc.root.i-1
+                                                while not_exit and current>=0:
+                                                        if doc[current].pos_.encode('utf-8')=="VERB":
+                                                                if doc[current].lemma_.encode('utf-8') in each_pattern:
+                                                                        one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
+                                                                        one_predict=clean_one_predict(one_predict)
+                                                                        one_predict=clean_out_number(one_predict) 
+                                                                        one_doc_predict.append(one_predict)                                                                       
+                                                                not_exit=False
+                                                        current=current-1
                                                         
 
-                                elif nc.root.dep_.encode('utf-8')=='pobj' and nc.root.ent_type_.encode('utf-8')!='DATE':
+                                if nc.root.dep_.encode('utf-8')=='pobj' and nc.root.ent_type_.encode('utf-8')!='DATE':
                                         for each_pattern in pobjpatternlist:
+                                                current=nc.root.left_edge.i-1
+
+                                                if (doc[current].dep_.encode('utf-8')=="prep" or doc[current].pos_.encode('utf-8')=="ADP") and doc[current].text.encode('utf-8') in each_pattern and doc[current-1].text.encode('utf-8') in each_pattern:
+                                                        one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
+                                                        one_predict=clean_one_predict(one_predict)
+                                                        one_predict=clean_out_number(one_predict)
+                                                        one_doc_predict.append(one_predict)
+
+                                                
+                                                '''
                                                 not_exit=True
                                                 current=nc.root.i-1
                                                 while not_exit and current>=0:
                                                         if (doc[current].dep_.encode('utf-8')=="prep" or doc[current].pos_.encode('utf-8')=="ADP") and doc[current].text.encode('utf-8') in each_pattern and doc[current-1].text.encode('utf-8') in each_pattern:
                                                                 one_predict=[each_pattern[len(each_pattern)-2], nc.text.encode('utf-8')]
                                                                 one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
                                                                 one_doc_predict.append(one_predict)
                                                                 not_exit=False
                                                         current=current-1
+                                                '''
+
+                                if nc.root.dep_.encode('utf-8')=='attr':
+                                        for each_pattern in attrpatternlist:
+                                                if nc.root.head.lemma_.encode('utf-8') == 'be':
+                                                        if doc[nc.root.head.i-1].text.encode('utf-8')=='TARGET':
+                                                                one_predict=['TARGET', nc.text.encode('utf-8')]
+                                                                one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
+                                                                one_doc_predict.append(one_predict)
+
+                                                        if doc[nc.root.head.i-1].text.encode('utf-8')=='VICTIM':
+                                                                one_predict=['VICTIM', nc.text.encode('utf-8')]
+                                                                one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
+                                                                one_doc_predict.append(one_predict)
+
+                                                        if doc[nc.root.head.i-1].text.encode('utf-8')=='PERPETRATOR':
+                                                                one_predict=['PERP INDIV', nc.text.encode('utf-8')]
+                                                                one_predict=clean_one_predict(one_predict)
+                                                                one_predict=clean_out_number(one_predict)
+                                                                one_doc_predict.append(one_predict)
+                                                                
                                                 
 
-                                      
-	
+                                                     
+                '''
 		if test:
 			print("############################\nPredictions:")
 			printList(predict, 0)
@@ -307,12 +352,13 @@ def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatter
 				prediRight(predict, ans[i])
 				print("---------------------")
 			print("############################\n\n\n")
+		'''
 			
         predicts=clean_duplicate_in_predicts(predicts)
 
 
 
-	keeplose = "110000"
+	keeplose = "111111"
 	predicts = purgePredicts(predicts, keeplose)
 
 	print "print predicts #####################################################"
@@ -435,7 +481,6 @@ def dumbGuess(text):
 def clean_duplicate_in_predicts(predicts):
         newcleanpredicts=[]
         for each_doc in predicts:
-                print "in each_doc iteration"
                 each_doc=clean_one_doc_predict(each_doc)
                 newcleanpredicts.append(each_doc)               
         return newcleanpredicts
@@ -444,8 +489,6 @@ def clean_duplicate_in_predicts(predicts):
 def clean_one_doc_predict(each_doc_predict):
         cleanpredict=[]
         for p in each_doc_predict:
-                print "in clean_one_doc_predict"
-                print p
                 inCP=-1
                 for i in range(len(cleanpredict)):
                         if p == cleanpredict[i]:
@@ -461,6 +504,7 @@ def clean_one_doc_predict(each_doc_predict):
 def clean_one_predict(one_predict):
 
         strip_count=0
+                
         while strip_count<3:
                 if one_predict[1][0:2]=="A ":
                         one_predict[1]=one_predict[1].lstrip("A ")
@@ -494,6 +538,17 @@ def clean_one_predict(one_predict):
                 strip_count=strip_count+1
                         
 	return one_predict
+
+def clean_out_number(one_predict):
+        nlp=spacy.load('en')
+        predicted_words=one_predict[1].split(" ")
+        string_length=len(predicted_words[0])
+        word=nlp(unicode(predicted_words[0]))
+        if word[0].pos_.encode('utf-8')=='NUM':
+                one_predict[1]=one_predict[1][string_length+1:]
+        return one_predict
+        
+
 
 def clean(predict):
 	npredict = []

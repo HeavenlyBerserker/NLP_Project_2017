@@ -58,8 +58,8 @@ def main(argv):
 	#[i][2][0] = raw answers
 	#[i][2][1] = parsed answers
 	#See printed output for more details
-	files = processFiles('developset/texts', 'developset/answers', "DEV")
-	t1Files = processFiles('developset/texts', 'developset/answers', "TST1")
+	files = processFiles('developset/texts', 'developset/answers', "")
+	t1Files = processFiles('developset/texts', 'developset/answers', "")
 
 	#uncomment the following line to see how "files" works
 	#printFiles(files)
@@ -81,7 +81,7 @@ def main(argv):
         writePats_autoslog(csubjpasspatternlist, "output/csubjpasspatterns.txt")
         writePats_autoslog(dobjpatternlist, "output/dobjpatterns.txt")
         writePats_autoslog(pobjpatternlist, "output/pobjpatterns.txt")
-        writePats_autoslog(pobjpatternlist, "output/attrpatterns.txt")
+        writePats_autoslog(attrpatternlist, "output/attrpatterns.txt")
         
 	#printFiles(t1Files)
 
@@ -176,14 +176,14 @@ def auto_slog(files):
                                                                         while not_exit and current<len(doc):
                                                                                                                                                
                                                                                 if doc[current].pos_.encode('utf-8')=="VERB":
-                                                                                        if doc[current].tag_.encode('utf-8')=="VBP" or doc[current].tag_.encode('utf-8')=="HVS":
+                                                                                        if doc[current].lemma_.encode('utf-8')=="be" or doc[current].lemma_.encode('utf-8')=="have":
                                                                                                 one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
                                                                                         else:
-                                                                                                one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
-                                                                                                        one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
+                                                                                                        one_pattern_entry.append(doc[current+1].text.encode('utf-8'))
                                                                                         not_exit=False
                                                                                 current=current+1
                                                                                         
@@ -216,7 +216,7 @@ def auto_slog(files):
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
                                                                                                         one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         else:
-                                                                                                one_pattern_entry.append(doc[current].lemma_.encode('utf-8'))
+                                                                                                one_pattern_entry.append(doc[current].text.encode('utf-8'))
                                                                                                 if doc[current+1].pos_.encode('utf-8')=="VERB":
                                                                                                         one_pattern_entry.append(doc[current+1].lemma_.encode('utf-8'))
                                                                                         not_exit=False
@@ -352,10 +352,13 @@ def auto_slog(files):
                                                                         pobjpatternlist.append(one_pattern_entry)
                                                         
                 ####clean subj here!!!!!!
+        printList(subjpatternlist, 0)                                                                                
         subjpatternlist = clean_subj(subjpatternlist)
         subjpatternlist = subj_list_lemma(subjpatternlist)
         for entry in nsubjpasspatternlist:
                 subjpatternlist.append(entry)
+                
+        subjpatternlist=special_clean_subj(subjpatternlist)
 
         subjpatternlist=clean_pattern(subjpatternlist)
         csubjpatternlist=clean_pattern(csubjpatternlist)
@@ -381,6 +384,12 @@ def auto_slog(files):
 
         pobjpatternlist=clean_pobj(pobjpatternlist)
         dobjpatternlist=clean_dobj(dobjpatternlist)
+
+        subjpatternlist=special_clean_subj(subjpatternlist)
+        dobjpatternlist=special_clean_dobj(dobjpatternlist)
+        pobjpatternlist=special_clean_pobj(pobjpatternlist)
+        nsubjpasspatternlist=special_clean_nsubjpasspatternlist(nsubjpasspatternlist)
+        
 
 
         print "print subj list #####################################################################"
@@ -457,7 +466,7 @@ def subj_list_lemma(subjpatternlist):
 
                 
 def clean_subj(subjpatternlist):
-        goodwordlist=['WEARING', 'DIED', 'KILLED', 'INJURED', 'RESPONSIBLE', 'HIT', 'OBLIGED', 'INTERCEPTED', 'OPERATING', 'CARRYING', 'IMPLICATED', 'ABONDONED', 'FAILED', 'ATTEMPTED', 'MAINTAIN', 'BOMBING', 'MISSING', 'ATTACKED', 'WARNED', 'MURDERED', 'LINKED', 'INVOLVED', 'SUFFERING', 'ATTACKED', 'RECALLED', 'COULD', 'ATTEMPTING', 'BOMBED', 'HURTING', 'GUARDING', 'SABOTAGED', 'PARTICIPATED', 'STAGED', 'CARRIED', 'ASSASSINATED','DAMAGED', 'FIRED', 'DENIED', 'SEEKING', 'FLEES']
+        goodwordlist=['LOCATED', 'ATTACKED', 'SHOT', 'SUFFERING', 'SUSTRAINED', 'OBSTRUCTING', 'MISSING', 'HIT', 'ABANDONED','WEARING', 'ENTERED', 'RECALLED', 'ASSASSINATED', 'DAMAGED', 'ATTEMPTED', 'PROTESTING', 'HURTING', 'ACTING','BOMBED', 'BROKE','RIDING', 'WEARING', 'DIED', 'KILLED', 'INJURED', 'RESPONSIBLE', 'HIT', 'OBLIGED', 'INTERCEPTED', 'OPERATING', 'CARRYING', 'IMPLICATED', 'ABONDONED', 'FAILED', 'ATTEMPTED', 'MAINTAIN', 'BOMBING', 'MISSING', 'ATTACKED', 'WARNED', 'MURDERED',  'INVOLVED', 'SUFFERING','LINKED', 'ATTACKED', 'RECALLED', 'ATTEMPTING', 'BOMBED', 'HURTING', 'GUARDING', 'SABOTAGED', 'PARTICIPATED', 'STAGED', 'ASSASSINATED','DAMAGED', 'FIRED', 'DENIED', 'SEEKING', 'FLEES']
         newsubjpatternlist=[]
         for entry in subjpatternlist:
                 if entry[0] in goodwordlist:
@@ -467,9 +476,145 @@ def clean_subj(subjpatternlist):
                         if entry[1] in goodwordlist:
                                 newsubjpatternlist.append(entry)
         return newsubjpatternlist
+
+#special clean subj##############
+def special_clean_subj(subjpatternlist):
+        '''
+        subjpatternlist.remove(['MURDERED', 'VICTIM'])
+        subjpatternlist.remove(['KILLED', 'VICTIM'])
+ #       subjpatternlist.remove(['be', 'MURDERED', 'VICTIM'])
+        subjpatternlist.remove(['be', 'ARRESTED', 'VICTIM'])
+        subjpatternlist.remove(['be', 'BROUGHT', 'VICTIM'])
+        subjpatternlist.remove(['be', 'BROUGHT', 'TARGET'])
+        subjpatternlist.remove(['be', 'INVOLVED', 'VICTIM'])
+        subjpatternlist.remove(['be', 'ADMITTED', 'VICTIM'])
+        subjpatternlist.remove(['be', 'FOUND', 'VICTIM'])
+        subjpatternlist.remove(['LOCATED', 'PERP INDIV'])
+        '''
+
+                
+        newsubjpatternlist=[]
+        for entry in subjpatternlist:
+                if (entry[0] == 'MURDERED' or entry[0]=='murder') and entry[1]=='VICTIM':
+                        continue
+                
+                if (entry[0] == 'KILLED' or entry[0]=='kill') and entry[1]=='VICTIM':
+                        continue
+                
+                if (entry[0] == 'LOCATED' or entry[0]=='locate') and entry[1]=='PERP INDIV':
+                        continue
+                
+                if entry[0] == 'be' and (entry[1]=='murder' or entry[1]=='MURDERED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='arrest' or entry[1]=='ARRESTED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='bring' or entry[1]=='BROUGHT') and (entry[2]=='VICTIM' or entry[2]=='TARGET') :
+                        continue
+                if entry[0] == 'be' and (entry[1]=='involve' or entry[1]=='INVOLVED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='admit' or entry[1]=='ADMITTED') and entry[2]=='VICTIM':
+                        continue
+
+                if entry[0] == 'be' and (entry[1]=='find' or entry[1]=='FOUND') and entry[2]=='VICTIM':
+                        continue
+
+                if entry[0] == 'be' and (entry[1]=='carry' or entry[1]=='CARRIED') and (entry[2]=='VICTIM' or entry[2]=='PERP INDIV'):
+                        continue
+                
+                if entry[0] == 'be' and (entry[1]=='kill' or entry[1]=='KILLED') and entry[2]=='PERP INDIV':
+                        continue
+
+                else:
+                        newsubjpatternlist.append(entry)
+        
+        return newsubjpatternlist
+
+def special_clean_nsubjpasspatternlist(nsubjpasspatternlist):              
+        newsubjpasspatternlist=[]
+        for entry in nsubjpasspatternlist:
+              
+                if entry[0] == 'be' and (entry[1]=='murder' or entry[1]=='MURDERED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='arrest' or entry[1]=='ARRESTED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='bring' or entry[1]=='BROUGHT') and (entry[2]=='VICTIM' or entry[2]=='TARGET') :
+                        continue
+                if entry[0] == 'be' and (entry[1]=='involve' or entry[1]=='INVOLVED') and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'be' and (entry[1]=='admit' or entry[1]=='ADMITTED') and entry[2]=='VICTIM':
+                        continue
+
+                if entry[0] == 'be' and (entry[1]=='find' or entry[1]=='FOUND') and entry[2]=='VICTIM':
+                        continue
+
+                if entry[0] == 'be' and (entry[1]=='carry' or entry[1]=='CARRIED') and (entry[2]=='VICTIM' or entry[2]=='PERP INDIV'):
+                        continue
+                
+                if entry[0] == 'be' and (entry[1]=='kill' or entry[1]=='KILLED') and entry[2]=='PERP INDIV':
+                        continue
+
+                else:
+                        newsubjpasspatternlist.append(entry)
+        
+        return newsubjpasspatternlist
+
+
+
+def special_clean_pobj(pobjpatternlist):
+        pobjpatternlist.append(['CARRIED', 'OUT', 'BY', 'PERP INDIV'])
+        pobjpatternlist.append(['EXPLODED', 'AT', 'TARGET'])
+        pobjpatternlist.append(['KILLING', 'OF', 'VICTIM'])
+        pobjpatternlist.append(['DEATH', 'OF', 'VICTIM'])
+        pobjpatternlist.append(['ARREST', 'OF', 'PERP INDIV'])
+        pobjpatternlist.append(['MASSACRE', 'OF', 'VICTIM'])
+        pobjpatternlist.append(['INTERCEPTED', 'BY', 'PERP INDIV'])
+        pobjpatternlist.remove(['BORDER', 'WITH', 'PERP INDIV'])
+        pobjpatternlist.remove( ['COMMITTED', 'AGAINST', 'TARGET'])
+        pobjpatternlist.remove(['NUMBER', 'OF', 'VICTIM'])
+        pobjpatternlist.remove(['ATTACK', 'ON', 'VICTIM'])
+        pobjpatternlist.remove(['VICTIMS', 'OF', 'TARGET'])
+        pobjpatternlist.remove(['VICTIMS', 'OF', 'VICTIM'])
+        pobjpatternlist.remove(['FILLED', 'WITH', 'VICTIM'])
+        pobjpatternlist.remove(['THOUSANDS', 'OF', 'VICTIM'])
+        pobjpatternlist.remove(['BELIEF', 'OF', 'PERP INDIV'])
+        pobjpatternlist.remove(['ODDS', 'WITH', 'PERP INDIV'])
+        pobjpatternlist.remove(['SOMETHING', 'ABOUT', 'VICTIM'])
+        pobjpatternlist.remove(['REGION', 'NEAR', 'TARGET'])
+        pobjpatternlist.remove(['REGION', 'NEAR', 'VICTIM'])
+        pobjpatternlist.remove(['OPERATING', 'IN', 'PERP INDIV'])
+        pobjpatternlist.remove(['GOING', 'TO', 'VICTIM'])
+        pobjpatternlist.remove(['COMMITTEES', 'OF', 'PERP INDIV'])
+
+        return pobjpatternlist
+
+
+def special_clean_dobj(dobjpatternlist):
+        ## see if list can remove element directly!!!
+        dobjpatternlist.append(['involve', 'PERP INDIV'])
+        dobjpatternlist.append(['rescue', 'VICTIM'])
+        dobjpatternlist.remove(['kill', 'TARGET'])
+        dobjpatternlist.remove(['force', 'PERP INDIV'])
+        dobjpatternlist.remove(['cause', 'VICTIM'])
+        dobjpatternlist.remove(['allege', 'PERP INDIV'])
+        dobjpatternlist.remove(['condemn', 'VICTIM'])
+        dobjpatternlist.remove(['accuse', 'VICTIM'])
+        dobjpatternlist.remove(['uncontroll', 'PERP INDIV'])
+        dobjpatternlist.remove(['dislodge', 'PERP INDIV'])
+        dobjpatternlist.remove(['order', 'PERP INDIV'])
+        dobjpatternlist.remove(['entrench', 'VICTIM'])
+        dobjpatternlist.remove(['add', 'PERP INDIV'])
+        dobjpatternlist.remove(['accord', 'PERP INDIV'])
+        dobjpatternlist.remove(['cause', 'TARGET'])
+        dobjpatternlist.remove(['affect', 'TARGET'])
+        dobjpatternlist.remove(['state', 'VICTIM'])
+                             
+                               
+        return dobjpatternlist
+
+        
         
 def clean_dobj(dobjpatternlist):
-        badwordlist=['wear', 'call','approve', 'need', 'issue', 'ask', 'do', 'deliver', 'see', 'say', 'request', 'indicate', 'admit','begin', 'remain','erupt', 'report', 'responsible', 'cross', 'heavy', 'say', 'propose', 'follow', 'have', 'will', 'include', 'receive', 'describe', 'make', 'do', 'find', 'request', 'reiterate', 'surround', 'leave', 'use', 'will','train', 'stop', 'hector', 'receive', 'have', 'point', 'continue', 'replace', 'name', 'participate','rank', 'be']
+        badwordlist=['wear', 'rafael','punish', 'turn', 'stag','hold', 'decide', 'carry', 'call','reach', 'approve', 'need', 'issue', 'ask', 'do', 'deliver', 'see', 'say', 'request', 'indicate', 'admit','begin', 'remain','erupt', 'report', 'responsible', 'cross', 'heavy', 'say', 'propose', 'follow', 'have', 'will', 'include', 'receive', 'describe', 'make', 'do', 'find', 'request', 'reiterate', 'surround', 'leave', 'use', 'will','train', 'stop', 'hector', 'receive', 'have', 'point', 'continue', 'replace', 'name', 'participate','rank', 'be']
         newdobjpatternlist=[]
         for entry in dobjpatternlist:
                 if len(entry)>=2:
@@ -481,7 +626,7 @@ def clean_dobj(dobjpatternlist):
         return newdobjpatternlist
 
 def clean_pobj(pobjpatternlist):
-        badwordlist=['FASHION', 'MISSIONARIES', 'MORNING', 'ACCORDING', 'BEING', 'PRIESTS', 'BEEN', 'POWER', 'HEADQUARTERS']
+        badwordlist=['FASHION', 'MISSIONARIES', 'MORNING', 'ACCORDING', 'BEING', 'PRIESTS', 'BEEN', 'POWER', 'HEADQUARTERS','DOZENS']
         newpobjpatternlist=[]
         for entry in pobjpatternlist:
                 if len(entry)>=2:

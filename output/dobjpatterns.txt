@@ -1,36 +1,34 @@
 murder/VICTIM/
-stag/PERP INDIV/
-force/PERP INDIV/
+involve/PERP INDIV/
+kill/VICTIM/
+destroy/TARGET/
+arrest/PERP INDIV/
+locate/PERP INDIV/
+pursue/PERP INDIV/
+attack/TARGET/
+condemn/PERP INDIV/
+wound/VICTIM/
 force/VICTIM/
 burn/TARGET/
-kill/VICTIM/
+blow/TARGET/
+accuse/PERP INDIV/
 bomb/TARGET/
+damage/TARGET/
+attacked/TARGET/
+attacked/VICTIM/
 explode/TARGET/
 sabotage/TARGET/
 injure/VICTIM/
-damage/TARGET/
 guard/TARGET/
 assassinate/VICTIM/
-kill/TARGET/
-allege/PERP INDIV/
-attacked/TARGET/
-attacked/VICTIM/
 capture/VICTIM/
-destroy/TARGET/
-accuse/PERP INDIV/
-condemn/VICTIM/
-accuse/VICTIM/
-uncontroll/PERP INDIV/
 warn/PERP INDIV/
 investigate/PERP INDIV/
-dislodge/PERP INDIV/
-entrench/VICTIM/
-attack/TARGET/
-blow/TARGET/
-order/PERP INDIV/
 prosecute/PERP INDIV/
-wound/VICTIM/
 identify/PERP INDIV/
-add/PERP INDIV/
 suspect/PERP INDIV/
 link/PERP INDIV/
+recover/VICTIM/
+release/VICTIM/
+involve/PERP INDIV/
+rescue/VICTIM/

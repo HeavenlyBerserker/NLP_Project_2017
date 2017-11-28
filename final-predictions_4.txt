@@ -1,0 +1,1068 @@
+
+ID:             DEV-MUC3-0004
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     IT
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         CIVILIANS
+                SALVADORANS
+
+ID:             DEV-MUC3-0022
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         LOW-RANKING OFFICERS
+                MONSIGNOR ROMERO
+                JESUIT FATHERS
+                OVER 7,000 PEOPLE
+
+ID:             DEV-MUC3-0026
+INCIDENT:       KIDNAPPING
+WEAPON:         VEHICLE
+PERP INDIV:     VEHICLE
+                HEAVILY ARMED MEN
+PERP ORG:       SALVADORAN GOVERNMENT
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0028
+INCIDENT:       ATTACK
+WEAPON:         MINE
+PERP INDIV:     THIS ACTION
+                MUCH HIGHER LEVEL OFFICERS
+                GENERAL
+                WHO
+                MILITARY PERSONNEL
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         MILITARY PERSONNEL
+                JESUITS
+
+ID:             DEV-MUC3-0036
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     SALVADORAN PARAMILITARY GROUPS
+                Y
+PERP ORG:       MILITARY
+TARGET:         -
+VICTIM:         BOTH BODIES
+                OQUELI
+                BOTH LEADERS
+                BODIES
+
+ID:             DEV-MUC3-0044
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     PRESIDENTIAL HOUSE
+PERP ORG:       FMLN
+TARGET:         PRESIDENTIAL HOUSE
+VICTIM:         -
+
+ID:             DEV-MUC3-0051
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     EXPLOSION
+                INDIVIDUALS
+PERP ORG:       -
+TARGET:         WINDOWS AND WATER PIPES
+VICTIM:         -
+
+ID:             DEV-MUC3-0061
+INCIDENT:       ATTACK
+WEAPON:         MINE
+PERP INDIV:     -
+PERP ORG:       GOVERNMENT
+TARGET:         MSGR ROMERO
+VICTIM:         INVESTIGATIONS
+                MSGR ARNULFO ROMERO
+                MSGR ROMERO
+
+ID:             DEV-MUC3-0077
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     KIDNAPPERS
+                M
+PERP ORG:       MEDELLIN
+TARGET:         PEOPLE
+VICTIM:         PEOPLE
+
+ID:             DEV-MUC3-0102
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ACTIONS
+PERP ORG:       FMLN
+TARGET:         FENASTRAS
+VICTIM:         ACTIONS
+                FENASTRAS
+
+ID:             DEV-MUC3-0115
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+                BULLETS
+PERP INDIV:     ARMED GROUP
+                PEASANTS
+                THIS SECTOR
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         PEASANTS
+                PEASANTS' CORPSES
+                CORPSES
+
+ID:             DEV-MUC3-0117
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     JUDGE RAMIRO PUYOL
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0118
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     ESA BULLETIN
+                ATTACK
+PERP ORG:       ARMY
+TARGET:         TASS MISSION
+VICTIM:         ATTACK
+                NEITHER TRUSHIN
+                TASS MISSION
+
+ID:             DEV-MUC3-0126
+INCIDENT:       BOMBING
+WEAPON:         MORTAR
+PERP INDIV:     URBAN GUERILLAS
+                PRESUMABLY
+PERP ORG:       FARABUNDO MARTI NATIONAL LIBERATION FRONT
+TARGET:         URBAN GUERILLAS
+                PRESIDENCY
+VICTIM:         PRESUMABLY
+
+ID:             DEV-MUC3-0134
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       NATIONAL POLICE
+TARGET:         -
+VICTIM:         FRUIT STANDS
+                WE
+
+ID:             DEV-MUC3-0139
+INCIDENT:       ATTACK
+WEAPON:         VEHICLE
+PERP INDIV:     DICTATORSHIP
+                TROOPS
+                THIS NEW COWARDLY ACTION
+                OFFICERS
+                VIDES CASANOVA'S TROOPS
+PERP ORG:       AIR FORCE
+TARGET:         INDISCRIMINATE SHOOTING
+VICTIM:         DICTATORSHIP
+                REPORTER ROBERTO NAVAS
+                REPORTERS ROBERTO NAVAS
+                INDISCRIMINATE SHOOTING
+                THAT JOURNALIST ROBERTO NAVAS
+                ROBERTO NAVAS
+
+ID:             DEV-MUC3-0165
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     CULTURAL INSTITUTE
+                ATTACK
+PERP ORG:       -
+TARGET:         CHILEAN
+                SHOCK WAVE
+                INSTITUTE'S WINDOWS
+                CULTURAL INSTITUTE
+VICTIM:         CHILEAN
+
+ID:             DEV-MUC3-0169
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+                FIREARMS
+PERP INDIV:     DEMONSTRATORS
+                PERSONS
+PERP ORG:       GOVERNMENT
+TARGET:         -
+VICTIM:         WHO
+
+ID:             DEV-MUC3-0182
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       ARMED FORCES
+TARGET:         SALVADORAN ATTORNEY GENERAL ROBERTO GARCIA ALVARADO
+VICTIM:         SALVADORAN ATTORNEY GENERAL ROBERTO GARCIA ALVARADO
+
+ID:             DEV-MUC3-0197
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     UP
+                U.S. EMBASSY WAREHOUSE
+                U.S. EMBASSY EMPLOYEES
+PERP ORG:       -
+TARGET:         UP
+                BOMBS
+                U.S. EMBASSY WAREHOUSE
+                U.S. EMBASSY EMPLOYEES
+                CAMERAMAN
+                VIDEO EQUIPMENT
+VICTIM:         U.S. EMBASSY WAREHOUSE
+
+ID:             DEV-MUC3-0213
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     SELF-STYLED ZARATE WILKA ARMED FORCES
+                SHINING PATH
+                BOLIVIA
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         U.S. MISSIONARIES
+                MISSIONARIES
+
+ID:             DEV-MUC3-0225
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                CAR-BOMB
+PERP INDIV:     NATIONAL POLICE ARRESTED ARMY CAPTAIN LUIS JAVIER WULMEN CAMARGO
+                RIGHT-WING PARAMILITARY GROUPS
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0231
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     MURDER
+PERP ORG:       -
+TARGET:         -
+VICTIM:         COUNTRY
+                AMERICAN CITIZENS
+
+ID:             DEV-MUC3-0239
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     RODRIGUEZ PORTH
+PERP ORG:       -
+TARGET:         -
+VICTIM:         ANTONIO RODRIGUEZ PORTH
+                RODRIGUEZ PORTH
+
+ID:             DEV-MUC3-0241
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     HIS BODYGUARD
+                ELECTIONS
+                RODRIGUEZ PORTH
+PERP ORG:       SALVADORAN POLICE
+TARGET:         -
+VICTIM:         SALVADORAN PRESIDENCY MINISTER JOSE ANTONIO RODRIGUEZ PORTH
+                HIS BODYGUARD
+                ELECTIONS
+                RODRIGUEZ PORTH
+
+ID:             DEV-MUC3-0243
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     THIS ACTION
+PERP ORG:       FMLN
+TARGET:         US
+VICTIM:         PRESIDENCY MINISTER DR ANTONIO RODRIGUEZ PORTH
+                DR ANTONIO RODRIGUEZ PORTH
+
+ID:             DEV-MUC3-0253
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     WHO
+                THAT RODRIGUEZ PORTH
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         WHO
+                RODRIGUEZ PORTH
+                HE
+                THAT RODRIGUEZ PORTH
+
+ID:             DEV-MUC3-0260
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         PERSON
+                WE
+                THIS EXPLOSION
+                PERSONS
+                FORCE
+                MANY PEOPLE
+
+ID:             DEV-MUC3-0261
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     2 PEOPLE
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         2 PEOPLE
+
+ID:             DEV-MUC3-0263
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+PERP INDIV:     CAMILIST UNION - ARMY
+PERP ORG:       ELN
+TARGET:         PACIFIC OIL PIPELINE
+                GASOLINE
+                PACIFIC PIPELINE
+VICTIM:         CAMILIST UNION - ARMY
+                PACIFIC OIL PIPELINE
+                PACIFIC PIPELINE
+
+ID:             DEV-MUC3-0277
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     ATTACK
+                MAOIST
+                WHO
+PERP ORG:       SHINING PATH
+TARGET:         -
+VICTIM:         ATTACK
+                WHO
+                SEVERAL SOVIET CITIZENS
+
+ID:             DEV-MUC3-0280
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     NONE
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SOVIET SAILORS
+                NONE
+
+ID:             DEV-MUC3-0284
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     COMMUNIQUE
+PERP ORG:       ELN
+TARGET:         -
+VICTIM:         COMMUNIQUE
+
+ID:             DEV-MUC3-0287
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       ELN
+TARGET:         COUNTRY'S PETROLEUM INSTALLATIONS
+VICTIM:         -
+
+ID:             DEV-MUC3-0289
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0297
+INCIDENT:       BOMBING
+WEAPON:         MOLOTOV COCKTAILS
+PERP INDIV:     SOLDIERS
+                STUDENTS
+PERP ORG:       GOVERNMENT
+TARGET:         -
+VICTIM:         APPROXIMATELY SIX PERSONS
+                WHO
+                STUDENTS
+
+ID:             DEV-MUC3-0298
+INCIDENT:       ATTACK
+WEAPON:         FIREARMS
+PERP INDIV:     APPROXIMATELY
+PERP ORG:       GOVERNMENT
+TARGET:         -
+VICTIM:         POOR FAMILIES
+
+ID:             DEV-MUC3-0306
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVES
+PERP INDIV:     TODAY
+                COLOMBIAN TOWNS
+PERP ORG:       ELN
+TARGET:         1 METER
+                COLOMBIA'S OIL PIPELINES
+                GOVERNMENT
+                OIL INDUSTRY
+                CANO LIMON-COVENAS OIL PIPELINE
+                CANO LIMON- COVENAS PIPELINE
+                PACIFIC OIL PIPELINE
+VICTIM:         TODAY
+
+ID:             DEV-MUC3-0316
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                DYNAMITE CHARGE
+PERP INDIV:     IT
+PERP ORG:       ELN
+TARGET:         -
+VICTIM:         IT
+
+ID:             DEV-MUC3-0318
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     PERPETRATORS
+                MANY PEOPLE
+                Y
+PERP ORG:       FPMR
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0325
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     SALOMON ENRIQUE
+                YOU
+                ME
+                ALL MEN
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         PARISHIONERS
+                IR PAINS
+                ALL MEN
+
+ID:             DEV-MUC3-0342
+INCIDENT:       ATTACK
+WEAPON:         MINE
+PERP INDIV:     THAT PERUVIAN SOLDIERS
+                AT LEAST 22 MINERS
+                SOLDIERS
+                MINERS
+                TERRORISTS
+PERP ORG:       ARMY
+TARGET:         TERRORISTS
+                SEVERAL MINES LATELY
+VICTIM:         APPROXIMATELY
+                MINERS
+
+ID:             DEV-MUC3-0345
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     HE
+                INDIVIDUALS
+PERP ORG:       -
+TARGET:         -
+VICTIM:         JUDGE VALENCIA GARCIA
+
+ID:             DEV-MUC3-0347
+INCIDENT:       ATTACK
+WEAPON:         VEHICLE
+PERP INDIV:     -
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         COLOMBIAN JUSTICE CARLOS VALENCIA
+                JUSTICE
+
+ID:             DEV-MUC3-0351
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     AT LEAST ONE MAN
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SENATOR LUIS CARLOS GALAN
+                HER PERSONS
+
+ID:             DEV-MUC3-0354
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     COUNTRY
+PERP ORG:       -
+TARGET:         COUNTRY
+VICTIM:         LUIS CARLOS GALAN
+
+ID:             DEV-MUC3-0366
+INCIDENT:       ATTACK
+WEAPON:         VEHICLE
+PERP INDIV:     OPERATIONS IT
+                SENATOR LUIS CARLOS GALAN
+                PERSONS
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         OPERATIONS IT
+                PERSONS
+
+ID:             DEV-MUC3-0367
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     IT
+                RECENTLY
+                GROUP
+                SOLDIERS
+PERP ORG:       MILITARY
+TARGET:         -
+VICTIM:         IT
+                LUIS CARLOS GALAN
+
+ID:             DEV-MUC3-0371
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
+PERP INDIV:     WHO
+                OUR RELATIVES
+PERP ORG:       EXTRADITABLES
+TARGET:         WHO
+                OLIGARCHY'S INDUSTRIES
+VICTIM:         M
+
+ID:             DEV-MUC3-0391
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     ORGANIZATIONS
+                COLOMBIA
+                AUTHORITIES
+                ESCOBAR GAVIRIA
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         AUTHORITIES
+                WHO
+
+ID:             DEV-MUC3-0395
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+PERP INDIV:     WHO
+                INVESTIGATIONS
+                MANY PEOPLE
+PERP ORG:       GOVERNMENT
+TARGET:         DYNAMITE ATTACK
+VICTIM:         SENATOR LUIS CARLOS GALAN
+                WHO
+                APPARENTLY
+                INVESTIGATIONS
+
+ID:             DEV-MUC3-0404
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         ANYONE
+
+ID:             DEV-MUC3-0406
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     SENATOR GALAN
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SENATOR GALAN
+
+ID:             DEV-MUC3-0411
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     "ATLACATL" BATTALION SOLDIERS
+                WHO
+PERP ORG:       MILITARY
+TARGET:         -
+VICTIM:         YOUNG MECHANICS STUDENT
+                INNOCENT YOUNG MAN
+
+ID:             DEV-MUC3-0413
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SOME PEOPLE
+                PERSON
+                HAD HE
+
+ID:             DEV-MUC3-0441
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                TRUCK
+PERP INDIV:     FLAG
+                NATIONAL UNIVERSITY STUDENTS
+PERP ORG:       ELN
+TARGET:         MAIN ENTRANCE
+VICTIM:         FLAG
+                POLICEMEN
+
+ID:             DEV-MUC3-0443
+INCIDENT:       BOMBING
+WEAPON:         TWO DEVICES
+PERP INDIV:     -
+PERP ORG:       GOVERNMENT
+TARGET:         -
+VICTIM:         STUDENTS
+
+ID:             DEV-MUC3-0451
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                POWERFUL BOMB
+PERP INDIV:     -
+PERP ORG:       MEDELLIN
+TARGET:         -
+VICTIM:         PEOPLE
+
+ID:             DEV-MUC3-0452
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     GALEANO BERRIO
+PERP ORG:       MILITARY
+TARGET:         -
+VICTIM:         GALEANO BERRIO
+                COUNCILMAN
+
+ID:             DEV-MUC3-0465
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0467
+INCIDENT:       KIDNAPPING
+WEAPON:         MINE
+PERP INDIV:     OFFICIAL
+PERP ORG:       -
+TARGET:         -
+VICTIM:         ORLANDO CUELLER OSORIO
+                OFFICIAL
+
+ID:             DEV-MUC3-0472
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       FMLN
+TARGET:         FORCES
+VICTIM:         MONSIGNOR OSCAR ARNULFO ROMERO
+
+ID:             DEV-MUC3-0474
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                DYNAMITE
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         HONORARY CONSUL'S AUTOMOBILE
+VICTIM:         -
+
+ID:             DEV-MUC3-0480
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     THAT TWO SOLDIERS
+                ARMED FORCES
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         THAT TWO SOLDIERS
+                ARMED FORCES
+                BOMBINGS
+
+ID:             DEV-MUC3-0487
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     AUTHORITIES
+PERP ORG:       -
+TARGET:         BRANCH OFFICES
+                KG
+                NEIGHBORING STORES
+VICTIM:         -
+
+ID:             DEV-MUC3-0501
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0502
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     CARTELS
+                GUATEMALA
+                THOUSANDS
+                PROMINENT POLITICIAN
+                BANKER RAMIRO CASTILLO LOVE
+                SEVERAL INTERESTS
+                IT
+                MORE THAN 100,000 PEOPLE
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         THOUSANDS
+                HECTARES
+                POLITICIANS
+                SEVERAL INTERESTS
+                IT
+                MORE THAN 100,000 PEOPLE
+                GOVERNMENT
+                ARMY
+                ILLEGAL IMMIGRANTS
+                UNDOCUMENTED CENTRAL AMERICANS
+
+ID:             DEV-MUC3-0504
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       MILITARY
+TARGET:         BANKS
+VICTIM:         MINOR
+
+ID:             DEV-MUC3-0528
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     OWNERS
+                HEAVILY ARMED AND UNIDENTIFIED INDIVIDUALS
+PERP ORG:       -
+TARGET:         OWNERS
+VICTIM:         -
+
+ID:             DEV-MUC3-0539
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       ELN
+TARGET:         COLOMBIAN OIL ENTERPRISE
+VICTIM:         -
+
+ID:             DEV-MUC3-0552
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     MEMBERS
+                COLUMN
+                RESULT
+PERP ORG:       MILITARY
+TARGET:         HUANTA TOWN
+                MEMBERS
+                IR 38-YEAR OLD PRESIDENT FIDEL QUISPE
+                IR HOUSES
+VICTIM:         HUANTA TOWN
+                MEMBERS
+                IR 38-YEAR OLD PRESIDENT FIDEL QUISPE
+                IR HOUSES
+                RESULT
+                FEDERICO PAQUILLAUVI
+
+ID:             DEV-MUC3-0557
+INCIDENT:       KIDNAPPING
+WEAPON:         EXPLOSIVES
+PERP INDIV:     PRESIDENTS
+                COUNTRIES
+                POLICE
+                THOUSANDS
+                ROUNDUPS
+                DRIVER
+                KIDNAPPING
+                PEOPLE
+                LLEGED LIEUTENANT
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         PEOPLE
+                ROUNDUPS
+                DRIVER
+                HIS BODYGUARD
+                KIDNAPPING
+                LLEGED LIEUTENANT
+
+ID:             DEV-MUC3-0559
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                VEHICLE
+PERP INDIV:     FOREIGN MINISTERS
+                FOREIGN MINISTERS MEETING
+                FIRST MEETING
+                SECOND MEETING
+PERP ORG:       MILITARY
+TARGET:         -
+VICTIM:         FOREIGN MINISTERS MEETING
+                FIRST MEETING
+                SECOND MEETING
+
+ID:             DEV-MUC3-0561
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     HE HAD
+PERP ORG:       GOVERNMENT
+TARGET:         -
+VICTIM:         HE HAD
+
+ID:             DEV-MUC3-0565
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+                BULLETS
+PERP INDIV:     TALKS
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         WIFE
+                TALKS
+
+ID:             DEV-MUC3-0875
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     PRIESTS
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             DEV-MUC3-0876
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       CITE
+TARGET:         -
+VICTIM:         PERSONS
+
+ID:             DEV-MUC3-0887
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     PEOPLE
+                WHO
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         PRIESTS
+                MURDERS
+                WHO
+
+ID:             DEV-MUC3-0888
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     WHO
+                POSSIBILITIES
+PERP ORG:       MILITARY
+TARGET:         DEAD BODIES
+VICTIM:         MORE THAN 1,000 PEOPLE
+                CATHOLIC PRIESTS
+                SOVIET GOVERNMENT
+
+ID:             TST1-MUC3-0002
+INCIDENT:       BOMBING
+WEAPON:         HELICOPTER GUNSHIP
+                HELICOPTER GUNSHIPS
+PERP INDIV:     MEMBERS
+PERP ORG:       FMLN
+TARGET:         MEMBERS
+                ELECTRIC POWER SUBSTATION
+                SUBSTATION
+VICTIM:         ELECTRIC POWER SUBSTATION
+                SOLDIER
+
+ID:             TST1-MUC3-0004
+INCIDENT:       BOMBING
+WEAPON:         DYNAMITE
+                EXPLOSIVES
+PERP INDIV:     SOME 100 PEOPLE
+PERP ORG:       -
+TARGET:         ANTIOQUIA LIQUEUR PLANT
+VICTIM:         SOME 100 PEOPLE
+
+ID:             TST1-MUC3-0035
+INCIDENT:       ATTACK
+WEAPON:         BULLET
+PERP INDIV:     URBAN COMMANDO UNITS
+                ARMED UNITS
+                OUR UNITS
+                TROOPS
+PERP ORG:       FMLN
+TARGET:         INFANTRY BRIGADE HEADQUARTERS
+                OUR UNITS
+                ELECTRICAL SYSTEM
+VICTIM:         -
+
+ID:             TST1-MUC3-0036
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                HOMEMADE BOMB
+PERP INDIV:     SOLDIERS
+                Y
+                SUSPECTS
+PERP ORG:       -
+TARGET:         SOLDIERS
+VICTIM:         WHO
+
+ID:             TST1-MUC3-0045
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     JESUITS
+                ARMED INDIVIDUALS
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         JESUITS
+
+ID:             TST1-MUC3-0050
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     RECTOR
+                MEN
+                PRIESTS
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         JESUITS
+                MEN
+                PRIESTS
+
+ID:             TST1-MUC3-0072
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       ESA
+TARGET:         -
+VICTIM:         -
+
+ID:             TST1-MUC3-0080
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       EXTRADITABLES
+TARGET:         -
+VICTIM:         SENATOR
+
+ID:             TST1-MUC3-0092
+INCIDENT:       ATTACK
+WEAPON:         GRENADE
+                ROCKET
+PERP INDIV:     CLASH
+                WE
+                ANOTHER FMLN UNIT
+                Y
+                FMLN UNITS
+                URBAN GUERRILLAS
+PERP ORG:       FMLN
+TARGET:         CONCHAGUA BATTALION
+                FMLN UNITS
+                INFANTRY COMPANY
+                URBAN GUERRILLAS
+                WE
+                HELICOPTER
+VICTIM:         CONCHAGUA BATTALION
+                CLASH
+                WE
+                Y
+                PRISONERS
+
+ID:             TST2-MUC4-0010
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       FAL
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0012
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     MURDER
+                CRIME
+PERP ORG:       -
+TARGET:         -
+VICTIM:         JECAR NEGHME
+
+ID:             TST2-MUC4-0019
+INCIDENT:       ATTACK
+WEAPON:         MACHINEGUN
+PERP INDIV:     WHO
+                CRIME
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         NATIONAL FIRE DEPARTMENT DIRECTOR COLONEL ROBERTO ARMANDO RIVERA ESCOBAR
+                WHO
+                DEFENSELESS CITIZENS
+
+ID:             TST2-MUC4-0044
+INCIDENT:       ATTACK
+WEAPON:         EXPLOSIVES
+                VERY POWERFUL EXPLOSIVES
+PERP INDIV:     NEZUELAN SOLDIERS
+                COLOMBIAN GUERRILLAS AND DRUG TRAFFICKING GANGS
+                COLOMBIA
+                GUARDS
+                EXPLOSIVES
+                ALLEGED COLOMBIAN GUERRILLAS
+PERP ORG:       ARMY
+TARGET:         -
+VICTIM:         NEZUELAN SOLDIERS
+                GUARDS
+                EXPLOSIVES
+                SOLDIERS
+
+ID:             TST2-MUC4-0046
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       NATIONAL POLICE
+TARGET:         -
+VICTIM:         CALI
+                PASSENGERS
+
+ID:             TST2-MUC4-0051
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     SARMIENTO
+PERP ORG:       -
+TARGET:         -
+VICTIM:         SARMIENTO
+
+ID:             TST2-MUC4-0053
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     -
+PERP ORG:       -
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0056
+INCIDENT:       ATTACK
+WEAPON:         -
+PERP INDIV:     WE
+PERP ORG:       ARMED FORCES
+TARGET:         -
+VICTIM:         PORTERS
+                HE
+                WE
+
+ID:             TST2-MUC4-0070
+INCIDENT:       KIDNAPPING
+WEAPON:         -
+PERP INDIV:     SALVADORAN TELEVISION JOURNALISTS
+                MOTHERS
+                OCCUPATION
+PERP ORG:       NATIONAL POLICE
+TARGET:         -
+VICTIM:         SALVADORAN TELEVISION JOURNALISTS
+
+ID:             TST2-MUC4-0081
+INCIDENT:       BOMBING
+WEAPON:         BOMB
+                BOMBS
+PERP INDIV:     -
+PERP ORG:       MEDELLIN
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0093
+INCIDENT:       ATTACK
+WEAPON:         BOMB
+PERP INDIV:     -
+PERP ORG:       FMLN
+TARGET:         -
+VICTIM:         -
+
+ID:             TST2-MUC4-0095
+INCIDENT:       BOMBING
+WEAPON:         EXPLOSIVE DEVICES
+                EXPLOSIVE DEVICE
+PERP INDIV:     SUBVERSIVE
+                SE TERRORIST ACTIONS
+PERP ORG:       AIR FORCE
+TARGET:         HIT A WALL
+                SOME BUILDINGS
+VICTIM:         SE TERRORIST ACTIONS
