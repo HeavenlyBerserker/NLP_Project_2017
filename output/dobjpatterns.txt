@@ -1,3 +1,5 @@
+involve/PERP INDIV/
+rescue/VICTIM/
 murder/VICTIM/
 involve/PERP INDIV/
 kill/VICTIM/
@@ -22,6 +24,8 @@ injure/VICTIM/
 guard/TARGET/
 assassinate/VICTIM/
 capture/VICTIM/
+accuse/VICTIM/
+uncontroll/PERP INDIV/
 warn/PERP INDIV/
 investigate/PERP INDIV/
 prosecute/PERP INDIV/
@@ -30,5 +34,3 @@ suspect/PERP INDIV/
 link/PERP INDIV/
 recover/VICTIM/
 release/VICTIM/
-involve/PERP INDIV/
-rescue/VICTIM/

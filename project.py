@@ -479,20 +479,6 @@ def clean_subj(subjpatternlist):
 
 #special clean subj##############
 def special_clean_subj(subjpatternlist):
-        '''
-        subjpatternlist.remove(['MURDERED', 'VICTIM'])
-        subjpatternlist.remove(['KILLED', 'VICTIM'])
- #       subjpatternlist.remove(['be', 'MURDERED', 'VICTIM'])
-        subjpatternlist.remove(['be', 'ARRESTED', 'VICTIM'])
-        subjpatternlist.remove(['be', 'BROUGHT', 'VICTIM'])
-        subjpatternlist.remove(['be', 'BROUGHT', 'TARGET'])
-        subjpatternlist.remove(['be', 'INVOLVED', 'VICTIM'])
-        subjpatternlist.remove(['be', 'ADMITTED', 'VICTIM'])
-        subjpatternlist.remove(['be', 'FOUND', 'VICTIM'])
-        subjpatternlist.remove(['LOCATED', 'PERP INDIV'])
-        '''
-
-                
         newsubjpatternlist=[]
         for entry in subjpatternlist:
                 if (entry[0] == 'MURDERED' or entry[0]=='murder') and entry[1]=='VICTIM':
@@ -561,37 +547,120 @@ def special_clean_nsubjpasspatternlist(nsubjpasspatternlist):
 
 
 def special_clean_pobj(pobjpatternlist):
-        pobjpatternlist.append(['CARRIED', 'OUT', 'BY', 'PERP INDIV'])
-        pobjpatternlist.append(['EXPLODED', 'AT', 'TARGET'])
-        pobjpatternlist.append(['KILLING', 'OF', 'VICTIM'])
-        pobjpatternlist.append(['DEATH', 'OF', 'VICTIM'])
-        pobjpatternlist.append(['ARREST', 'OF', 'PERP INDIV'])
-        pobjpatternlist.append(['MASSACRE', 'OF', 'VICTIM'])
-        pobjpatternlist.append(['INTERCEPTED', 'BY', 'PERP INDIV'])
-        pobjpatternlist.remove(['BORDER', 'WITH', 'PERP INDIV'])
+        newpobjpatternlist=[]
+        newpobjpatternlist.append(['CARRIED', 'OUT', 'BY', 'PERP INDIV'])
+        newpobjpatternlist.append(['CARRIED', 'OUT', 'BY', 'PERP INDIV'])
+        newpobjpatternlist.append(['EXPLODED', 'AT', 'TARGET'])
+        newpobjpatternlist.append(['KILLING', 'OF', 'VICTIM'])
+        newpobjpatternlist.append(['DEATH', 'OF', 'VICTIM'])
+        newpobjpatternlist.append(['ARREST', 'OF', 'PERP INDIV'])
+        newpobjpatternlist.append(['MASSACRE', 'OF', 'VICTIM'])
+        newpobjpatternlist.append(['INTERCEPTED', 'BY', 'PERP INDIV'])
+
+        for entry in pobjpatternlist:
+                if entry[0] == 'BORDER' and entry[1]=='WITH' and entry[2]=='PERP INDIV':
+                        continue
+                if entry[0] == 'COMMITTED' and entry[1]=='AGAINST' and entry[2]=='TARGET':
+                        continue
+                if entry[0] == 'ATTACK' and entry[1]=='ON' and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'VICTIMS' and entry[1]=='OF' and entry[2]=='TARGET':
+                        continue
+                if entry[0] == 'FILLED' and entry[1]=='WITH' and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'THOUSANDS' and entry[1]=='OF' and entry[2]=='PVICTIM':
+                        continue
+                if entry[0] == 'BELIEF' and entry[1]=='OF' and entry[2]=='PERP INDIV':
+                        continue
+                if entry[0] == 'ODDS' and entry[1]=='WITH' and entry[2]=='PERP INDIV':
+                        continue
+                if entry[0] == 'SOMETHING' and entry[1]=='ABOUT' and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'REGION' and entry[1]=='NEAR' and entry[2]=='TARGET':
+                        continue
+                if entry[0] == 'REGION' and entry[1]=='NEAR' and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'OPERATING' and entry[1]=='IN' and entry[2]=='PERP INDIV':
+                        continue
+                if entry[0] == 'GOING' and entry[1]=='TO' and entry[2]=='VICTIM':
+                        continue
+                if entry[0] == 'COMMITTEES' and entry[1]=='OF' and entry[2]=='PERP INDIV':
+                        continue
+                else:
+                        newpobjpatternlist.append(entry)
+
+                
+                
+        '''
         pobjpatternlist.remove( ['COMMITTED', 'AGAINST', 'TARGET'])
         pobjpatternlist.remove(['NUMBER', 'OF', 'VICTIM'])
         pobjpatternlist.remove(['ATTACK', 'ON', 'VICTIM'])
         pobjpatternlist.remove(['VICTIMS', 'OF', 'TARGET'])
         pobjpatternlist.remove(['VICTIMS', 'OF', 'VICTIM'])
         pobjpatternlist.remove(['FILLED', 'WITH', 'VICTIM'])
+        
         pobjpatternlist.remove(['THOUSANDS', 'OF', 'VICTIM'])
+        
         pobjpatternlist.remove(['BELIEF', 'OF', 'PERP INDIV'])
+        
         pobjpatternlist.remove(['ODDS', 'WITH', 'PERP INDIV'])
         pobjpatternlist.remove(['SOMETHING', 'ABOUT', 'VICTIM'])
+        
         pobjpatternlist.remove(['REGION', 'NEAR', 'TARGET'])
         pobjpatternlist.remove(['REGION', 'NEAR', 'VICTIM'])
+        
         pobjpatternlist.remove(['OPERATING', 'IN', 'PERP INDIV'])
         pobjpatternlist.remove(['GOING', 'TO', 'VICTIM'])
         pobjpatternlist.remove(['COMMITTEES', 'OF', 'PERP INDIV'])
-
-        return pobjpatternlist
+        '''
+        return newpobjpatternlist
 
 
 def special_clean_dobj(dobjpatternlist):
+        newdobjpatternlist=[]
+        newdobjpatternlist.append(['involve', 'PERP INDIV'])
+        newdobjpatternlist.append(['rescue', 'VICTIM'])
+        
+        for entry in dobjpatternlist:
+                if entry[0]=='kill'and entry[1]=='TARGET':
+                        continue
+                if entry[0]=='force'and entry[1]=='PERP INDIV':
+                        continue
+                if entry[0]=='cause'and entry[1]=='VICTIM':
+                        continue
+                if entry[0]=='allege'and entry[1]=='PERP INDIV':
+                        continue
+                if entry[0]=='condemn'and entry[1]=='VICTIM':
+                        continue
+                if entry[0]=='uncontrolled'and entry[1]=='PERP INDIV':
+                        continue
+                
+                if entry[0]=='dislodge'and entry[1]=='PERP INDIV':
+                        continue             
+                if entry[0]=='order'and entry[1]=='PERP INDIV':
+                        continue
+                if entry[0]=='entrench' and entry[1]=='VICTIM':
+                        continue
+                if entry[0]=='add'and entry[1]=='PERP INDIV':
+                        continue
+                if entry[0]=='accord'and entry[1]=='PERP INDIV':
+                        continue
+                if entry[0]=='cause'and entry[1]=='TARGET':
+                        continue
+                if entry[0]=='affect'and entry[1]=='TARGET':
+                        continue
+                if entry[0]=='state'and entry[1]=='VICTIM':
+                        continue
+                else:
+                        newdobjpatternlist.append(entry)
+                        
+        return newdobjpatternlist
+
+                
+                
+               
         ## see if list can remove element directly!!!
-        dobjpatternlist.append(['involve', 'PERP INDIV'])
-        dobjpatternlist.append(['rescue', 'VICTIM'])
+        '''
         dobjpatternlist.remove(['kill', 'TARGET'])
         dobjpatternlist.remove(['force', 'PERP INDIV'])
         dobjpatternlist.remove(['cause', 'VICTIM'])
@@ -599,6 +668,7 @@ def special_clean_dobj(dobjpatternlist):
         dobjpatternlist.remove(['condemn', 'VICTIM'])
         dobjpatternlist.remove(['accuse', 'VICTIM'])
         dobjpatternlist.remove(['uncontroll', 'PERP INDIV'])
+        
         dobjpatternlist.remove(['dislodge', 'PERP INDIV'])
         dobjpatternlist.remove(['order', 'PERP INDIV'])
         dobjpatternlist.remove(['entrench', 'VICTIM'])
@@ -608,8 +678,8 @@ def special_clean_dobj(dobjpatternlist):
         dobjpatternlist.remove(['affect', 'TARGET'])
         dobjpatternlist.remove(['state', 'VICTIM'])
                              
-                               
-        return dobjpatternlist
+         '''                              
+   
 
         
         
