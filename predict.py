@@ -96,9 +96,10 @@ def main(argv):
 
 	writePred(predictions)
 
+	print(argv[0])
 	print("The final predictions have been written to final-predictions.txt in the NLP_Project_2017  directory.")
 
-	print(argv)
+	
 
 
 def predict(files, patterns, triggers, words, test, subjpatternlist, csubjpatternlist, nsubjpasspatternlist, csubjpasspatternlist, dobjpatternlist, pobjpatternlist, attrpatternlist):
