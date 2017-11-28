@@ -1,6 +1,6 @@
 NLP Project 2017
 Project by Hong Xu and Jie Zhang
-Written on python 2.7.12
+Written on python 2.7.12 and tested on lab2-12 cade machine
 #!/bin/bash
 For any questions, please contact Hong Xu u0867999@utah.edu
 Input: file to test as argument to ./infoextract.sh
